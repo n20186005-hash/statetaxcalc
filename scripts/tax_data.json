@@ -1,0 +1,1306 @@
+{
+  "federal": {
+    "id": "federal",
+    "sources": [
+      {
+        "name": "IRS Revenue Procedure 2025-XX",
+        "url": "https://www.irs.gov/newsroom/inflation-adjustments"
+      },
+      {
+        "name": "Internal Revenue Service",
+        "url": "https://www.irs.gov/"
+      }
+    ],
+    "content": {
+      "en": {
+        "title": "2026 Federal Tax Brackets Overview",
+        "description": "Comprehensive guide to 2026 IRS federal tax brackets, standard deduction changes, and inflation adjustments.",
+        "intro": "The IRS has announced annual inflation adjustments for the tax year 2026. These changes prevent 'bracket creep' and may result in lower taxes for filers whose income has not increased significantly.",
+        "details": "<ul><li><strong>Standard Deduction (Single):</strong> Projected to increase to approximately $16,100.</li><li><strong>Standard Deduction (Married):</strong> Projected to increase to approximately $32,200.</li><li><strong>Top Tax Rate:</strong> Remains at 37% for the highest income bracket.</li></ul><p>The 2026 tax year generally corresponds to tax returns filed in early 2027.</p>"
+      },
+      "zh-TW": {
+        "title": "2026 聯邦稅率級距總覽",
+        "description": "2026 年 IRS 聯邦稅率級距、標準扣除額變化及通膨調整的完整指南。",
+        "intro": "IRS 已宣布 2026 納稅年度的年度通膨調整。這些變化旨在防止「級距攀升」，對於收入未顯著增加的申報人來說，可能會降低稅負。",
+        "details": "<ul><li><strong>標準扣除額 (單身):</strong> 預計增加至約 $16,100。</li><li><strong>標準扣除額 (已婚):</strong> 預計增加至約 $32,200。</li><li><strong>最高稅率:</strong> 最高收入級距維持在 37%。</li></ul><p>2026 納稅年度通常對應於 2027 年初申報的稅表。</p>"
+      }
+    }
+  },
+  "states": [
+    {
+      "id": "alaska",
+      "sources": [
+        {
+          "name": "Alaska Dept. of Revenue",
+          "url": "http://tax.alaska.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Alaska State Tax 2026: No Income Tax Guide",
+          "state_name": "Alaska",
+          "description": "Detailed guide to Alaska taxes in 2026. Alaska is one of the few states with no individual income tax.",
+          "intro": "Good news for residents: <strong>Alaska does not impose a state individual income tax</strong>. This can lead to significant savings compared to other states.",
+          "details": "<p>While there is no income tax on wages, residents should be aware of other taxes:</p><ul><li><strong>Sales Tax:</strong> Alaska relies heavily on sales tax revenue.</li><li><strong>Property Tax:</strong> Property taxes may be higher to offset the lack of income tax.</li></ul><p>Always check with the <a href='http://tax.alaska.gov/' target='_blank'>official department of revenue</a> for the latest updates on other local taxes.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 阿拉斯加州稅務：免所得稅指南",
+          "state_name": "阿拉斯加州",
+          "description": "2026 年阿拉斯加州稅務詳細指南。阿拉斯加州是少數幾個不徵收個人所得稅的州之一。",
+          "intro": "居民的好消息：<strong>阿拉斯加州不徵收州個人所得稅</strong>。與其他州相比，這可以節省大量稅款。",
+          "details": "<p>雖然工資不徵收所得稅，但居民應注意其他稅種：</p><ul><li><strong>銷售稅 (Sales Tax):</strong> 阿拉斯加州 主要依賴銷售稅收入。</li><li><strong>房產稅 (Property Tax):</strong> 房產稅可能會較高，以彌補所得稅的缺失。</li></ul><p>請務必查看 <a href='http://tax.alaska.gov/' target='_blank'>官方稅務部門</a> 以獲取其他地方稅的最新更新。</p>"
+        }
+      }
+    },
+    {
+      "id": "florida",
+      "sources": [
+        {
+          "name": "Florida Dept. of Revenue",
+          "url": "https://floridarevenue.com/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Florida State Tax 2026: No Income Tax Guide",
+          "state_name": "Florida",
+          "description": "Detailed guide to Florida taxes in 2026. Florida is one of the few states with no individual income tax.",
+          "intro": "Good news for residents: <strong>Florida does not impose a state individual income tax</strong>. This can lead to significant savings compared to other states.",
+          "details": "<p>While there is no income tax on wages, residents should be aware of other taxes:</p><ul><li><strong>Sales Tax:</strong> Florida relies heavily on sales tax revenue.</li><li><strong>Property Tax:</strong> Property taxes may be higher to offset the lack of income tax.</li></ul><p>Always check with the <a href='https://floridarevenue.com/' target='_blank'>official department of revenue</a> for the latest updates on other local taxes.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 佛羅里達州稅務：免所得稅指南",
+          "state_name": "佛羅里達州",
+          "description": "2026 年佛羅里達州稅務詳細指南。佛羅里達州是少數幾個不徵收個人所得稅的州之一。",
+          "intro": "居民的好消息：<strong>佛羅里達州不徵收州個人所得稅</strong>。與其他州相比，這可以節省大量稅款。",
+          "details": "<p>雖然工資不徵收所得稅，但居民應注意其他稅種：</p><ul><li><strong>銷售稅 (Sales Tax):</strong> 佛羅里達州 主要依賴銷售稅收入。</li><li><strong>房產稅 (Property Tax):</strong> 房產稅可能會較高，以彌補所得稅的缺失。</li></ul><p>請務必查看 <a href='https://floridarevenue.com/' target='_blank'>官方稅務部門</a> 以獲取其他地方稅的最新更新。</p>"
+        }
+      }
+    },
+    {
+      "id": "nevada",
+      "sources": [
+        {
+          "name": "Nevada Dept. of Revenue",
+          "url": "https://tax.nv.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Nevada State Tax 2026: No Income Tax Guide",
+          "state_name": "Nevada",
+          "description": "Detailed guide to Nevada taxes in 2026. Nevada is one of the few states with no individual income tax.",
+          "intro": "Good news for residents: <strong>Nevada does not impose a state individual income tax</strong>. This can lead to significant savings compared to other states.",
+          "details": "<p>While there is no income tax on wages, residents should be aware of other taxes:</p><ul><li><strong>Sales Tax:</strong> Nevada relies heavily on sales tax revenue.</li><li><strong>Property Tax:</strong> Property taxes may be higher to offset the lack of income tax.</li></ul><p>Always check with the <a href='https://tax.nv.gov/' target='_blank'>official department of revenue</a> for the latest updates on other local taxes.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 內華達州稅務：免所得稅指南",
+          "state_name": "內華達州",
+          "description": "2026 年內華達州稅務詳細指南。內華達州是少數幾個不徵收個人所得稅的州之一。",
+          "intro": "居民的好消息：<strong>內華達州不徵收州個人所得稅</strong>。與其他州相比，這可以節省大量稅款。",
+          "details": "<p>雖然工資不徵收所得稅，但居民應注意其他稅種：</p><ul><li><strong>銷售稅 (Sales Tax):</strong> 內華達州 主要依賴銷售稅收入。</li><li><strong>房產稅 (Property Tax):</strong> 房產稅可能會較高，以彌補所得稅的缺失。</li></ul><p>請務必查看 <a href='https://tax.nv.gov/' target='_blank'>官方稅務部門</a> 以獲取其他地方稅的最新更新。</p>"
+        }
+      }
+    },
+    {
+      "id": "south-dakota",
+      "sources": [
+        {
+          "name": "South Dakota Dept. of Revenue",
+          "url": "https://dor.sd.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "South Dakota State Tax 2026: No Income Tax Guide",
+          "state_name": "South Dakota",
+          "description": "Detailed guide to South Dakota taxes in 2026. South Dakota is one of the few states with no individual income tax.",
+          "intro": "Good news for residents: <strong>South Dakota does not impose a state individual income tax</strong>. This can lead to significant savings compared to other states.",
+          "details": "<p>While there is no income tax on wages, residents should be aware of other taxes:</p><ul><li><strong>Sales Tax:</strong> South Dakota relies heavily on sales tax revenue.</li><li><strong>Property Tax:</strong> Property taxes may be higher to offset the lack of income tax.</li></ul><p>Always check with the <a href='https://dor.sd.gov/' target='_blank'>official department of revenue</a> for the latest updates on other local taxes.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 南達科他州稅務：免所得稅指南",
+          "state_name": "南達科他州",
+          "description": "2026 年南達科他州稅務詳細指南。南達科他州是少數幾個不徵收個人所得稅的州之一。",
+          "intro": "居民的好消息：<strong>南達科他州不徵收州個人所得稅</strong>。與其他州相比，這可以節省大量稅款。",
+          "details": "<p>雖然工資不徵收所得稅，但居民應注意其他稅種：</p><ul><li><strong>銷售稅 (Sales Tax):</strong> 南達科他州 主要依賴銷售稅收入。</li><li><strong>房產稅 (Property Tax):</strong> 房產稅可能會較高，以彌補所得稅的缺失。</li></ul><p>請務必查看 <a href='https://dor.sd.gov/' target='_blank'>官方稅務部門</a> 以獲取其他地方稅的最新更新。</p>"
+        }
+      }
+    },
+    {
+      "id": "tennessee",
+      "sources": [
+        {
+          "name": "Tennessee Dept. of Revenue",
+          "url": "https://www.tn.gov/revenue.html"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Tennessee State Tax 2026: No Income Tax Guide",
+          "state_name": "Tennessee",
+          "description": "Detailed guide to Tennessee taxes in 2026. Tennessee is one of the few states with no individual income tax.",
+          "intro": "Good news for residents: <strong>Tennessee does not impose a state individual income tax</strong>. This can lead to significant savings compared to other states.",
+          "details": "<p>While there is no income tax on wages, residents should be aware of other taxes:</p><ul><li><strong>Sales Tax:</strong> Tennessee relies heavily on sales tax revenue.</li><li><strong>Property Tax:</strong> Property taxes may be higher to offset the lack of income tax.</li></ul><p>Always check with the <a href='https://www.tn.gov/revenue.html' target='_blank'>official department of revenue</a> for the latest updates on other local taxes.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 田納西州稅務：免所得稅指南",
+          "state_name": "田納西州",
+          "description": "2026 年田納西州稅務詳細指南。田納西州是少數幾個不徵收個人所得稅的州之一。",
+          "intro": "居民的好消息：<strong>田納西州不徵收州個人所得稅</strong>。與其他州相比，這可以節省大量稅款。",
+          "details": "<p>雖然工資不徵收所得稅，但居民應注意其他稅種：</p><ul><li><strong>銷售稅 (Sales Tax):</strong> 田納西州 主要依賴銷售稅收入。</li><li><strong>房產稅 (Property Tax):</strong> 房產稅可能會較高，以彌補所得稅的缺失。</li></ul><p>請務必查看 <a href='https://www.tn.gov/revenue.html' target='_blank'>官方稅務部門</a> 以獲取其他地方稅的最新更新。</p>"
+        }
+      }
+    },
+    {
+      "id": "texas",
+      "sources": [
+        {
+          "name": "Texas Dept. of Revenue",
+          "url": "https://comptroller.texas.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Texas State Tax 2026: No Income Tax Guide",
+          "state_name": "Texas",
+          "description": "Detailed guide to Texas taxes in 2026. Texas is one of the few states with no individual income tax.",
+          "intro": "Good news for residents: <strong>Texas does not impose a state individual income tax</strong>. This can lead to significant savings compared to other states.",
+          "details": "<p>While there is no income tax on wages, residents should be aware of other taxes:</p><ul><li><strong>Sales Tax:</strong> Texas relies heavily on sales tax revenue.</li><li><strong>Property Tax:</strong> Property taxes may be higher to offset the lack of income tax.</li></ul><p>Always check with the <a href='https://comptroller.texas.gov/' target='_blank'>official department of revenue</a> for the latest updates on other local taxes.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 德克薩斯州稅務：免所得稅指南",
+          "state_name": "德克薩斯州",
+          "description": "2026 年德克薩斯州稅務詳細指南。德克薩斯州是少數幾個不徵收個人所得稅的州之一。",
+          "intro": "居民的好消息：<strong>德克薩斯州不徵收州個人所得稅</strong>。與其他州相比，這可以節省大量稅款。",
+          "details": "<p>雖然工資不徵收所得稅，但居民應注意其他稅種：</p><ul><li><strong>銷售稅 (Sales Tax):</strong> 德克薩斯州 主要依賴銷售稅收入。</li><li><strong>房產稅 (Property Tax):</strong> 房產稅可能會較高，以彌補所得稅的缺失。</li></ul><p>請務必查看 <a href='https://comptroller.texas.gov/' target='_blank'>官方稅務部門</a> 以獲取其他地方稅的最新更新。</p>"
+        }
+      }
+    },
+    {
+      "id": "washington",
+      "sources": [
+        {
+          "name": "Washington Dept. of Revenue",
+          "url": "https://dor.wa.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Washington State Tax 2026: No Income Tax Guide",
+          "state_name": "Washington",
+          "description": "Detailed guide to Washington taxes in 2026. Washington is one of the few states with no individual income tax.",
+          "intro": "Good news for residents: <strong>Washington does not impose a state individual income tax</strong>. This can lead to significant savings compared to other states.",
+          "details": "<p>While there is no income tax on wages, residents should be aware of other taxes:</p><ul><li><strong>Sales Tax:</strong> Washington relies heavily on sales tax revenue.</li><li><strong>Property Tax:</strong> Property taxes may be higher to offset the lack of income tax.</li></ul><p>Always check with the <a href='https://dor.wa.gov/' target='_blank'>official department of revenue</a> for the latest updates on other local taxes.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 華盛頓州稅務：免所得稅指南",
+          "state_name": "華盛頓州",
+          "description": "2026 年華盛頓州稅務詳細指南。華盛頓州是少數幾個不徵收個人所得稅的州之一。",
+          "intro": "居民的好消息：<strong>華盛頓州不徵收州個人所得稅</strong>。與其他州相比，這可以節省大量稅款。",
+          "details": "<p>雖然工資不徵收所得稅，但居民應注意其他稅種：</p><ul><li><strong>銷售稅 (Sales Tax):</strong> 華盛頓州 主要依賴銷售稅收入。</li><li><strong>房產稅 (Property Tax):</strong> 房產稅可能會較高，以彌補所得稅的缺失。</li></ul><p>請務必查看 <a href='https://dor.wa.gov/' target='_blank'>官方稅務部門</a> 以獲取其他地方稅的最新更新。</p>"
+        }
+      }
+    },
+    {
+      "id": "wyoming",
+      "sources": [
+        {
+          "name": "Wyoming Dept. of Revenue",
+          "url": "http://revenue.wyo.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Wyoming State Tax 2026: No Income Tax Guide",
+          "state_name": "Wyoming",
+          "description": "Detailed guide to Wyoming taxes in 2026. Wyoming is one of the few states with no individual income tax.",
+          "intro": "Good news for residents: <strong>Wyoming does not impose a state individual income tax</strong>. This can lead to significant savings compared to other states.",
+          "details": "<p>While there is no income tax on wages, residents should be aware of other taxes:</p><ul><li><strong>Sales Tax:</strong> Wyoming relies heavily on sales tax revenue.</li><li><strong>Property Tax:</strong> Property taxes may be higher to offset the lack of income tax.</li></ul><p>Always check with the <a href='http://revenue.wyo.gov/' target='_blank'>official department of revenue</a> for the latest updates on other local taxes.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 懷俄明州稅務：免所得稅指南",
+          "state_name": "懷俄明州",
+          "description": "2026 年懷俄明州稅務詳細指南。懷俄明州是少數幾個不徵收個人所得稅的州之一。",
+          "intro": "居民的好消息：<strong>懷俄明州不徵收州個人所得稅</strong>。與其他州相比，這可以節省大量稅款。",
+          "details": "<p>雖然工資不徵收所得稅，但居民應注意其他稅種：</p><ul><li><strong>銷售稅 (Sales Tax):</strong> 懷俄明州 主要依賴銷售稅收入。</li><li><strong>房產稅 (Property Tax):</strong> 房產稅可能會較高，以彌補所得稅的缺失。</li></ul><p>請務必查看 <a href='http://revenue.wyo.gov/' target='_blank'>官方稅務部門</a> 以獲取其他地方稅的最新更新。</p>"
+        }
+      }
+    },
+    {
+      "id": "new-hampshire",
+      "sources": [
+        {
+          "name": "New Hampshire Dept. of Revenue",
+          "url": "https://www.revenue.nh.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "New Hampshire State Tax 2026: No Income Tax Guide",
+          "state_name": "New Hampshire",
+          "description": "Detailed guide to New Hampshire taxes in 2026. New Hampshire is one of the few states with no individual income tax.",
+          "intro": "Good news for residents: <strong>New Hampshire does not impose a state individual income tax</strong>. This can lead to significant savings compared to other states.",
+          "details": "<p>While there is no income tax on wages, residents should be aware of other taxes:</p><ul><li><strong>Sales Tax:</strong> New Hampshire relies heavily on sales tax revenue.</li><li><strong>Property Tax:</strong> Property taxes may be higher to offset the lack of income tax.</li></ul><p>Always check with the <a href='https://www.revenue.nh.gov/' target='_blank'>official department of revenue</a> for the latest updates on other local taxes.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 新罕布什爾州稅務：免所得稅指南",
+          "state_name": "新罕布什爾州",
+          "description": "2026 年新罕布什爾州稅務詳細指南。新罕布什爾州是少數幾個不徵收個人所得稅的州之一。",
+          "intro": "居民的好消息：<strong>新罕布什爾州不徵收州個人所得稅</strong>。與其他州相比，這可以節省大量稅款。",
+          "details": "<p>雖然工資不徵收所得稅，但居民應注意其他稅種：</p><ul><li><strong>銷售稅 (Sales Tax):</strong> 新罕布什爾州 主要依賴銷售稅收入。</li><li><strong>房產稅 (Property Tax):</strong> 房產稅可能會較高，以彌補所得稅的缺失。</li></ul><p>請務必查看 <a href='https://www.revenue.nh.gov/' target='_blank'>官方稅務部門</a> 以獲取其他地方稅的最新更新。</p>"
+        }
+      }
+    },
+    {
+      "id": "alabama",
+      "sources": [
+        {
+          "name": "Alabama Dept. of Revenue",
+          "url": "https://revenue.alabama.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Alabama State Tax Brackets & Rates 2026",
+          "state_name": "Alabama",
+          "description": "Updated 2026 income tax brackets and rates for Alabama. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Alabama continues to adjust its tax policy. Alabama employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Alabama allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://revenue.alabama.gov/' target='_blank'>official Alabama Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 阿拉巴馬州州稅：稅率與級距",
+          "state_name": "阿拉巴馬州",
+          "description": "2026 年阿拉巴馬州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，阿拉巴馬州 繼續調整其稅務政策。阿拉巴馬州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 阿拉巴馬州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://revenue.alabama.gov/' target='_blank'>阿拉巴馬州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "arizona",
+      "sources": [
+        {
+          "name": "Arizona Dept. of Revenue",
+          "url": "https://azdor.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Arizona State Tax Brackets & Rates 2026",
+          "state_name": "Arizona",
+          "description": "Updated 2026 income tax brackets and rates for Arizona. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Arizona continues to adjust its tax policy. Arizona employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Arizona allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://azdor.gov/' target='_blank'>official Arizona Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 亞利桑那州州稅：稅率與級距",
+          "state_name": "亞利桑那州",
+          "description": "2026 年亞利桑那州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，亞利桑那州 繼續調整其稅務政策。亞利桑那州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 亞利桑那州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://azdor.gov/' target='_blank'>亞利桑那州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "arkansas",
+      "sources": [
+        {
+          "name": "Arkansas Dept. of Revenue",
+          "url": "https://www.dfa.arkansas.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Arkansas State Tax Brackets & Rates 2026",
+          "state_name": "Arkansas",
+          "description": "Updated 2026 income tax brackets and rates for Arkansas. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Arkansas continues to adjust its tax policy. Arkansas employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Arkansas allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.dfa.arkansas.gov/' target='_blank'>official Arkansas Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 阿肯色州州稅：稅率與級距",
+          "state_name": "阿肯色州",
+          "description": "2026 年阿肯色州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，阿肯色州 繼續調整其稅務政策。阿肯色州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 阿肯色州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.dfa.arkansas.gov/' target='_blank'>阿肯色州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "california",
+      "sources": [
+        {
+          "name": "California Dept. of Revenue",
+          "url": "https://www.ftb.ca.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "California State Tax Brackets & Rates 2026",
+          "state_name": "California",
+          "description": "Updated 2026 income tax brackets and rates for California. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, California continues to adjust its tax policy. California has one of the most progressive tax systems in the US, with rates ranging from 1% up to 13.3% (plus mental health service tax for high earners).",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if California allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.ftb.ca.gov/' target='_blank'>official California Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 加利福尼亞州州稅：稅率與級距",
+          "state_name": "加利福尼亞州",
+          "description": "2026 年加利福尼亞州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，加利福尼亞州 繼續調整其稅務政策。加利福尼亞州擁有全美最累進的稅收制度之一，稅率範圍從 1% 到 13.3%（高收入者需額外繳納心理健康服務稅）。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 加利福尼亞州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.ftb.ca.gov/' target='_blank'>加利福尼亞州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "colorado",
+      "sources": [
+        {
+          "name": "Colorado Dept. of Revenue",
+          "url": "https://tax.colorado.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Colorado State Tax Brackets & Rates 2026",
+          "state_name": "Colorado",
+          "description": "Updated 2026 income tax brackets and rates for Colorado. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Colorado continues to adjust its tax policy. Colorado employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Colorado allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://tax.colorado.gov/' target='_blank'>official Colorado Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 科羅拉多州州稅：稅率與級距",
+          "state_name": "科羅拉多州",
+          "description": "2026 年科羅拉多州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，科羅拉多州 繼續調整其稅務政策。科羅拉多州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 科羅拉多州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://tax.colorado.gov/' target='_blank'>科羅拉多州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "connecticut",
+      "sources": [
+        {
+          "name": "Connecticut Dept. of Revenue",
+          "url": "https://portal.ct.gov/DRS"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Connecticut State Tax Brackets & Rates 2026",
+          "state_name": "Connecticut",
+          "description": "Updated 2026 income tax brackets and rates for Connecticut. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Connecticut continues to adjust its tax policy. Connecticut employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Connecticut allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://portal.ct.gov/DRS' target='_blank'>official Connecticut Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 康乃狄克州州稅：稅率與級距",
+          "state_name": "康乃狄克州",
+          "description": "2026 年康乃狄克州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，康乃狄克州 繼續調整其稅務政策。康乃狄克州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 康乃狄克州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://portal.ct.gov/DRS' target='_blank'>康乃狄克州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "delaware",
+      "sources": [
+        {
+          "name": "Delaware Dept. of Revenue",
+          "url": "https://revenue.delaware.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Delaware State Tax Brackets & Rates 2026",
+          "state_name": "Delaware",
+          "description": "Updated 2026 income tax brackets and rates for Delaware. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Delaware continues to adjust its tax policy. Delaware employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Delaware allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://revenue.delaware.gov/' target='_blank'>official Delaware Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 特拉華州州稅：稅率與級距",
+          "state_name": "特拉華州",
+          "description": "2026 年特拉華州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，特拉華州 繼續調整其稅務政策。特拉華州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 特拉華州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://revenue.delaware.gov/' target='_blank'>特拉華州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "district-of-columbia",
+      "sources": [
+        {
+          "name": "District of Columbia Dept. of Revenue",
+          "url": "https://otr.cfo.dc.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "District of Columbia State Tax Brackets & Rates 2026",
+          "state_name": "District of Columbia",
+          "description": "Updated 2026 income tax brackets and rates for District of Columbia. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, District of Columbia continues to adjust its tax policy. District of Columbia employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if District of Columbia allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://otr.cfo.dc.gov/' target='_blank'>official District of Columbia Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 華盛頓特區州稅：稅率與級距",
+          "state_name": "華盛頓特區",
+          "description": "2026 年華盛頓特區所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，華盛頓特區 繼續調整其稅務政策。華盛頓特區 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 華盛頓特區 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://otr.cfo.dc.gov/' target='_blank'>華盛頓特區稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "georgia",
+      "sources": [
+        {
+          "name": "Georgia Dept. of Revenue",
+          "url": "https://dor.georgia.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Georgia State Tax Brackets & Rates 2026",
+          "state_name": "Georgia",
+          "description": "Updated 2026 income tax brackets and rates for Georgia. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Georgia continues to adjust its tax policy. Georgia employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Georgia allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://dor.georgia.gov/' target='_blank'>official Georgia Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 喬治亞州州稅：稅率與級距",
+          "state_name": "喬治亞州",
+          "description": "2026 年喬治亞州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，喬治亞州 繼續調整其稅務政策。喬治亞州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 喬治亞州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://dor.georgia.gov/' target='_blank'>喬治亞州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "hawaii",
+      "sources": [
+        {
+          "name": "Hawaii Dept. of Revenue",
+          "url": "https://tax.hawaii.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Hawaii State Tax Brackets & Rates 2026",
+          "state_name": "Hawaii",
+          "description": "Updated 2026 income tax brackets and rates for Hawaii. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Hawaii continues to adjust its tax policy. Hawaii employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Hawaii allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://tax.hawaii.gov/' target='_blank'>official Hawaii Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 夏威夷州州稅：稅率與級距",
+          "state_name": "夏威夷州",
+          "description": "2026 年夏威夷州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，夏威夷州 繼續調整其稅務政策。夏威夷州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 夏威夷州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://tax.hawaii.gov/' target='_blank'>夏威夷州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "idaho",
+      "sources": [
+        {
+          "name": "Idaho Dept. of Revenue",
+          "url": "https://tax.idaho.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Idaho State Tax Brackets & Rates 2026",
+          "state_name": "Idaho",
+          "description": "Updated 2026 income tax brackets and rates for Idaho. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Idaho continues to adjust its tax policy. Idaho employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Idaho allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://tax.idaho.gov/' target='_blank'>official Idaho Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 愛達荷州州稅：稅率與級距",
+          "state_name": "愛達荷州",
+          "description": "2026 年愛達荷州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，愛達荷州 繼續調整其稅務政策。愛達荷州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 愛達荷州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://tax.idaho.gov/' target='_blank'>愛達荷州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "illinois",
+      "sources": [
+        {
+          "name": "Illinois Dept. of Revenue",
+          "url": "https://www2.illinois.gov/rev"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Illinois State Tax Brackets & Rates 2026",
+          "state_name": "Illinois",
+          "description": "Updated 2026 income tax brackets and rates for Illinois. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Illinois continues to adjust its tax policy. Illinois employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Illinois allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www2.illinois.gov/rev' target='_blank'>official Illinois Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 伊利諾伊州州稅：稅率與級距",
+          "state_name": "伊利諾伊州",
+          "description": "2026 年伊利諾伊州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，伊利諾伊州 繼續調整其稅務政策。伊利諾伊州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 伊利諾伊州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www2.illinois.gov/rev' target='_blank'>伊利諾伊州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "indiana",
+      "sources": [
+        {
+          "name": "Indiana Dept. of Revenue",
+          "url": "https://www.in.gov/dor/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Indiana State Tax Brackets & Rates 2026",
+          "state_name": "Indiana",
+          "description": "Updated 2026 income tax brackets and rates for Indiana. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Indiana continues to adjust its tax policy. Indiana employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Indiana allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.in.gov/dor/' target='_blank'>official Indiana Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 印第安納州州稅：稅率與級距",
+          "state_name": "印第安納州",
+          "description": "2026 年印第安納州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，印第安納州 繼續調整其稅務政策。印第安納州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 印第安納州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.in.gov/dor/' target='_blank'>印第安納州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "iowa",
+      "sources": [
+        {
+          "name": "Iowa Dept. of Revenue",
+          "url": "https://tax.iowa.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Iowa State Tax Brackets & Rates 2026",
+          "state_name": "Iowa",
+          "description": "Updated 2026 income tax brackets and rates for Iowa. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Iowa continues to adjust its tax policy. Iowa employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Iowa allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://tax.iowa.gov/' target='_blank'>official Iowa Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 愛荷華州州稅：稅率與級距",
+          "state_name": "愛荷華州",
+          "description": "2026 年愛荷華州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，愛荷華州 繼續調整其稅務政策。愛荷華州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 愛荷華州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://tax.iowa.gov/' target='_blank'>愛荷華州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "kansas",
+      "sources": [
+        {
+          "name": "Kansas Dept. of Revenue",
+          "url": "https://www.ksrevenue.org/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Kansas State Tax Brackets & Rates 2026",
+          "state_name": "Kansas",
+          "description": "Updated 2026 income tax brackets and rates for Kansas. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Kansas continues to adjust its tax policy. Kansas employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Kansas allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.ksrevenue.org/' target='_blank'>official Kansas Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 堪薩斯州州稅：稅率與級距",
+          "state_name": "堪薩斯州",
+          "description": "2026 年堪薩斯州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，堪薩斯州 繼續調整其稅務政策。堪薩斯州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 堪薩斯州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.ksrevenue.org/' target='_blank'>堪薩斯州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "kentucky",
+      "sources": [
+        {
+          "name": "Kentucky Dept. of Revenue",
+          "url": "https://revenue.ky.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Kentucky State Tax Brackets & Rates 2026",
+          "state_name": "Kentucky",
+          "description": "Updated 2026 income tax brackets and rates for Kentucky. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Kentucky continues to adjust its tax policy. Kentucky employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Kentucky allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://revenue.ky.gov/' target='_blank'>official Kentucky Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 肯塔基州州稅：稅率與級距",
+          "state_name": "肯塔基州",
+          "description": "2026 年肯塔基州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，肯塔基州 繼續調整其稅務政策。肯塔基州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 肯塔基州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://revenue.ky.gov/' target='_blank'>肯塔基州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "louisiana",
+      "sources": [
+        {
+          "name": "Louisiana Dept. of Revenue",
+          "url": "https://revenue.louisiana.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Louisiana State Tax Brackets & Rates 2026",
+          "state_name": "Louisiana",
+          "description": "Updated 2026 income tax brackets and rates for Louisiana. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Louisiana continues to adjust its tax policy. Louisiana employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Louisiana allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://revenue.louisiana.gov/' target='_blank'>official Louisiana Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 路易斯安那州州稅：稅率與級距",
+          "state_name": "路易斯安那州",
+          "description": "2026 年路易斯安那州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，路易斯安那州 繼續調整其稅務政策。路易斯安那州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 路易斯安那州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://revenue.louisiana.gov/' target='_blank'>路易斯安那州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "maine",
+      "sources": [
+        {
+          "name": "Maine Dept. of Revenue",
+          "url": "https://www.maine.gov/revenue/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Maine State Tax Brackets & Rates 2026",
+          "state_name": "Maine",
+          "description": "Updated 2026 income tax brackets and rates for Maine. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Maine continues to adjust its tax policy. Maine employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Maine allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.maine.gov/revenue/' target='_blank'>official Maine Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 緬因州州稅：稅率與級距",
+          "state_name": "緬因州",
+          "description": "2026 年緬因州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，緬因州 繼續調整其稅務政策。緬因州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 緬因州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.maine.gov/revenue/' target='_blank'>緬因州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "maryland",
+      "sources": [
+        {
+          "name": "Maryland Dept. of Revenue",
+          "url": "https://www.marylandtaxes.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Maryland State Tax Brackets & Rates 2026",
+          "state_name": "Maryland",
+          "description": "Updated 2026 income tax brackets and rates for Maryland. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Maryland continues to adjust its tax policy. Maryland employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Maryland allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.marylandtaxes.gov/' target='_blank'>official Maryland Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 馬里蘭州州稅：稅率與級距",
+          "state_name": "馬里蘭州",
+          "description": "2026 年馬里蘭州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，馬里蘭州 繼續調整其稅務政策。馬里蘭州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 馬里蘭州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.marylandtaxes.gov/' target='_blank'>馬里蘭州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "massachusetts",
+      "sources": [
+        {
+          "name": "Massachusetts Dept. of Revenue",
+          "url": "https://www.mass.gov/orgs/massachusetts-department-of-revenue"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Massachusetts State Tax Brackets & Rates 2026",
+          "state_name": "Massachusetts",
+          "description": "Updated 2026 income tax brackets and rates for Massachusetts. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Massachusetts continues to adjust its tax policy. Massachusetts employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Massachusetts allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.mass.gov/orgs/massachusetts-department-of-revenue' target='_blank'>official Massachusetts Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 馬薩諸塞州州稅：稅率與級距",
+          "state_name": "馬薩諸塞州",
+          "description": "2026 年馬薩諸塞州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，馬薩諸塞州 繼續調整其稅務政策。馬薩諸塞州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 馬薩諸塞州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.mass.gov/orgs/massachusetts-department-of-revenue' target='_blank'>馬薩諸塞州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "michigan",
+      "sources": [
+        {
+          "name": "Michigan Dept. of Revenue",
+          "url": "https://www.michigan.gov/taxes"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Michigan State Tax Brackets & Rates 2026",
+          "state_name": "Michigan",
+          "description": "Updated 2026 income tax brackets and rates for Michigan. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Michigan continues to adjust its tax policy. Michigan employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Michigan allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.michigan.gov/taxes' target='_blank'>official Michigan Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 密西根州州稅：稅率與級距",
+          "state_name": "密西根州",
+          "description": "2026 年密西根州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，密西根州 繼續調整其稅務政策。密西根州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 密西根州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.michigan.gov/taxes' target='_blank'>密西根州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "minnesota",
+      "sources": [
+        {
+          "name": "Minnesota Dept. of Revenue",
+          "url": "https://www.revenue.state.mn.us/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Minnesota State Tax Brackets & Rates 2026",
+          "state_name": "Minnesota",
+          "description": "Updated 2026 income tax brackets and rates for Minnesota. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Minnesota continues to adjust its tax policy. Minnesota employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Minnesota allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.revenue.state.mn.us/' target='_blank'>official Minnesota Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 明尼蘇達州州稅：稅率與級距",
+          "state_name": "明尼蘇達州",
+          "description": "2026 年明尼蘇達州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，明尼蘇達州 繼續調整其稅務政策。明尼蘇達州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 明尼蘇達州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.revenue.state.mn.us/' target='_blank'>明尼蘇達州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "mississippi",
+      "sources": [
+        {
+          "name": "Mississippi Dept. of Revenue",
+          "url": "https://www.dor.ms.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Mississippi State Tax Brackets & Rates 2026",
+          "state_name": "Mississippi",
+          "description": "Updated 2026 income tax brackets and rates for Mississippi. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Mississippi continues to adjust its tax policy. Mississippi employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Mississippi allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.dor.ms.gov/' target='_blank'>official Mississippi Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 密西西比州州稅：稅率與級距",
+          "state_name": "密西西比州",
+          "description": "2026 年密西西比州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，密西西比州 繼續調整其稅務政策。密西西比州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 密西西比州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.dor.ms.gov/' target='_blank'>密西西比州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "missouri",
+      "sources": [
+        {
+          "name": "Missouri Dept. of Revenue",
+          "url": "https://dor.mo.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Missouri State Tax Brackets & Rates 2026",
+          "state_name": "Missouri",
+          "description": "Updated 2026 income tax brackets and rates for Missouri. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Missouri continues to adjust its tax policy. Missouri employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Missouri allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://dor.mo.gov/' target='_blank'>official Missouri Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 密蘇里州州稅：稅率與級距",
+          "state_name": "密蘇里州",
+          "description": "2026 年密蘇里州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，密蘇里州 繼續調整其稅務政策。密蘇里州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 密蘇里州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://dor.mo.gov/' target='_blank'>密蘇里州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "montana",
+      "sources": [
+        {
+          "name": "Montana Dept. of Revenue",
+          "url": "https://mats.mt.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Montana State Tax Brackets & Rates 2026",
+          "state_name": "Montana",
+          "description": "Updated 2026 income tax brackets and rates for Montana. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Montana continues to adjust its tax policy. Montana employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Montana allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://mats.mt.gov/' target='_blank'>official Montana Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 蒙大拿州州稅：稅率與級距",
+          "state_name": "蒙大拿州",
+          "description": "2026 年蒙大拿州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，蒙大拿州 繼續調整其稅務政策。蒙大拿州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 蒙大拿州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://mats.mt.gov/' target='_blank'>蒙大拿州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "nebraska",
+      "sources": [
+        {
+          "name": "Nebraska Dept. of Revenue",
+          "url": "https://revenue.nebraska.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Nebraska State Tax Brackets & Rates 2026",
+          "state_name": "Nebraska",
+          "description": "Updated 2026 income tax brackets and rates for Nebraska. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Nebraska continues to adjust its tax policy. Nebraska employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Nebraska allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://revenue.nebraska.gov/' target='_blank'>official Nebraska Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 內布拉斯加州州稅：稅率與級距",
+          "state_name": "內布拉斯加州",
+          "description": "2026 年內布拉斯加州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，內布拉斯加州 繼續調整其稅務政策。內布拉斯加州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 內布拉斯加州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://revenue.nebraska.gov/' target='_blank'>內布拉斯加州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "new-jersey",
+      "sources": [
+        {
+          "name": "New Jersey Dept. of Revenue",
+          "url": "https://www.state.nj.us/treasury/taxation/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "New Jersey State Tax Brackets & Rates 2026",
+          "state_name": "New Jersey",
+          "description": "Updated 2026 income tax brackets and rates for New Jersey. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, New Jersey continues to adjust its tax policy. New Jersey employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if New Jersey allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.state.nj.us/treasury/taxation/' target='_blank'>official New Jersey Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 紐澤西州州稅：稅率與級距",
+          "state_name": "紐澤西州",
+          "description": "2026 年紐澤西州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，紐澤西州 繼續調整其稅務政策。紐澤西州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 紐澤西州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.state.nj.us/treasury/taxation/' target='_blank'>紐澤西州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "new-mexico",
+      "sources": [
+        {
+          "name": "New Mexico Dept. of Revenue",
+          "url": "https://www.tax.newmexico.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "New Mexico State Tax Brackets & Rates 2026",
+          "state_name": "New Mexico",
+          "description": "Updated 2026 income tax brackets and rates for New Mexico. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, New Mexico continues to adjust its tax policy. New Mexico employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if New Mexico allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.tax.newmexico.gov/' target='_blank'>official New Mexico Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 新墨西哥州州稅：稅率與級距",
+          "state_name": "新墨西哥州",
+          "description": "2026 年新墨西哥州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，新墨西哥州 繼續調整其稅務政策。新墨西哥州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 新墨西哥州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.tax.newmexico.gov/' target='_blank'>新墨西哥州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "new-york",
+      "sources": [
+        {
+          "name": "New York Dept. of Revenue",
+          "url": "https://www.tax.ny.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "New York State Tax Brackets & Rates 2026",
+          "state_name": "New York",
+          "description": "Updated 2026 income tax brackets and rates for New York. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, New York continues to adjust its tax policy. New York state tax rates range from 4% to 10.9%. Residents of New York City are also subject to an additional local city tax.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if New York allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.tax.ny.gov/' target='_blank'>official New York Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 紐約州州稅：稅率與級距",
+          "state_name": "紐約州",
+          "description": "2026 年紐約州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，紐約州 繼續調整其稅務政策。紐約州稅率範圍從 4% 到 10.9%。紐約市居民還需繳納額外的當地城市稅。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 紐約州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.tax.ny.gov/' target='_blank'>紐約州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "north-carolina",
+      "sources": [
+        {
+          "name": "North Carolina Dept. of Revenue",
+          "url": "https://www.ncdor.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "North Carolina State Tax Brackets & Rates 2026",
+          "state_name": "North Carolina",
+          "description": "Updated 2026 income tax brackets and rates for North Carolina. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, North Carolina continues to adjust its tax policy. North Carolina employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if North Carolina allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.ncdor.gov/' target='_blank'>official North Carolina Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 北卡羅來納州州稅：稅率與級距",
+          "state_name": "北卡羅來納州",
+          "description": "2026 年北卡羅來納州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，北卡羅來納州 繼續調整其稅務政策。北卡羅來納州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 北卡羅來納州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.ncdor.gov/' target='_blank'>北卡羅來納州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "north-dakota",
+      "sources": [
+        {
+          "name": "North Dakota Dept. of Revenue",
+          "url": "https://www.nd.gov/tax/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "North Dakota State Tax Brackets & Rates 2026",
+          "state_name": "North Dakota",
+          "description": "Updated 2026 income tax brackets and rates for North Dakota. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, North Dakota continues to adjust its tax policy. North Dakota employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if North Dakota allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.nd.gov/tax/' target='_blank'>official North Dakota Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 北達科他州州稅：稅率與級距",
+          "state_name": "北達科他州",
+          "description": "2026 年北達科他州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，北達科他州 繼續調整其稅務政策。北達科他州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 北達科他州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.nd.gov/tax/' target='_blank'>北達科他州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "ohio",
+      "sources": [
+        {
+          "name": "Ohio Dept. of Revenue",
+          "url": "https://tax.ohio.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Ohio State Tax Brackets & Rates 2026",
+          "state_name": "Ohio",
+          "description": "Updated 2026 income tax brackets and rates for Ohio. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Ohio continues to adjust its tax policy. Ohio employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Ohio allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://tax.ohio.gov/' target='_blank'>official Ohio Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 俄亥俄州州稅：稅率與級距",
+          "state_name": "俄亥俄州",
+          "description": "2026 年俄亥俄州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，俄亥俄州 繼續調整其稅務政策。俄亥俄州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 俄亥俄州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://tax.ohio.gov/' target='_blank'>俄亥俄州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "oklahoma",
+      "sources": [
+        {
+          "name": "Oklahoma Dept. of Revenue",
+          "url": "https://oklahoma.gov/tax.html"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Oklahoma State Tax Brackets & Rates 2026",
+          "state_name": "Oklahoma",
+          "description": "Updated 2026 income tax brackets and rates for Oklahoma. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Oklahoma continues to adjust its tax policy. Oklahoma employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Oklahoma allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://oklahoma.gov/tax.html' target='_blank'>official Oklahoma Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 奧克拉荷馬州州稅：稅率與級距",
+          "state_name": "奧克拉荷馬州",
+          "description": "2026 年奧克拉荷馬州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，奧克拉荷馬州 繼續調整其稅務政策。奧克拉荷馬州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 奧克拉荷馬州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://oklahoma.gov/tax.html' target='_blank'>奧克拉荷馬州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "oregon",
+      "sources": [
+        {
+          "name": "Oregon Dept. of Revenue",
+          "url": "https://www.oregon.gov/dor/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Oregon State Tax Brackets & Rates 2026",
+          "state_name": "Oregon",
+          "description": "Updated 2026 income tax brackets and rates for Oregon. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Oregon continues to adjust its tax policy. Oregon employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Oregon allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.oregon.gov/dor/' target='_blank'>official Oregon Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 俄勒岡州州稅：稅率與級距",
+          "state_name": "俄勒岡州",
+          "description": "2026 年俄勒岡州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，俄勒岡州 繼續調整其稅務政策。俄勒岡州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 俄勒岡州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.oregon.gov/dor/' target='_blank'>俄勒岡州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "pennsylvania",
+      "sources": [
+        {
+          "name": "Pennsylvania Dept. of Revenue",
+          "url": "https://www.revenue.pa.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Pennsylvania State Tax Brackets & Rates 2026",
+          "state_name": "Pennsylvania",
+          "description": "Updated 2026 income tax brackets and rates for Pennsylvania. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Pennsylvania continues to adjust its tax policy. Pennsylvania employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Pennsylvania allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.revenue.pa.gov/' target='_blank'>official Pennsylvania Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 賓夕法尼亞州州稅：稅率與級距",
+          "state_name": "賓夕法尼亞州",
+          "description": "2026 年賓夕法尼亞州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，賓夕法尼亞州 繼續調整其稅務政策。賓夕法尼亞州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 賓夕法尼亞州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.revenue.pa.gov/' target='_blank'>賓夕法尼亞州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "rhode-island",
+      "sources": [
+        {
+          "name": "Rhode Island Dept. of Revenue",
+          "url": "https://tax.ri.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Rhode Island State Tax Brackets & Rates 2026",
+          "state_name": "Rhode Island",
+          "description": "Updated 2026 income tax brackets and rates for Rhode Island. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Rhode Island continues to adjust its tax policy. Rhode Island employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Rhode Island allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://tax.ri.gov/' target='_blank'>official Rhode Island Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 羅德島州州稅：稅率與級距",
+          "state_name": "羅德島州",
+          "description": "2026 年羅德島州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，羅德島州 繼續調整其稅務政策。羅德島州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 羅德島州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://tax.ri.gov/' target='_blank'>羅德島州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "south-carolina",
+      "sources": [
+        {
+          "name": "South Carolina Dept. of Revenue",
+          "url": "https://dor.sc.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "South Carolina State Tax Brackets & Rates 2026",
+          "state_name": "South Carolina",
+          "description": "Updated 2026 income tax brackets and rates for South Carolina. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, South Carolina continues to adjust its tax policy. South Carolina employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if South Carolina allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://dor.sc.gov/' target='_blank'>official South Carolina Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 南卡羅來納州州稅：稅率與級距",
+          "state_name": "南卡羅來納州",
+          "description": "2026 年南卡羅來納州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，南卡羅來納州 繼續調整其稅務政策。南卡羅來納州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 南卡羅來納州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://dor.sc.gov/' target='_blank'>南卡羅來納州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "utah",
+      "sources": [
+        {
+          "name": "Utah Dept. of Revenue",
+          "url": "https://tax.utah.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Utah State Tax Brackets & Rates 2026",
+          "state_name": "Utah",
+          "description": "Updated 2026 income tax brackets and rates for Utah. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Utah continues to adjust its tax policy. Utah employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Utah allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://tax.utah.gov/' target='_blank'>official Utah Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 猶他州州稅：稅率與級距",
+          "state_name": "猶他州",
+          "description": "2026 年猶他州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，猶他州 繼續調整其稅務政策。猶他州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 猶他州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://tax.utah.gov/' target='_blank'>猶他州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "vermont",
+      "sources": [
+        {
+          "name": "Vermont Dept. of Revenue",
+          "url": "https://tax.vermont.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Vermont State Tax Brackets & Rates 2026",
+          "state_name": "Vermont",
+          "description": "Updated 2026 income tax brackets and rates for Vermont. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Vermont continues to adjust its tax policy. Vermont employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Vermont allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://tax.vermont.gov/' target='_blank'>official Vermont Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 佛蒙特州州稅：稅率與級距",
+          "state_name": "佛蒙特州",
+          "description": "2026 年佛蒙特州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，佛蒙特州 繼續調整其稅務政策。佛蒙特州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 佛蒙特州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://tax.vermont.gov/' target='_blank'>佛蒙特州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "virginia",
+      "sources": [
+        {
+          "name": "Virginia Dept. of Revenue",
+          "url": "https://www.tax.virginia.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Virginia State Tax Brackets & Rates 2026",
+          "state_name": "Virginia",
+          "description": "Updated 2026 income tax brackets and rates for Virginia. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Virginia continues to adjust its tax policy. Virginia employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Virginia allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.tax.virginia.gov/' target='_blank'>official Virginia Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 維吉尼亞州州稅：稅率與級距",
+          "state_name": "維吉尼亞州",
+          "description": "2026 年維吉尼亞州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，維吉尼亞州 繼續調整其稅務政策。維吉尼亞州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 維吉尼亞州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.tax.virginia.gov/' target='_blank'>維吉尼亞州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "west-virginia",
+      "sources": [
+        {
+          "name": "West Virginia Dept. of Revenue",
+          "url": "https://tax.wv.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "West Virginia State Tax Brackets & Rates 2026",
+          "state_name": "West Virginia",
+          "description": "Updated 2026 income tax brackets and rates for West Virginia. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, West Virginia continues to adjust its tax policy. West Virginia employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if West Virginia allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://tax.wv.gov/' target='_blank'>official West Virginia Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 西維吉尼亞州州稅：稅率與級距",
+          "state_name": "西維吉尼亞州",
+          "description": "2026 年西維吉尼亞州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，西維吉尼亞州 繼續調整其稅務政策。西維吉尼亞州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 西維吉尼亞州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://tax.wv.gov/' target='_blank'>西維吉尼亞州稅務局官方網站</a>。</p>"
+        }
+      }
+    },
+    {
+      "id": "wisconsin",
+      "sources": [
+        {
+          "name": "Wisconsin Dept. of Revenue",
+          "url": "https://www.revenue.wi.gov/"
+        }
+      ],
+      "content": {
+        "en": {
+          "title": "Wisconsin State Tax Brackets & Rates 2026",
+          "state_name": "Wisconsin",
+          "description": "Updated 2026 income tax brackets and rates for Wisconsin. Calculate your state tax liability.",
+          "intro": "For the 2026 tax year, Wisconsin continues to adjust its tax policy. Wisconsin employs a graduated tax rate system. Specific brackets for 2026 are subject to legislative approval.",
+          "details": "<p><strong>Key Tax Features:</strong></p><ul><li><strong>Filing Status:</strong> Brackets vary based on whether you file Single, Married Jointly, or Head of Household.</li><li><strong>Standard Deduction:</strong> Check if Wisconsin allows a standard deduction that mirrors the federal amount.</li></ul><p>For the most accurate tables, please refer to the <a href='https://www.revenue.wi.gov/' target='_blank'>official Wisconsin Department of Revenue</a> website.</p>"
+        },
+        "zh-TW": {
+          "title": "2026 威斯康星州州稅：稅率與級距",
+          "state_name": "威斯康星州",
+          "description": "2026 年威斯康星州所得稅級距與稅率更新。計算您的州稅負。",
+          "intro": "對於 2026 納稅年度，威斯康星州 繼續調整其稅務政策。威斯康星州 採用累進稅率制度。2026 年的具體級距有待立法批准。",
+          "details": "<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 威斯康星州 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href='https://www.revenue.wi.gov/' target='_blank'>威斯康星州稅務局官方網站</a>。</p>"
+        }
+      }
+    }
+  ]
+}

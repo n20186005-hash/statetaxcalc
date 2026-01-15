@@ -1,0 +1,1175 @@
+[
+  {
+    "id": "AL",
+    "slug": "alabama",
+    "names": { "en": "Alabama", "cn": "阿拉巴馬州" },
+    "meta": { "desc_en": "Alabama Tax Calculator.", "desc_cn": "阿拉巴馬州稅務計算器。", "keywords_en": "AL tax", "keywords_cn": "阿拉巴馬稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "5%", "std_deduction_single": 2500, "std_deduction_mfj": 5000, "brackets_single": [{ "threshold": 0, "rate": 0.02 }, { "threshold": 3000, "rate": 0.05 }] },
+    "content": { "intro_en": "Alabama has a low top rate threshold.", "intro_cn": "阿拉巴馬州的最高稅率起徵點很低。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Mississippi", "pitch_en": "Moving to Mississippi?", "pitch_cn": "考慮搬家去密西西比？" },
+    "policy": {
+      "personal": {
+        "rate_en": "2% - 5%", "rate_cn": "2% - 5%",
+        "new_rules_en": "Standard deduction adjusted for inflation.", "new_rules_cn": "標準扣除額隨通貨膨脹調整。",
+        "deadline": "2025-04-15", "source_url": "https://revenue.alabama.gov/"
+      },
+      "corporate": {
+        "rate_en": "6.5%", "rate_cn": "6.5%",
+        "new_rules_en": "No major rate changes for 2025.", "new_rules_cn": "2025 年稅率無重大變化。",
+        "sales_tax_obligations_en": "4% state rate + local taxes.", "sales_tax_obligations_cn": "4% 州稅率 + 地方稅。",
+        "source_url": "https://revenue.alabama.gov/"
+      },
+      "portals": { "personal_url": "https://myalabamataxes.alabama.gov/", "corporate_url": "https://myalabamataxes.alabama.gov/" }
+    }
+  },
+  {
+    "id": "AK",
+    "slug": "alaska",
+    "names": { "en": "Alaska", "cn": "阿拉斯加州" },
+    "meta": { "desc_en": "Alaska No Income Tax.", "desc_cn": "阿拉斯加州無所得稅。", "keywords_en": "Alaska tax", "keywords_cn": "阿拉斯加稅" },
+    "tax_logic": { "type": "none", "max_rate_display": "0%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [] },
+    "content": { "intro_en": "Alaska has no state income tax.", "intro_cn": "阿拉斯加州沒有州所得稅。", "cap_gains_en": "0% tax.", "cap_gains_cn": "0% 稅率。" },
+    "relocation": { "target_state": "Washington", "pitch_en": "Moving to WA?", "pitch_cn": "考慮搬家去華盛頓州？" },
+    "policy": {
+      "personal": {
+        "rate_en": "0% (No State Income Tax)", "rate_cn": "0% (無州所得稅)",
+        "new_rules_en": "No personal income tax implementation planned.", "new_rules_cn": "無計劃實施個人所得稅。",
+        "deadline": "N/A", "source_url": "http://tax.alaska.gov/"
+      },
+      "corporate": {
+        "rate_en": "0% - 9.4%", "rate_cn": "0% - 9.4%",
+        "new_rules_en": "Graduated rates apply to taxable income.", "new_rules_cn": "應稅收入適用累進稅率。",
+        "sales_tax_obligations_en": "No state sales tax (Local only).", "sales_tax_obligations_cn": "無州銷售稅 (僅地方稅)。",
+        "source_url": "http://tax.alaska.gov/"
+      },
+      "portals": { "personal_url": "N/A", "corporate_url": "http://tax.alaska.gov/" }
+    }
+  },
+  {
+    "id": "AZ",
+    "slug": "arizona",
+    "names": { "en": "Arizona", "cn": "亞利桑那州" },
+    "meta": { "desc_en": "Arizona Tax Calculator. New 2.5% Flat Tax.", "desc_cn": "亞利桑那州稅務計算器。新的 2.5% 單一稅。", "keywords_en": "AZ tax", "keywords_cn": "亞利桑那稅" },
+    "tax_logic": { "type": "flat", "max_rate_display": "2.5%", "std_deduction_single": 13850, "std_deduction_mfj": 27700, "brackets_single": [{ "threshold": 0, "rate": 0.025 }] },
+    "content": { "intro_en": "Arizona has a flat 2.5% tax.", "intro_cn": "亞利桑那州實行 2.5% 的單一稅。", "cap_gains_en": "Taxed at 2.5%.", "cap_gains_cn": "按 2.5% 徵稅。" },
+    "relocation": { "target_state": "Nevada", "pitch_en": "Moving to Nevada?", "pitch_cn": "考慮搬家去內華達？" },
+    "policy": {
+      "personal": {
+        "rate_en": "2.5% Flat Rate", "rate_cn": "2.5% 單一稅率",
+        "new_rules_en": "Full implementation of 2.5% flat tax continues.", "new_rules_cn": "繼續全面實施 2.5% 單一稅。",
+        "deadline": "2025-04-15", "source_url": "https://azdor.gov/"
+      },
+      "corporate": {
+        "rate_en": "4.9%", "rate_cn": "4.9%",
+        "new_rules_en": "Corporate rate remains flat.", "new_rules_cn": "企業稅率保持單一。",
+        "sales_tax_obligations_en": "Transaction Privilege Tax (TPT) applies.", "sales_tax_obligations_cn": "適用交易特權稅 (TPT)。",
+        "source_url": "https://azdor.gov/"
+      },
+      "portals": { "personal_url": "https://aztaxes.gov/Home", "corporate_url": "https://aztaxes.gov/Home" }
+    }
+  },
+  {
+    "id": "AR",
+    "slug": "arkansas",
+    "names": { "en": "Arkansas", "cn": "阿肯色州" },
+    "meta": { "desc_en": "Arkansas Tax Calculator.", "desc_cn": "阿肯色州稅務計算器。", "keywords_en": "Arkansas tax", "keywords_cn": "阿肯色稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "4.4%", "std_deduction_single": 2270, "std_deduction_mfj": 4540, "brackets_single": [{ "threshold": 0, "rate": 0.02 }, { "threshold": 8800, "rate": 0.044 }] },
+    "content": { "intro_en": "Arkansas rates have been lowered.", "intro_cn": "阿肯色州稅率已降低。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Tennessee", "pitch_en": "Moving to Tennessee?", "pitch_cn": "考慮搬家去田納西？" },
+    "policy": {
+      "personal": {
+        "rate_en": "Up to 4.4%", "rate_cn": "最高 4.4%",
+        "new_rules_en": "Rate reductions from previous years in effect.", "new_rules_cn": "往年降稅措施生效。",
+        "deadline": "2025-04-15", "source_url": "https://www.dfa.arkansas.gov/"
+      },
+      "corporate": {
+        "rate_en": "1% - 5.1%", "rate_cn": "1% - 5.1%",
+        "new_rules_en": "Top corporate rate reduced to 5.1%.", "new_rules_cn": "最高企業稅率降至 5.1%。",
+        "sales_tax_obligations_en": "6.5% state rate + local.", "sales_tax_obligations_cn": "6.5% 州稅率 + 地方稅。",
+        "source_url": "https://www.dfa.arkansas.gov/"
+      },
+      "portals": { "personal_url": "https://www.atap.arkansas.gov/", "corporate_url": "https://www.atap.arkansas.gov/" }
+    }
+  },
+  {
+    "id": "CA",
+    "slug": "california",
+    "names": { "en": "California", "cn": "加利福尼亞州" },
+    "meta": { "desc_en": "Calculate your 2026 California paycheck.", "desc_cn": "計算您的 2026 加州薪資。", "keywords_en": "California tax calculator", "keywords_cn": "加州稅務計算器" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "14.4%", "std_deduction_single": 5363, "std_deduction_mfj": 10726, "brackets_single": [{ "threshold": 0, "rate": 0.01 }, { "threshold": 10412, "rate": 0.02 }, { "threshold": 24684, "rate": 0.04 }, { "threshold": 38959, "rate": 0.06 }, { "threshold": 54081, "rate": 0.08 }, { "threshold": 68350, "rate": 0.093 }, { "threshold": 349137, "rate": 0.103 }, { "threshold": 418961, "rate": 0.113 }, { "threshold": 698271, "rate": 0.123 }, { "threshold": 1000000, "rate": 0.144 }] },
+    "content": { "intro_en": "California has some of the highest income tax rates in the US.", "intro_cn": "加州擁有全美最高的所得稅率之一。", "cap_gains_en": "Taxed as ordinary income.", "cap_gains_cn": "視為普通收入徵稅。" },
+    "relocation": { "target_state": "Texas", "pitch_en": "Moving to Texas?", "pitch_cn": "考慮搬家去德州？" },
+    "policy": {
+      "personal": {
+        "rate_en": "1% - 14.4%", "rate_cn": "1% - 14.4%",
+        "new_rules_en": "14.4% top rate includes Mental Health Service Tax. SDI rate 1.2% (uncapped).", "new_rules_cn": "14.4% 最高稅率包含心理健康服務稅。SDI 費率 1.2% (無上限)。",
+        "deadline": "2025-04-15", "source_url": "https://www.ftb.ca.gov/"
+      },
+      "corporate": {
+        "rate_en": "8.84% (Flat)", "rate_cn": "8.84% (單一)",
+        "new_rules_en": "$800 minimum franchise tax applies to most entities.", "new_rules_cn": "大多數實體需繳納最低 $800 特許經營稅。",
+        "sales_tax_obligations_en": "7.25% base + district taxes.", "sales_tax_obligations_cn": "7.25% 基礎 + 地區稅。",
+        "source_url": "https://www.ftb.ca.gov/"
+      },
+      "portals": { "personal_url": "https://www.ftb.ca.gov/file/index.html", "corporate_url": "https://www.ftb.ca.gov/file/business/index.html" }
+    }
+  },
+  {
+    "id": "CO",
+    "slug": "colorado",
+    "names": { "en": "Colorado", "cn": "科羅拉多州" },
+    "meta": { "desc_en": "Colorado Paycheck Calculator.", "desc_cn": "科羅拉多州薪資計算器。", "keywords_en": "CO tax", "keywords_cn": "科羅拉多稅" },
+    "tax_logic": { "type": "flat", "max_rate_display": "4.4%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.044 }] },
+    "content": { "intro_en": "Colorado maintains a simple flat tax system.", "intro_cn": "科羅拉多州維持簡單的單一稅制。", "cap_gains_en": "Taxed at 4.4%.", "cap_gains_cn": "按 4.4% 徵稅。" },
+    "relocation": { "target_state": "Wyoming", "pitch_en": "Moving to Wyoming?", "pitch_cn": "考慮搬家去懷俄明？" },
+    "policy": {
+      "personal": {
+        "rate_en": "4.4% Flat Rate", "rate_cn": "4.4% 單一稅率",
+        "new_rules_en": "TABOR refunds may affect effective rate.", "new_rules_cn": "TABOR 退稅可能會影響有效稅率。",
+        "deadline": "2025-04-15", "source_url": "https://tax.colorado.gov/"
+      },
+      "corporate": {
+        "rate_en": "4.4%", "rate_cn": "4.4%",
+        "new_rules_en": "Corporate rate matches personal rate.", "new_rules_cn": "企業稅率與個人稅率一致。",
+        "sales_tax_obligations_en": "2.9% state + significant local taxes.", "sales_tax_obligations_cn": "2.9% 州稅 + 顯著的地方稅。",
+        "source_url": "https://tax.colorado.gov/"
+      },
+      "portals": { "personal_url": "https://www.colorado.gov/revenueonline/", "corporate_url": "https://www.colorado.gov/revenueonline/" }
+    }
+  },
+  {
+    "id": "CT",
+    "slug": "connecticut",
+    "names": { "en": "Connecticut", "cn": "康涅狄格州" },
+    "meta": { "desc_en": "Connecticut Tax Calculator.", "desc_cn": "康涅狄格州稅務計算器。", "keywords_en": "CT tax", "keywords_cn": "康涅狄格稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "6.99%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.03 }, { "threshold": 500000, "rate": 0.0699 }] },
+    "content": { "intro_en": "CT taxes are relatively high for the region.", "intro_cn": "康州稅收在該地區相對較高。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Florida", "pitch_en": "Moving to Florida?", "pitch_cn": "考慮搬家去佛州？" },
+    "policy": {
+      "personal": {
+        "rate_en": "3% - 6.99%", "rate_cn": "3% - 6.99%",
+        "new_rules_en": "Expanded exemptions for pension income.", "new_rules_cn": "擴大養老金收入的豁免。",
+        "deadline": "2025-04-15", "source_url": "https://portal.ct.gov/drs"
+      },
+      "corporate": {
+        "rate_en": "7.5%", "rate_cn": "7.5%",
+        "new_rules_en": "Surcharge may apply to certain companies.", "new_rules_cn": "特定公司可能適用附加費。",
+        "sales_tax_obligations_en": "6.35% general rate.", "sales_tax_obligations_cn": "6.35% 一般稅率。",
+        "source_url": "https://portal.ct.gov/drs"
+      },
+      "portals": { "personal_url": "https://portal.ct.gov/drs/myconnekt", "corporate_url": "https://portal.ct.gov/drs/myconnekt" }
+    }
+  },
+  {
+    "id": "DE",
+    "slug": "delaware",
+    "names": { "en": "Delaware", "cn": "特拉華州" },
+    "meta": { "desc_en": "Delaware Tax Calculator.", "desc_cn": "特拉華州稅務計算器。", "keywords_en": "Delaware tax", "keywords_cn": "特拉華稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "6.6%", "std_deduction_single": 3250, "std_deduction_mfj": 6500, "brackets_single": [{ "threshold": 0, "rate": 0.0 }, { "threshold": 60000, "rate": 0.066 }] },
+    "content": { "intro_en": "Delaware has no sales tax.", "intro_cn": "特拉華州沒有銷售稅。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Maryland", "pitch_en": "Moving to Maryland?", "pitch_cn": "考慮搬家去馬里蘭？" },
+    "policy": {
+      "personal": {
+        "rate_en": "2.2% - 6.6%", "rate_cn": "2.2% - 6.6%",
+        "new_rules_en": "Standard deduction increased for 2025.", "new_rules_cn": "2025 年標準扣除額增加。",
+        "deadline": "2025-04-30", "source_url": "https://revenue.delaware.gov/"
+      },
+      "corporate": {
+        "rate_en": "8.7%", "rate_cn": "8.7%",
+        "new_rules_en": "Flat rate applies to taxable income.", "new_rules_cn": "應稅收入適用單一稅率。",
+        "sales_tax_obligations_en": "0% (No Sales Tax). Gross Receipts Tax applies.", "sales_tax_obligations_cn": "0% (無銷售稅)。適用總收入稅。",
+        "source_url": "https://revenue.delaware.gov/"
+      },
+      "portals": { "personal_url": "https://revenue.delaware.gov/file/", "corporate_url": "https://revenue.delaware.gov/file/" }
+    }
+  },
+  {
+    "id": "DC",
+    "slug": "district-of-columbia",
+    "names": { "en": "District of Columbia", "cn": "哥倫比亞特區" },
+    "meta": { "desc_en": "DC Tax Calculator.", "desc_cn": "哥倫比亞特區稅務計算器。", "keywords_en": "DC tax", "keywords_cn": "DC 稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "10.75%", "std_deduction_single": 13850, "std_deduction_mfj": 27700, "brackets_single": [{ "threshold": 0, "rate": 0.04 }, { "threshold": 1000000, "rate": 0.1075 }] },
+    "content": { "intro_en": "DC taxes are progressive.", "intro_cn": "DC 稅收是累進的。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Virginia", "pitch_en": "Moving to Virginia?", "pitch_cn": "考慮搬家去弗吉尼亞？" },
+    "policy": {
+      "personal": {
+        "rate_en": "4% - 10.75%", "rate_cn": "4% - 10.75%",
+        "new_rules_en": "Brackets adjusted for cost of living.", "new_rules_cn": "稅級根據生活成本調整。",
+        "deadline": "2025-04-15", "source_url": "https://otr.cfo.dc.gov/"
+      },
+      "corporate": {
+        "rate_en": "8.25%", "rate_cn": "8.25%",
+        "new_rules_en": "Surtaxes may apply.", "new_rules_cn": "可能適用附加稅。",
+        "sales_tax_obligations_en": "6% general rate.", "sales_tax_obligations_cn": "6% 一般稅率。",
+        "source_url": "https://otr.cfo.dc.gov/"
+      },
+      "portals": { "personal_url": "https://mytax.dc.gov/", "corporate_url": "https://mytax.dc.gov/" }
+    }
+  },
+  {
+    "id": "FL",
+    "slug": "florida",
+    "names": { "en": "Florida", "cn": "佛羅里達州" },
+    "meta": { "desc_en": "Florida Paycheck Calculator.", "desc_cn": "佛羅里達州薪資計算器。", "keywords_en": "Florida tax", "keywords_cn": "佛羅里達稅" },
+    "tax_logic": { "type": "none", "max_rate_display": "0%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [] },
+    "content": { "intro_en": "Florida is a tax-friendly haven.", "intro_cn": "佛羅里達是一個稅收友好的避風港。", "cap_gains_en": "0% tax.", "cap_gains_cn": "0% 稅率。" },
+    "relocation": { "target_state": "New York", "pitch_en": "Moving from New York?", "pitch_cn": "從紐約搬來？" },
+    "policy": {
+      "personal": {
+        "rate_en": "0% (No State Income Tax)", "rate_cn": "0% (無州所得稅)",
+        "new_rules_en": "No personal income tax implementation planned.", "new_rules_cn": "無計劃實施個人所得稅。",
+        "deadline": "N/A", "source_url": "https://floridarevenue.com/"
+      },
+      "corporate": {
+        "rate_en": "5.5%", "rate_cn": "5.5%",
+        "new_rules_en": "State corporate tax rate remains 5.5%.", "new_rules_cn": "州企業稅率維持 5.5%。",
+        "sales_tax_obligations_en": "6% state rate + local surtax.", "sales_tax_obligations_cn": "6% 州稅率 + 地方附加稅。",
+        "source_url": "https://floridarevenue.com/"
+      },
+      "portals": { "personal_url": "N/A", "corporate_url": "https://floridarevenue.com/taxes/eServices/Pages/default.aspx" }
+    }
+  },
+  {
+    "id": "GA",
+    "slug": "georgia",
+    "names": { "en": "Georgia", "cn": "佐治亞州" },
+    "meta": { "desc_en": "Georgia Tax Calculator.", "desc_cn": "佐治亞州稅務計算器。", "keywords_en": "GA tax", "keywords_cn": "佐治亞稅" },
+    "tax_logic": { "type": "flat", "max_rate_display": "5.49%", "std_deduction_single": 5400, "std_deduction_mfj": 7100, "brackets_single": [{ "threshold": 0, "rate": 0.0549 }] },
+    "content": { "intro_en": "Georgia has transitioned to a flat tax.", "intro_cn": "佐治亞州已過渡到單一稅制。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Florida", "pitch_en": "Moving to Florida?", "pitch_cn": "考慮搬家去佛州？" },
+    "policy": {
+      "personal": {
+        "rate_en": "5.49% Flat Rate", "rate_cn": "5.49% 單一稅率",
+        "new_rules_en": "Rate reduced to 5.49% for 2024-2025.", "new_rules_cn": "2024-2025 稅率降至 5.49%。",
+        "deadline": "2025-04-15", "source_url": "https://dor.georgia.gov/"
+      },
+      "corporate": {
+        "rate_en": "5.75%", "rate_cn": "5.75%",
+        "new_rules_en": "Corporate rate aligns with legislative adjustments.", "new_rules_cn": "企業稅率隨立法調整。",
+        "sales_tax_obligations_en": "4% state rate + local taxes.", "sales_tax_obligations_cn": "4% 州稅率 + 地方稅。",
+        "source_url": "https://dor.georgia.gov/"
+      },
+      "portals": { "personal_url": "https://gtc.dor.ga.gov/", "corporate_url": "https://gtc.dor.ga.gov/" }
+    }
+  },
+  {
+    "id": "HI",
+    "slug": "hawaii",
+    "names": { "en": "Hawaii", "cn": "夏威夷州" },
+    "meta": { "desc_en": "Hawaii Tax Calculator.", "desc_cn": "夏威夷州稅務計算器。", "keywords_en": "Hawaii tax", "keywords_cn": "夏威夷稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "11%", "std_deduction_single": 2200, "std_deduction_mfj": 4400, "brackets_single": [{ "threshold": 0, "rate": 0.014 }, { "threshold": 200000, "rate": 0.11 }] },
+    "content": { "intro_en": "Hawaii has high tax rates.", "intro_cn": "夏威夷稅率很高。", "cap_gains_en": "7.25% max rate.", "cap_gains_cn": "最高稅率 7.25%。" },
+    "relocation": { "target_state": "California", "pitch_en": "Moving to California?", "pitch_cn": "考慮搬家去加州？" },
+    "policy": {
+      "personal": {
+        "rate_en": "1.4% - 11%", "rate_cn": "1.4% - 11%",
+        "new_rules_en": "Brackets adjusted.", "new_rules_cn": "稅級調整。",
+        "deadline": "2025-04-20", "source_url": "https://tax.hawaii.gov/"
+      },
+      "corporate": {
+        "rate_en": "4.4% - 6.4%", "rate_cn": "4.4% - 6.4%",
+        "new_rules_en": "No major changes.", "new_rules_cn": "無重大變化。",
+        "sales_tax_obligations_en": "4% GET (General Excise Tax).", "sales_tax_obligations_cn": "4% GET (一般消費稅)。",
+        "source_url": "https://tax.hawaii.gov/"
+      },
+      "portals": { "personal_url": "https://hitax.hawaii.gov/", "corporate_url": "https://hitax.hawaii.gov/" }
+    }
+  },
+  {
+    "id": "ID",
+    "slug": "idaho",
+    "names": { "en": "Idaho", "cn": "愛達荷州" },
+    "meta": { "desc_en": "Idaho Flat Tax.", "desc_cn": "愛達荷單一稅。", "keywords_en": "Idaho tax", "keywords_cn": "愛達荷稅" },
+    "tax_logic": { "type": "flat", "max_rate_display": "5.8%", "std_deduction_single": 13850, "std_deduction_mfj": 27700, "brackets_single": [{ "threshold": 0, "rate": 0.058 }] },
+    "content": { "intro_en": "Idaho uses a flat tax system.", "intro_cn": "愛達荷州使用單一稅制。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Montana", "pitch_en": "Moving to Montana?", "pitch_cn": "考慮搬家去蒙大拿？" },
+    "policy": {
+      "personal": {
+        "rate_en": "5.8% Flat Rate", "rate_cn": "5.8% 單一稅率",
+        "new_rules_en": "Flat tax system fully implemented.", "new_rules_cn": "單一稅制全面實施。",
+        "deadline": "2025-04-15", "source_url": "https://tax.idaho.gov/"
+      },
+      "corporate": {
+        "rate_en": "5.8%", "rate_cn": "5.8%",
+        "new_rules_en": "Corporate rate matches personal flat rate.", "new_rules_cn": "企業稅率與個人單一稅率一致。",
+        "sales_tax_obligations_en": "6% state rate.", "sales_tax_obligations_cn": "6% 州稅率。",
+        "source_url": "https://tax.idaho.gov/"
+      },
+      "portals": { "personal_url": "https://tax.idaho.gov/i-file/", "corporate_url": "https://tax.idaho.gov/i-file/" }
+    }
+  },
+  {
+    "id": "IL",
+    "slug": "illinois",
+    "names": { "en": "Illinois", "cn": "伊利諾伊州" },
+    "meta": { "desc_en": "Illinois Paycheck Calculator.", "desc_cn": "伊利諾伊州薪資計算器。", "keywords_en": "Illinois tax", "keywords_cn": "伊利諾伊稅" },
+    "tax_logic": { "type": "flat", "max_rate_display": "4.95%", "std_deduction_single": 2425, "std_deduction_mfj": 4850, "brackets_single": [{ "threshold": 0, "rate": 0.0495 }] },
+    "content": { "intro_en": "Illinois imposes a flat income tax rate.", "intro_cn": "伊利諾伊州徵收單一所得稅率。", "cap_gains_en": "Taxed at 4.95%.", "cap_gains_cn": "按 4.95% 徵稅。" },
+    "relocation": { "target_state": "Indiana", "pitch_en": "Moving to Indiana?", "pitch_cn": "考慮搬家去印第安納？" },
+    "policy": {
+      "personal": {
+        "rate_en": "4.95% Flat Rate", "rate_cn": "4.95% 單一稅率",
+        "new_rules_en": "Standard exemption adjusted.", "new_rules_cn": "標準免稅額調整。",
+        "deadline": "2025-04-15", "source_url": "https://tax.illinois.gov/"
+      },
+      "corporate": {
+        "rate_en": "7% + 2.5% Replacement Tax", "rate_cn": "7% + 2.5% 替代稅",
+        "new_rules_en": "Corporate rate remains 7%.", "new_rules_cn": "企業稅率維持 7%。",
+        "sales_tax_obligations_en": "6.25% state rate + local.", "sales_tax_obligations_cn": "6.25% 州稅率 + 地方稅。",
+        "source_url": "https://tax.illinois.gov/"
+      },
+      "portals": { "personal_url": "https://mytax.illinois.gov/", "corporate_url": "https://mytax.illinois.gov/" }
+    }
+  },
+  {
+    "id": "IN",
+    "slug": "indiana",
+    "names": { "en": "Indiana", "cn": "印第安納州" },
+    "meta": { "desc_en": "Indiana Tax Calculator.", "desc_cn": "印第安納州稅務計算器。", "keywords_en": "IN tax", "keywords_cn": "印第安納稅" },
+    "tax_logic": { "type": "flat", "max_rate_display": "3.05%", "std_deduction_single": 1000, "std_deduction_mfj": 2000, "brackets_single": [{ "threshold": 0, "rate": 0.0305 }] },
+    "content": { "intro_en": "Indiana has a flat tax rate.", "intro_cn": "印第安納州有單一稅率。", "cap_gains_en": "Ordinary rate.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Ohio", "pitch_en": "Moving to Ohio?", "pitch_cn": "考慮搬家去俄亥俄？" },
+    "policy": {
+      "personal": {
+        "rate_en": "3.05% Flat Rate", "rate_cn": "3.05% 單一稅率",
+        "new_rules_en": "Rate scheduled to decrease.", "new_rules_cn": "稅率預計下調。",
+        "deadline": "2025-04-15", "source_url": "https://www.in.gov/dor/"
+      },
+      "corporate": {
+        "rate_en": "4.9%", "rate_cn": "4.9%",
+        "new_rules_en": "Corporate rate decreasing annually.", "new_rules_cn": "企業稅率逐年下降。",
+        "sales_tax_obligations_en": "7% state rate.", "sales_tax_obligations_cn": "7% 州稅率。",
+        "source_url": "https://www.in.gov/dor/"
+      },
+      "portals": { "personal_url": "https://intime.dor.in.gov/", "corporate_url": "https://intime.dor.in.gov/" }
+    }
+  },
+  {
+    "id": "IA",
+    "slug": "iowa",
+    "names": { "en": "Iowa", "cn": "愛荷華州" },
+    "meta": { "desc_en": "Iowa Tax Calculator.", "desc_cn": "愛荷華州稅務計算器。", "keywords_en": "Iowa tax", "keywords_cn": "愛荷華稅" },
+    "tax_logic": { "type": "flat", "max_rate_display": "3.8%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.038 }] },
+    "content": { "intro_en": "Iowa is implementing a flat tax.", "intro_cn": "愛荷華州正在實施單一稅。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Illinois", "pitch_en": "Moving to Illinois?", "pitch_cn": "考慮搬家去伊利諾？" },
+    "policy": {
+      "personal": {
+        "rate_en": "3.8% Flat Rate", "rate_cn": "3.8% 單一稅率",
+        "new_rules_en": "Transition to 3.8% flat tax in 2025.", "new_rules_cn": "2025 年過渡至 3.8% 單一稅。",
+        "deadline": "2025-04-30", "source_url": "https://tax.iowa.gov/"
+      },
+      "corporate": {
+        "rate_en": "5.5% - 9.8%", "rate_cn": "5.5% - 9.8%",
+        "new_rules_en": "Corporate rates under review for reduction.", "new_rules_cn": "企業稅率正在審查以進行下調。",
+        "sales_tax_obligations_en": "6% state rate.", "sales_tax_obligations_cn": "6% 州稅率。",
+        "source_url": "https://tax.iowa.gov/"
+      },
+      "portals": { "personal_url": "https://govconnect.iowa.gov/", "corporate_url": "https://govconnect.iowa.gov/" }
+    }
+  },
+  {
+    "id": "KS",
+    "slug": "kansas",
+    "names": { "en": "Kansas", "cn": "堪薩斯州" },
+    "meta": { "desc_en": "Kansas Tax Calculator.", "desc_cn": "堪薩斯州稅務計算器。", "keywords_en": "KS tax", "keywords_cn": "堪薩斯稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "5.7%", "std_deduction_single": 3500, "std_deduction_mfj": 8000, "brackets_single": [{ "threshold": 0, "rate": 0.031 }, { "threshold": 30000, "rate": 0.057 }] },
+    "content": { "intro_en": "Kansas uses a simple 2-bracket system.", "intro_cn": "堪薩斯州使用簡單的兩級稅制。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Missouri", "pitch_en": "Moving to Missouri?", "pitch_cn": "考慮搬家去密蘇里？" },
+    "policy": {
+      "personal": {
+        "rate_en": "3.1% - 5.7%", "rate_cn": "3.1% - 5.7%",
+        "new_rules_en": "Adjustments to bottom bracket.", "new_rules_cn": "底部稅級調整。",
+        "deadline": "2025-04-15", "source_url": "https://www.ksrevenue.gov/"
+      },
+      "corporate": {
+        "rate_en": "4% + 3% Surtax", "rate_cn": "4% + 3% 附加稅",
+        "new_rules_en": "Surtax applies to income > $50k.", "new_rules_cn": "收入超過 $50k 適用附加稅。",
+        "sales_tax_obligations_en": "6.5% state rate.", "sales_tax_obligations_cn": "6.5% 州稅率。",
+        "source_url": "https://www.ksrevenue.gov/"
+      },
+      "portals": { "personal_url": "https://www.kansas.gov/user/login", "corporate_url": "https://www.kansas.gov/user/login" }
+    }
+  },
+  {
+    "id": "KY",
+    "slug": "kentucky",
+    "names": { "en": "Kentucky", "cn": "肯塔基州" },
+    "meta": { "desc_en": "Kentucky Flat Tax.", "desc_cn": "肯塔基單一稅。", "keywords_en": "KY tax", "keywords_cn": "肯塔基稅" },
+    "tax_logic": { "type": "flat", "max_rate_display": "4.0%", "std_deduction_single": 2980, "std_deduction_mfj": 2980, "brackets_single": [{ "threshold": 0, "rate": 0.04 }] },
+    "content": { "intro_en": "Kentucky has a flat 4% tax.", "intro_cn": "肯塔基州實行 4% 的單一稅。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Indiana", "pitch_en": "Moving to Indiana?", "pitch_cn": "考慮搬家去印第安納？" },
+    "policy": {
+      "personal": {
+        "rate_en": "4.0% Flat Rate", "rate_cn": "4.0% 單一稅率",
+        "new_rules_en": "Flat rate lowered to 4.0%.", "new_rules_cn": "單一稅率降至 4.0%。",
+        "deadline": "2025-04-15", "source_url": "https://revenue.ky.gov/"
+      },
+      "corporate": {
+        "rate_en": "5%", "rate_cn": "5%",
+        "new_rules_en": "Limited liability entity tax may apply.", "new_rules_cn": "可能適用有限責任實體稅。",
+        "sales_tax_obligations_en": "6% state rate.", "sales_tax_obligations_cn": "6% 州稅率。",
+        "source_url": "https://revenue.ky.gov/"
+      },
+      "portals": { "personal_url": "https://revenue.ky.gov/", "corporate_url": "https://revenue.ky.gov/" }
+    }
+  },
+  {
+    "id": "LA",
+    "slug": "louisiana",
+    "names": { "en": "Louisiana", "cn": "路易斯安那州" },
+    "meta": { "desc_en": "Louisiana Tax Calculator.", "desc_cn": "路易斯安那州稅務計算器。", "keywords_en": "LA tax", "keywords_cn": "路易斯安那稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "4.25%", "std_deduction_single": 4500, "std_deduction_mfj": 9000, "brackets_single": [{ "threshold": 0, "rate": 0.0185 }, { "threshold": 50000, "rate": 0.0425 }] },
+    "content": { "intro_en": "Louisiana rates are moderate.", "intro_cn": "路易斯安那州稅率適中。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Texas", "pitch_en": "Moving to Texas?", "pitch_cn": "考慮搬家去德州？" },
+    "policy": {
+      "personal": {
+        "rate_en": "1.85% - 4.25%", "rate_cn": "1.85% - 4.25%",
+        "new_rules_en": "Continued phase-out of federal income tax deduction.", "new_rules_cn": "繼續逐步取消聯邦所得稅扣除。",
+        "deadline": "2025-05-15", "source_url": "https://revenue.louisiana.gov/"
+      },
+      "corporate": {
+        "rate_en": "3.5% - 7.5%", "rate_cn": "3.5% - 7.5%",
+        "new_rules_en": "Graduated corporate rates apply.", "new_rules_cn": "適用累進企業稅率。",
+        "sales_tax_obligations_en": "4.45% state + local.", "sales_tax_obligations_cn": "4.45% 州稅 + 地方稅。",
+        "source_url": "https://revenue.louisiana.gov/"
+      },
+      "portals": { "personal_url": "https://latap.revenue.louisiana.gov/", "corporate_url": "https://latap.revenue.louisiana.gov/" }
+    }
+  },
+  {
+    "id": "ME",
+    "slug": "maine",
+    "names": { "en": "Maine", "cn": "緬因州" },
+    "meta": { "desc_en": "Maine Tax Calculator.", "desc_cn": "緬因州稅務計算器。", "keywords_en": "Maine tax", "keywords_cn": "緬因稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "7.15%", "std_deduction_single": 13850, "std_deduction_mfj": 27700, "brackets_single": [{ "threshold": 0, "rate": 0.058 }, { "threshold": 58050, "rate": 0.0715 }] },
+    "content": { "intro_en": "Maine has progressive rates.", "intro_cn": "緬因州實行累進稅率。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "New Hampshire", "pitch_en": "Moving to NH?", "pitch_cn": "考慮搬家去新罕布什爾？" },
+    "policy": {
+      "personal": {
+        "rate_en": "5.8% - 7.15%", "rate_cn": "5.8% - 7.15%",
+        "new_rules_en": "Inflation adjustments for brackets.", "new_rules_cn": "稅級進行通貨膨脹調整。",
+        "deadline": "2025-04-15", "source_url": "https://www.maine.gov/revenue/"
+      },
+      "corporate": {
+        "rate_en": "3.5% - 8.93%", "rate_cn": "3.5% - 8.93%",
+        "new_rules_en": "Graduated rates apply.", "new_rules_cn": "適用累進稅率。",
+        "sales_tax_obligations_en": "5.5% state rate.", "sales_tax_obligations_cn": "5.5% 州稅率。",
+        "source_url": "https://www.maine.gov/revenue/"
+      },
+      "portals": { "personal_url": "https://portal.maine.gov/salestax/", "corporate_url": "https://portal.maine.gov/salestax/" }
+    }
+  },
+  {
+    "id": "MD",
+    "slug": "maryland",
+    "names": { "en": "Maryland", "cn": "馬里蘭州" },
+    "meta": { "desc_en": "Maryland Tax Calculator.", "desc_cn": "馬里蘭州稅務計算器。", "keywords_en": "MD tax", "keywords_cn": "馬里蘭稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "5.75% + Local", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.02 }, { "threshold": 100000, "rate": 0.05 }, { "threshold": 250000, "rate": 0.0575 }] },
+    "content": { "intro_en": "Maryland residents pay local tax.", "intro_cn": "馬里蘭州居民需繳納地方稅。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Virginia", "pitch_en": "Moving to Virginia?", "pitch_cn": "考慮搬家去弗吉尼亞？" },
+    "policy": {
+      "personal": {
+        "rate_en": "2% - 5.75%", "rate_cn": "2% - 5.75%",
+        "new_rules_en": "County piggyback tax rates may vary.", "new_rules_cn": "縣附加稅率可能有所不同。",
+        "deadline": "2025-04-15", "source_url": "https://www.marylandtaxes.gov/"
+      },
+      "corporate": {
+        "rate_en": "8.25%", "rate_cn": "8.25%",
+        "new_rules_en": "Flat corporate rate applies.", "new_rules_cn": "適用單一企業稅率。",
+        "sales_tax_obligations_en": "6% state rate.", "sales_tax_obligations_cn": "6% 州稅率。",
+        "source_url": "https://www.marylandtaxes.gov/"
+      },
+      "portals": { "personal_url": "https://interactive.marylandtaxes.gov/", "corporate_url": "https://interactive.marylandtaxes.gov/" }
+    }
+  },
+  {
+    "id": "MA",
+    "slug": "massachusetts",
+    "names": { "en": "Massachusetts", "cn": "馬薩諸塞州" },
+    "meta": { "desc_en": "Massachusetts Tax Calculator.", "desc_cn": "馬薩諸塞州稅務計算器。", "keywords_en": "MA tax", "keywords_cn": "麻省稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "5% - 9%", "std_deduction_single": 4400, "std_deduction_mfj": 8800, "brackets_single": [{ "threshold": 0, "rate": 0.05 }, { "threshold": 1000000, "rate": 0.09 }] },
+    "content": { "intro_en": "MA has a 4% surtax on >$1M.", "intro_cn": "麻省對超過 100 萬美元的收入徵收 4% 附加稅。", "cap_gains_en": "12% for short term.", "cap_gains_cn": "短期為 12%。" },
+    "relocation": { "target_state": "New Hampshire", "pitch_en": "Moving to NH?", "pitch_cn": "考慮搬家去新罕布什爾？" },
+    "policy": {
+      "personal": {
+        "rate_en": "5% (+4% surtax over $1M)", "rate_cn": "5% (超過 100 萬加收 4%)",
+        "new_rules_en": "Millionaire's tax surtax threshold adjusted.", "new_rules_cn": "百萬富翁稅起徵點調整。",
+        "deadline": "2025-04-17", "source_url": "https://www.mass.gov/orgs/massachusetts-department-of-revenue"
+      },
+      "corporate": {
+        "rate_en": "8%", "rate_cn": "8%",
+        "new_rules_en": "Minimum excise tax $456.", "new_rules_cn": "最低消費稅 $456。",
+        "sales_tax_obligations_en": "6.25% state rate.", "sales_tax_obligations_cn": "6.25% 州稅率。",
+        "source_url": "https://www.mass.gov/orgs/massachusetts-department-of-revenue"
+      },
+      "portals": { "personal_url": "https://mtc.dor.state.ma.us/mtc", "corporate_url": "https://mtc.dor.state.ma.us/mtc" }
+    }
+  },
+  {
+    "id": "MI",
+    "slug": "michigan",
+    "names": { "en": "Michigan", "cn": "密歇根州" },
+    "meta": { "desc_en": "Michigan Income Tax Calculator.", "desc_cn": "密歇根州所得稅計算器。", "keywords_en": "MI tax", "keywords_cn": "密歇根稅" },
+    "tax_logic": { "type": "flat", "max_rate_display": "4.25%", "std_deduction_single": 5400, "std_deduction_mfj": 10800, "brackets_single": [{ "threshold": 0, "rate": 0.0425 }] },
+    "content": { "intro_en": "Michigan uses a simple flat tax rate.", "intro_cn": "密歇根州使用簡單的單一稅率。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Indiana", "pitch_en": "Moving to Indiana?", "pitch_cn": "考慮搬家去印第安納？" },
+    "policy": {
+      "personal": {
+        "rate_en": "4.25% Flat Rate", "rate_cn": "4.25% 單一稅率",
+        "new_rules_en": "Rate reduced to 4.05% for 2024 tax year only.", "new_rules_cn": "2024 稅年稅率曾降至 4.05%。",
+        "deadline": "2025-04-15", "source_url": "https://www.michigan.gov/taxes"
+      },
+      "corporate": {
+        "rate_en": "6%", "rate_cn": "6%",
+        "new_rules_en": "Corporate income tax flat rate.", "new_rules_cn": "企業所得稅單一稅率。",
+        "sales_tax_obligations_en": "6% state rate.", "sales_tax_obligations_cn": "6% 州稅率。",
+        "source_url": "https://www.michigan.gov/taxes"
+      },
+      "portals": { "personal_url": "https://www.michigan.gov/taxes/iit", "corporate_url": "https://www.michigan.gov/taxes/business-taxes" }
+    }
+  },
+  {
+    "id": "MN",
+    "slug": "minnesota",
+    "names": { "en": "Minnesota", "cn": "明尼蘇達州" },
+    "meta": { "desc_en": "Minnesota Tax Calculator.", "desc_cn": "明尼蘇達州稅務計算器。", "keywords_en": "MN tax", "keywords_cn": "明尼蘇達稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "9.85%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.0535 }, { "threshold": 183340, "rate": 0.0985 }] },
+    "content": { "intro_en": "Minnesota has high rates.", "intro_cn": "明尼蘇達州稅率較高。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "South Dakota", "pitch_en": "Moving to SD?", "pitch_cn": "考慮搬去南達科他？" },
+    "policy": {
+      "personal": {
+        "rate_en": "5.35% - 9.85%", "rate_cn": "5.35% - 9.85%",
+        "new_rules_en": "Brackets adjusted for inflation.", "new_rules_cn": "稅級隨通脹調整。",
+        "deadline": "2025-04-15", "source_url": "https://www.revenue.state.mn.us/"
+      },
+      "corporate": {
+        "rate_en": "9.8%", "rate_cn": "9.8%",
+        "new_rules_en": "One of the highest corporate rates.", "new_rules_cn": "企業稅率最高的州之一。",
+        "sales_tax_obligations_en": "6.875% state + local.", "sales_tax_obligations_cn": "6.875% 州稅 + 地方稅。",
+        "source_url": "https://www.revenue.state.mn.us/"
+      },
+      "portals": { "personal_url": "https://www.mndor.state.mn.us/tp/eservices", "corporate_url": "https://www.mndor.state.mn.us/tp/eservices" }
+    }
+  },
+  {
+    "id": "MS",
+    "slug": "mississippi",
+    "names": { "en": "Mississippi", "cn": "密西西比州" },
+    "meta": { "desc_en": "Mississippi Flat Tax.", "desc_cn": "密西西比單一稅。", "keywords_en": "MS tax", "keywords_cn": "密西西比稅" },
+    "tax_logic": { "type": "flat", "max_rate_display": "4.7%", "std_deduction_single": 2300, "std_deduction_mfj": 4600, "brackets_single": [{ "threshold": 0, "rate": 0.047 }] },
+    "content": { "intro_en": "Mississippi uses a flat tax.", "intro_cn": "密西西比州使用單一稅。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Alabama", "pitch_en": "Moving to Alabama?", "pitch_cn": "考慮搬家去阿拉巴馬？" },
+    "policy": {
+      "personal": {
+        "rate_en": "4.7% Flat Rate", "rate_cn": "4.7% 單一稅率",
+        "new_rules_en": "Rate reduced from 5%.", "new_rules_cn": "稅率從 5% 下調。",
+        "deadline": "2025-04-15", "source_url": "https://www.dor.ms.gov/"
+      },
+      "corporate": {
+        "rate_en": "4% - 5%", "rate_cn": "4% - 5%",
+        "new_rules_en": "Graduated rates apply.", "new_rules_cn": "適用累進稅率。",
+        "sales_tax_obligations_en": "7% state rate.", "sales_tax_obligations_cn": "7% 州稅率。",
+        "source_url": "https://www.dor.ms.gov/"
+      },
+      "portals": { "personal_url": "https://tap.dor.ms.gov/", "corporate_url": "https://tap.dor.ms.gov/" }
+    }
+  },
+  {
+    "id": "MO",
+    "slug": "missouri",
+    "names": { "en": "Missouri", "cn": "密蘇里州" },
+    "meta": { "desc_en": "Missouri Tax Calculator.", "desc_cn": "密蘇里州稅務計算器。", "keywords_en": "MO tax", "keywords_cn": "密蘇里稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "4.8%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.02 }, { "threshold": 8968, "rate": 0.048 }] },
+    "content": { "intro_en": "Missouri has simplified its brackets.", "intro_cn": "密蘇里州簡化了稅級。", "cap_gains_en": "Ordinary rate.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Kansas", "pitch_en": "Moving to Kansas?", "pitch_cn": "考慮搬家去堪薩斯？" },
+    "policy": {
+      "personal": {
+        "rate_en": "2% - 4.8%", "rate_cn": "2% - 4.8%",
+        "new_rules_en": "Top rate reduced to 4.8%.", "new_rules_cn": "最高稅率降至 4.8%。",
+        "deadline": "2025-04-15", "source_url": "https://dor.mo.gov/"
+      },
+      "corporate": {
+        "rate_en": "4%", "rate_cn": "4%",
+        "new_rules_en": "Flat corporate rate.", "new_rules_cn": "單一企業稅率。",
+        "sales_tax_obligations_en": "4.225% state rate + local.", "sales_tax_obligations_cn": "4.225% 州稅 + 地方稅。",
+        "source_url": "https://dor.mo.gov/"
+      },
+      "portals": { "personal_url": "https://mytax.mo.gov/rptp/portal/home", "corporate_url": "https://mytax.mo.gov/rptp/portal/home" }
+    }
+  },
+  {
+    "id": "MT",
+    "slug": "montana",
+    "names": { "en": "Montana", "cn": "蒙大拿州" },
+    "meta": { "desc_en": "Montana Tax Calculator.", "desc_cn": "蒙大拿州稅務計算器。", "keywords_en": "Montana tax", "keywords_cn": "蒙大拿稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "5.9%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.047 }, { "threshold": 20500, "rate": 0.059 }] },
+    "content": { "intro_en": "Montana has simple brackets.", "intro_cn": "蒙大拿州稅級簡單。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Idaho", "pitch_en": "Moving to Idaho?", "pitch_cn": "考慮搬家去愛達荷？" },
+    "policy": {
+      "personal": {
+        "rate_en": "4.7% - 5.9%", "rate_cn": "4.7% - 5.9%",
+        "new_rules_en": "Simplified into two brackets.", "new_rules_cn": "簡化為兩個稅級。",
+        "deadline": "2025-04-15", "source_url": "https://mtrevenue.gov/"
+      },
+      "corporate": {
+        "rate_en": "6.75%", "rate_cn": "6.75%",
+        "new_rules_en": "Flat corporate rate.", "new_rules_cn": "單一企業稅率。",
+        "sales_tax_obligations_en": "No general sales tax.", "sales_tax_obligations_cn": "無一般銷售稅。",
+        "source_url": "https://mtrevenue.gov/"
+      },
+      "portals": { "personal_url": "https://tap.dor.mt.gov/", "corporate_url": "https://tap.dor.mt.gov/" }
+    }
+  },
+  {
+    "id": "NE",
+    "slug": "nebraska",
+    "names": { "en": "Nebraska", "cn": "內布拉斯加州" },
+    "meta": { "desc_en": "Nebraska Tax Calculator.", "desc_cn": "內布拉斯加州稅務計算器。", "keywords_en": "Nebraska tax", "keywords_cn": "內布拉斯加稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "5.84%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.0246 }, { "threshold": 37000, "rate": 0.0584 }] },
+    "content": { "intro_en": "Nebraska is lowering rates.", "intro_cn": "內布拉斯加州正在降低稅率。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Kansas", "pitch_en": "Moving to Kansas?", "pitch_cn": "考慮搬家去堪薩斯？" },
+    "policy": {
+      "personal": {
+        "rate_en": "2.46% - 5.84%", "rate_cn": "2.46% - 5.84%",
+        "new_rules_en": "Phased reduction in top rate.", "new_rules_cn": "逐步降低最高稅率。",
+        "deadline": "2025-04-15", "source_url": "https://revenue.nebraska.gov/"
+      },
+      "corporate": {
+        "rate_en": "5.58% - 5.84%", "rate_cn": "5.58% - 5.84%",
+        "new_rules_en": "Corporate rate tied to top personal rate.", "new_rules_cn": "企業稅率與最高個人稅率掛鉤。",
+        "sales_tax_obligations_en": "5.5% state rate.", "sales_tax_obligations_cn": "5.5% 州稅率。",
+        "source_url": "https://revenue.nebraska.gov/"
+      },
+      "portals": { "personal_url": "https://revenue.nebraska.gov/individuals", "corporate_url": "https://revenue.nebraska.gov/businesses" }
+    }
+  },
+  {
+    "id": "NV",
+    "slug": "nevada",
+    "names": { "en": "Nevada", "cn": "內華達州" },
+    "meta": { "desc_en": "Nevada Paycheck Calculator.", "desc_cn": "內華達州薪資計算器。", "keywords_en": "Nevada tax", "keywords_cn": "內華達稅" },
+    "tax_logic": { "type": "none", "max_rate_display": "0%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [] },
+    "content": { "intro_en": "Nevada has 0% state income tax.", "intro_cn": "內華達州州所得稅為 0%。", "cap_gains_en": "0% tax.", "cap_gains_cn": "0% 稅率。" },
+    "relocation": { "target_state": "California", "pitch_en": "Moving from California?", "pitch_cn": "從加州搬來？" },
+    "policy": {
+      "personal": {
+        "rate_en": "0% (No State Income Tax)", "rate_cn": "0% (無州所得稅)",
+        "new_rules_en": "No personal income tax implementation planned.", "new_rules_cn": "無計劃實施個人所得稅。",
+        "deadline": "N/A", "source_url": "https://tax.nv.gov/"
+      },
+      "corporate": {
+        "rate_en": "Commerce Tax (Gross Receipts)", "rate_cn": "商業稅 (總收入)",
+        "new_rules_en": "Commerce tax applies to revenue > $4M.", "new_rules_cn": "收入超過 400 萬美元適用商業稅。",
+        "sales_tax_obligations_en": "6.85% state rate + local.", "sales_tax_obligations_cn": "6.85% 州稅率 + 地方稅。",
+        "source_url": "https://tax.nv.gov/"
+      },
+      "portals": { "personal_url": "N/A", "corporate_url": "https://www.nevadatax.nv.gov/" }
+    }
+  },
+  {
+    "id": "NH",
+    "slug": "new-hampshire",
+    "names": { "en": "New Hampshire", "cn": "新罕布什爾州" },
+    "meta": { "desc_en": "New Hampshire No Income Tax.", "desc_cn": "新罕布什爾州無所得稅。", "keywords_en": "NH tax", "keywords_cn": "新罕布什爾稅" },
+    "tax_logic": { "type": "none", "max_rate_display": "0% (Wages)", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [] },
+    "content": { "intro_en": "NH does not tax earned wages.", "intro_cn": "NH 不對賺取的工資徵稅。", "cap_gains_en": "Interest/Dividends tax phasing out.", "cap_gains_cn": "利息/股息稅逐步取消。" },
+    "relocation": { "target_state": "Massachusetts", "pitch_en": "Moving from MA?", "pitch_cn": "從麻省搬來？" },
+    "policy": {
+      "personal": {
+        "rate_en": "0% on Wages", "rate_cn": "工資 0% 稅率",
+        "new_rules_en": "Interest & Dividends tax fully repealed by 2025/26.", "new_rules_cn": "利息和股息稅將於 2025/26 年完全廢除。",
+        "deadline": "2025-04-15", "source_url": "https://www.revenue.nh.gov/"
+      },
+      "corporate": {
+        "rate_en": "7.5% BPT", "rate_cn": "7.5% 商業利潤稅",
+        "new_rules_en": "Business Profits Tax (BPT) applies.", "new_rules_cn": "適用商業利潤稅 (BPT)。",
+        "sales_tax_obligations_en": "0% (No Sales Tax).", "sales_tax_obligations_cn": "0% (無銷售稅)。",
+        "source_url": "https://www.revenue.nh.gov/"
+      },
+      "portals": { "personal_url": "https://gtc.revenue.nh.gov/", "corporate_url": "https://gtc.revenue.nh.gov/" }
+    }
+  },
+  {
+    "id": "NJ",
+    "slug": "new-jersey",
+    "names": { "en": "New Jersey", "cn": "新澤西州" },
+    "meta": { "desc_en": "New Jersey Paycheck Calculator.", "desc_cn": "新澤西州薪資計算器。", "keywords_en": "NJ tax", "keywords_cn": "新澤西稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "10.75%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.014 }, { "threshold": 20000, "rate": 0.0175 }, { "threshold": 35000, "rate": 0.035 }, { "threshold": 40000, "rate": 0.05525 }, { "threshold": 75000, "rate": 0.0637 }, { "threshold": 500000, "rate": 0.0897 }, { "threshold": 1000000, "rate": 0.1075 }] },
+    "content": { "intro_en": "New Jersey has progressive taxes.", "intro_cn": "新澤西州實行累進稅。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Pennsylvania", "pitch_en": "Moving to PA?", "pitch_cn": "考慮搬去賓州？" },
+    "policy": {
+      "personal": {
+        "rate_en": "1.4% - 10.75%", "rate_cn": "1.4% - 10.75%",
+        "new_rules_en": "ANCHOR property tax relief program continues.", "new_rules_cn": "ANCHOR 房產稅減免計劃繼續。",
+        "deadline": "2025-04-15", "source_url": "https://www.state.nj.us/treasury/taxation/"
+      },
+      "corporate": {
+        "rate_en": "9% (for income >$100k)", "rate_cn": "9% (收入 >$100k)",
+        "new_rules_en": "Surtax expired.", "new_rules_cn": "附加稅已到期。",
+        "sales_tax_obligations_en": "6.625% state rate.", "sales_tax_obligations_cn": "6.625% 州稅率。",
+        "source_url": "https://www.state.nj.us/treasury/taxation/"
+      },
+      "portals": { "personal_url": "https://www.nj.gov/treasury/taxation/individuals/", "corporate_url": "https://www.nj.gov/treasury/taxation/businesses/" }
+    }
+  },
+  {
+    "id": "NM",
+    "slug": "new-mexico",
+    "names": { "en": "New Mexico", "cn": "新墨西哥州" },
+    "meta": { "desc_en": "New Mexico Tax Calculator.", "desc_cn": "新墨西哥州稅務計算器。", "keywords_en": "NM tax", "keywords_cn": "新墨西哥稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "5.9%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.017 }, { "threshold": 210000, "rate": 0.059 }] },
+    "content": { "intro_en": "NM has progressive rates.", "intro_cn": "新墨西哥州實行累進稅率。", "cap_gains_en": "Deduction available.", "cap_gains_cn": "有扣除額。" },
+    "relocation": { "target_state": "Arizona", "pitch_en": "Moving to Arizona?", "pitch_cn": "考慮搬家去亞利桑那？" },
+    "policy": {
+      "personal": {
+        "rate_en": "1.7% - 5.9%", "rate_cn": "1.7% - 5.9%",
+        "new_rules_en": "Rebates may be issued.", "new_rules_cn": "可能會發放退稅。",
+        "deadline": "2025-04-15", "source_url": "https://www.tax.newmexico.gov/"
+      },
+      "corporate": {
+        "rate_en": "4.8% - 5.9%", "rate_cn": "4.8% - 5.9%",
+        "new_rules_en": "Graduated corporate rate.", "new_rules_cn": "累進企業稅率。",
+        "sales_tax_obligations_en": "Gross Receipts Tax (varies).", "sales_tax_obligations_cn": "總收入稅 (各異)。",
+        "source_url": "https://www.tax.newmexico.gov/"
+      },
+      "portals": { "personal_url": "https://tap.state.nm.us/", "corporate_url": "https://tap.state.nm.us/" }
+    }
+  },
+  {
+    "id": "NY",
+    "slug": "new-york",
+    "names": { "en": "New York", "cn": "紐約州" },
+    "meta": { "desc_en": "New York State Tax Calculator 2026.", "desc_cn": "2026 紐約州稅務計算器。", "keywords_en": "NY tax", "keywords_cn": "紐約稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "10.9%", "std_deduction_single": 8000, "std_deduction_mfj": 16050, "brackets_single": [{ "threshold": 0, "rate": 0.04 }, { "threshold": 8500, "rate": 0.045 }, { "threshold": 11700, "rate": 0.0525 }, { "threshold": 13900, "rate": 0.0585 }, { "threshold": 80650, "rate": 0.0625 }, { "threshold": 215400, "rate": 0.0685 }, { "threshold": 1077550, "rate": 0.0965 }, { "threshold": 5000000, "rate": 0.103 }, { "threshold": 25000000, "rate": 0.109 }] },
+    "content": { "intro_en": "New York generally mimics the federal tax structure.", "intro_cn": "紐約州的稅收結構通常模仿聯邦稅制。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Florida", "pitch_en": "Moving to Florida?", "pitch_cn": "考慮搬家去佛州？" },
+    "policy": {
+      "personal": {
+        "rate_en": "4% - 10.9%", "rate_cn": "4% - 10.9%",
+        "new_rules_en": "NYC residents pay additional city tax (3.078%-3.876%).", "new_rules_cn": "NYC 居民需繳納額外城市稅 (3.078%-3.876%)。",
+        "deadline": "2025-04-15", "source_url": "https://www.tax.ny.gov/"
+      },
+      "corporate": {
+        "rate_en": "7.25%", "rate_cn": "7.25%",
+        "new_rules_en": "MTA Surcharge applies in metro area.", "new_rules_cn": "大都會地區適用 MTA 附加費。",
+        "sales_tax_obligations_en": "4% state rate + local (up to 8.875%).", "sales_tax_obligations_cn": "4% 州稅 + 地方稅 (最高 8.875%)。",
+        "source_url": "https://www.tax.ny.gov/"
+      },
+      "portals": { "personal_url": "https://www.tax.ny.gov/pit/file/", "corporate_url": "https://www.tax.ny.gov/bus/ct/file.htm" }
+    }
+  },
+  {
+    "id": "NC",
+    "slug": "north-carolina",
+    "names": { "en": "North Carolina", "cn": "北卡羅來納州" },
+    "meta": { "desc_en": "North Carolina Tax Calculator.", "desc_cn": "北卡羅來納州稅務計算器。", "keywords_en": "NC tax", "keywords_cn": "北卡稅" },
+    "tax_logic": { "type": "flat", "max_rate_display": "4.5%", "std_deduction_single": 12750, "std_deduction_mfj": 25500, "brackets_single": [{ "threshold": 0, "rate": 0.045 }] },
+    "content": { "intro_en": "NC tax rate is decreasing.", "intro_cn": "北卡稅率正在下降。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "South Carolina", "pitch_en": "Moving to South Carolina?", "pitch_cn": "考慮搬家去南卡？" },
+    "policy": {
+      "personal": {
+        "rate_en": "4.5% Flat Rate", "rate_cn": "4.5% 單一稅率",
+        "new_rules_en": "Rate scheduled to drop further in future years.", "new_rules_cn": "稅率計劃在未來幾年進一步下降。",
+        "deadline": "2025-04-15", "source_url": "https://www.ncdor.gov/"
+      },
+      "corporate": {
+        "rate_en": "2.5%", "rate_cn": "2.5%",
+        "new_rules_en": "Phasing out corporate income tax by 2030.", "new_rules_cn": "到 2030 年逐步取消企業所得稅。",
+        "sales_tax_obligations_en": "4.75% state rate.", "sales_tax_obligations_cn": "4.75% 州稅率。",
+        "source_url": "https://www.ncdor.gov/"
+      },
+      "portals": { "personal_url": "https://eservices.ncdor.gov/", "corporate_url": "https://eservices.ncdor.gov/" }
+    }
+  },
+  {
+    "id": "ND",
+    "slug": "north-dakota",
+    "names": { "en": "North Dakota", "cn": "北達科他州" },
+    "meta": { "desc_en": "North Dakota Tax Calculator.", "desc_cn": "北達科他州稅務計算器。", "keywords_en": "ND tax", "keywords_cn": "北達科他稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "2.5%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.011 }, { "threshold": 44725, "rate": 0.0195 }, { "threshold": 490200, "rate": 0.025 }] },
+    "content": { "intro_en": "ND has very low rates.", "intro_cn": "北達科他州稅率非常低。", "cap_gains_en": "40% exclusion.", "cap_gains_cn": "40% 排除額。" },
+    "relocation": { "target_state": "South Dakota", "pitch_en": "Moving to SD?", "pitch_cn": "考慮搬家去南達科他？" },
+    "policy": {
+      "personal": {
+        "rate_en": "1.1% - 2.5%", "rate_cn": "1.1% - 2.5%",
+        "new_rules_en": "Low rate structure maintained.", "new_rules_cn": "維持低稅率結構。",
+        "deadline": "2025-04-15", "source_url": "https://www.tax.nd.gov/"
+      },
+      "corporate": {
+        "rate_en": "1.41% - 4.31%", "rate_cn": "1.41% - 4.31%",
+        "new_rules_en": "Graduated rates apply.", "new_rules_cn": "適用累進稅率。",
+        "sales_tax_obligations_en": "5% state rate.", "sales_tax_obligations_cn": "5% 州稅率。",
+        "source_url": "https://www.tax.nd.gov/"
+      },
+      "portals": { "personal_url": "https://apps.nd.gov/tax/tap", "corporate_url": "https://apps.nd.gov/tax/tap" }
+    }
+  },
+  {
+    "id": "OH",
+    "slug": "ohio",
+    "names": { "en": "Ohio", "cn": "俄亥俄州" },
+    "meta": { "desc_en": "Ohio Tax Calculator.", "desc_cn": "俄亥俄州稅務計算器。", "keywords_en": "Ohio tax", "keywords_cn": "俄亥俄稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "3.5%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.0 }, { "threshold": 26050, "rate": 0.0275 }, { "threshold": 100000, "rate": 0.035 }] },
+    "content": { "intro_en": "Ohio has simplified tax brackets.", "intro_cn": "俄亥俄州簡化了稅級。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Kentucky", "pitch_en": "Moving to Kentucky?", "pitch_cn": "考慮搬家去肯塔基？" },
+    "policy": {
+      "personal": {
+        "rate_en": "2.75% - 3.5%", "rate_cn": "2.75% - 3.5%",
+        "new_rules_en": "Two-bracket system fully implemented.", "new_rules_cn": "兩級稅制全面實施。",
+        "deadline": "2025-04-15", "source_url": "https://tax.ohio.gov/"
+      },
+      "corporate": {
+        "rate_en": "CAT (Gross Receipts)", "rate_cn": "商業活動稅 (總收入)",
+        "new_rules_en": "Commercial Activity Tax (CAT) exemption increased.", "new_rules_cn": "商業活動稅 (CAT) 豁免額增加。",
+        "sales_tax_obligations_en": "5.75% state rate.", "sales_tax_obligations_cn": "5.75% 州稅率。",
+        "source_url": "https://tax.ohio.gov/"
+      },
+      "portals": { "personal_url": "https://tax.ohio.gov/individual", "corporate_url": "https://tax.ohio.gov/business" }
+    }
+  },
+  {
+    "id": "OK",
+    "slug": "oklahoma",
+    "names": { "en": "Oklahoma", "cn": "俄克拉荷馬州" },
+    "meta": { "desc_en": "Oklahoma Tax Calculator.", "desc_cn": "俄克拉荷馬州稅務計算器。", "keywords_en": "OK tax", "keywords_cn": "俄克拉荷馬稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "4.75%", "std_deduction_single": 6350, "std_deduction_mfj": 12700, "brackets_single": [{ "threshold": 0, "rate": 0.0025 }, { "threshold": 7200, "rate": 0.0475 }] },
+    "content": { "intro_en": "Oklahoma offers low cost of living.", "intro_cn": "俄克拉荷馬州生活成本低。", "cap_gains_en": "Deduction available.", "cap_gains_cn": "有扣除額。" },
+    "relocation": { "target_state": "Texas", "pitch_en": "Moving to Texas?", "pitch_cn": "考慮搬家去德州？" },
+    "policy": {
+      "personal": {
+        "rate_en": "0.25% - 4.75%", "rate_cn": "0.25% - 4.75%",
+        "new_rules_en": "Rates remain stable.", "new_rules_cn": "稅率保持穩定。",
+        "deadline": "2025-04-15", "source_url": "https://oklahoma.gov/tax.html"
+      },
+      "corporate": {
+        "rate_en": "4%", "rate_cn": "4%",
+        "new_rules_en": "Flat corporate rate.", "new_rules_cn": "單一企業稅率。",
+        "sales_tax_obligations_en": "4.5% state rate.", "sales_tax_obligations_cn": "4.5% 州稅率。",
+        "source_url": "https://oklahoma.gov/tax.html"
+      },
+      "portals": { "personal_url": "https://oktap.tax.ok.gov/", "corporate_url": "https://oktap.tax.ok.gov/" }
+    }
+  },
+  {
+    "id": "OR",
+    "slug": "oregon",
+    "names": { "en": "Oregon", "cn": "俄勒岡州" },
+    "meta": { "desc_en": "Oregon Tax Calculator.", "desc_cn": "俄勒岡州稅務計算器。", "keywords_en": "Oregon tax", "keywords_cn": "俄勒岡稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "9.9%", "std_deduction_single": 2605, "std_deduction_mfj": 5210, "brackets_single": [{ "threshold": 0, "rate": 0.0475 }, { "threshold": 125000, "rate": 0.099 }] },
+    "content": { "intro_en": "Oregon has high income tax but no sales tax.", "intro_cn": "俄勒岡州所得稅高，但沒有銷售稅。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Washington", "pitch_en": "Moving to WA?", "pitch_cn": "考慮搬家去華盛頓州？" },
+    "policy": {
+      "personal": {
+        "rate_en": "4.75% - 9.9%", "rate_cn": "4.75% - 9.9%",
+        "new_rules_en": "Kicker refund may apply if revenue exceeds forecast.", "new_rules_cn": "若收入超過預測，可能會有 Kicker 退稅。",
+        "deadline": "2025-04-15", "source_url": "https://www.oregon.gov/dor/"
+      },
+      "corporate": {
+        "rate_en": "6.6% - 7.6%", "rate_cn": "6.6% - 7.6%",
+        "new_rules_en": "CAT (Corporate Activity Tax) also applies.", "new_rules_cn": "也適用企業活動稅 (CAT)。",
+        "sales_tax_obligations_en": "0% (No Sales Tax).", "sales_tax_obligations_cn": "0% (無銷售稅)。",
+        "source_url": "https://www.oregon.gov/dor/"
+      },
+      "portals": { "personal_url": "https://revenueonline.dor.oregon.gov/", "corporate_url": "https://revenueonline.dor.oregon.gov/" }
+    }
+  },
+  {
+    "id": "PA",
+    "slug": "pennsylvania",
+    "names": { "en": "Pennsylvania", "cn": "賓夕法尼亞州" },
+    "meta": { "desc_en": "Pennsylvania Flat Tax Calculator.", "desc_cn": "賓夕法尼亞州單一稅率計算器。", "keywords_en": "PA tax", "keywords_cn": "賓州稅" },
+    "tax_logic": { "type": "flat", "max_rate_display": "3.07%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.0307 }] },
+    "content": { "intro_en": "Pennsylvania uses a flat tax system.", "intro_cn": "賓夕法尼亞州採用單一稅制。", "cap_gains_en": "Taxed at 3.07%.", "cap_gains_cn": "按 3.07% 徵稅。" },
+    "relocation": { "target_state": "Florida", "pitch_en": "Moving to Florida?", "pitch_cn": "考慮搬家去佛州？" },
+    "policy": {
+      "personal": {
+        "rate_en": "3.07% Flat Rate", "rate_cn": "3.07% 單一稅率",
+        "new_rules_en": "Rate remains constant. Local wage taxes apply.", "new_rules_cn": "稅率保持不變。需繳納地方工資稅。",
+        "deadline": "2025-04-15", "source_url": "https://www.revenue.pa.gov/"
+      },
+      "corporate": {
+        "rate_en": "8.49% (Scheduled Reduction)", "rate_cn": "8.49% (計劃下調)",
+        "new_rules_en": "CNI Tax rate decreasing to 4.99% by 2031.", "new_rules_cn": "CNI 稅率將在 2031 年前降至 4.99%。",
+        "sales_tax_obligations_en": "6% state rate.", "sales_tax_obligations_cn": "6% 州稅率。",
+        "source_url": "https://www.revenue.pa.gov/"
+      },
+      "portals": { "personal_url": "https://mypath.pa.gov/", "corporate_url": "https://mypath.pa.gov/" }
+    }
+  },
+  {
+    "id": "RI",
+    "slug": "rhode-island",
+    "names": { "en": "Rhode Island", "cn": "羅德島州" },
+    "meta": { "desc_en": "Rhode Island Tax Calculator.", "desc_cn": "羅德島州稅務計算器。", "keywords_en": "RI tax", "keywords_cn": "羅德島稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "5.99%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.0375 }, { "threshold": 155050, "rate": 0.0599 }] },
+    "content": { "intro_en": "Rhode Island is small but has tax.", "intro_cn": "羅德島雖小但有稅收。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Connecticut", "pitch_en": "Moving to CT?", "pitch_cn": "考慮搬家去康州？" },
+    "policy": {
+      "personal": {
+        "rate_en": "3.75% - 5.99%", "rate_cn": "3.75% - 5.99%",
+        "new_rules_en": "Exemption amounts adjusted.", "new_rules_cn": "豁免額調整。",
+        "deadline": "2025-04-15", "source_url": "https://tax.ri.gov/"
+      },
+      "corporate": {
+        "rate_en": "7%", "rate_cn": "7%",
+        "new_rules_en": "Minimum tax $400.", "new_rules_cn": "最低稅額 $400。",
+        "sales_tax_obligations_en": "7% state rate.", "sales_tax_obligations_cn": "7% 州稅率。",
+        "source_url": "https://tax.ri.gov/"
+      },
+      "portals": { "personal_url": "https://taxportal.ri.gov/", "corporate_url": "https://taxportal.ri.gov/" }
+    }
+  },
+  {
+    "id": "SC",
+    "slug": "south-carolina",
+    "names": { "en": "South Carolina", "cn": "南卡羅來納州" },
+    "meta": { "desc_en": "South Carolina Tax Calculator.", "desc_cn": "南卡羅來納州稅務計算器。", "keywords_en": "SC tax", "keywords_cn": "南卡稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "6.4%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.0 }, { "threshold": 16040, "rate": 0.064 }] },
+    "content": { "intro_en": "SC is reducing its top rate.", "intro_cn": "南卡正在逐步降低最高稅率。", "cap_gains_en": "44% deduction.", "cap_gains_cn": "44% 扣除額。" },
+    "relocation": { "target_state": "Georgia", "pitch_en": "Moving to Georgia?", "pitch_cn": "考慮搬家去佐治亞？" },
+    "policy": {
+      "personal": {
+        "rate_en": "0% - 6.4%", "rate_cn": "0% - 6.4%",
+        "new_rules_en": "Top rate reduction continues annually.", "new_rules_cn": "最高稅率逐年下調。",
+        "deadline": "2025-04-15", "source_url": "https://dor.sc.gov/"
+      },
+      "corporate": {
+        "rate_en": "5%", "rate_cn": "5%",
+        "new_rules_en": "Flat corporate rate.", "new_rules_cn": "單一企業稅率。",
+        "sales_tax_obligations_en": "6% state rate.", "sales_tax_obligations_cn": "6% 州稅率。",
+        "source_url": "https://dor.sc.gov/"
+      },
+      "portals": { "personal_url": "https://mydorway.dor.sc.gov/", "corporate_url": "https://mydorway.dor.sc.gov/" }
+    }
+  },
+  {
+    "id": "SD",
+    "slug": "south-dakota",
+    "names": { "en": "South Dakota", "cn": "南達科他州" },
+    "meta": { "desc_en": "South Dakota No Income Tax.", "desc_cn": "南達科他州無所得稅。", "keywords_en": "SD tax", "keywords_cn": "南達科他稅" },
+    "tax_logic": { "type": "none", "max_rate_display": "0%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [] },
+    "content": { "intro_en": "South Dakota has no state tax.", "intro_cn": "南達科他州沒有州稅。", "cap_gains_en": "0% tax.", "cap_gains_cn": "0% 稅率。" },
+    "relocation": { "target_state": "Minnesota", "pitch_en": "Moving from MN?", "pitch_cn": "從明尼蘇達搬來？" },
+    "policy": {
+      "personal": {
+        "rate_en": "0% (No State Income Tax)", "rate_cn": "0% (無州所得稅)",
+        "new_rules_en": "No personal income tax implementation planned.", "new_rules_cn": "無計劃實施個人所得稅。",
+        "deadline": "N/A", "source_url": "https://dor.sd.gov/"
+      },
+      "corporate": {
+        "rate_en": "0%", "rate_cn": "0%",
+        "new_rules_en": "No corporate income tax (Bank Franchise Tax exists).", "new_rules_cn": "無企業所得稅 (存在銀行特許經營稅)。",
+        "sales_tax_obligations_en": "4.2% state rate.", "sales_tax_obligations_cn": "4.2% 州稅率。",
+        "source_url": "https://dor.sd.gov/"
+      },
+      "portals": { "personal_url": "N/A", "corporate_url": "https://sd.gov/tax" }
+    }
+  },
+  {
+    "id": "TN",
+    "slug": "tennessee",
+    "names": { "en": "Tennessee", "cn": "田納西州" },
+    "meta": { "desc_en": "Tennessee Paycheck Calculator.", "desc_cn": "田納西州薪資計算器。", "keywords_en": "TN tax", "keywords_cn": "田納西稅" },
+    "tax_logic": { "type": "none", "max_rate_display": "0%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [] },
+    "content": { "intro_en": "Tennessee is a tax-friendly state.", "intro_cn": "田納西州是一個稅收友好的州。", "cap_gains_en": "0% tax.", "cap_gains_cn": "0% 稅率。" },
+    "relocation": { "target_state": "North Carolina", "pitch_en": "Moving from NC?", "pitch_cn": "從北卡搬來？" },
+    "policy": {
+      "personal": {
+        "rate_en": "0% (No State Income Tax)", "rate_cn": "0% (無州所得稅)",
+        "new_rules_en": "Hall Income Tax (dividends) fully repealed.", "new_rules_cn": "霍爾所得稅 (股息) 已完全廢除。",
+        "deadline": "N/A", "source_url": "https://www.tn.gov/revenue.html"
+      },
+      "corporate": {
+        "rate_en": "6.5% Excise Tax", "rate_cn": "6.5% 消費稅",
+        "new_rules_en": "Franchise tax property measure repealed.", "new_rules_cn": "特許經營稅財產衡量標準已廢除。",
+        "sales_tax_obligations_en": "7% state rate.", "sales_tax_obligations_cn": "7% 州稅率。",
+        "source_url": "https://www.tn.gov/revenue.html"
+      },
+      "portals": { "personal_url": "N/A", "corporate_url": "https://tntap.tn.gov/eservices" }
+    }
+  },
+  {
+    "id": "TX",
+    "slug": "texas",
+    "names": { "en": "Texas", "cn": "得克薩斯州" },
+    "meta": { "desc_en": "2026 Texas Paycheck Calculator.", "desc_cn": "2026 德州薪資計算器。", "keywords_en": "Texas tax calculator", "keywords_cn": "德州稅務計算器" },
+    "tax_logic": { "type": "none", "max_rate_display": "0%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [] },
+    "content": { "intro_en": "Texas has 0% personal income tax.", "intro_cn": "德克薩斯州個人所得稅為 0%。", "cap_gains_en": "0% state tax.", "cap_gains_cn": "0% 州稅。" },
+    "relocation": { "target_state": "California", "pitch_en": "Moving from California?", "pitch_cn": "從加州搬來？" },
+    "policy": {
+      "personal": {
+        "rate_en": "0% (No State Income Tax)", "rate_cn": "0% (無州所得稅)",
+        "new_rules_en": "No personal income tax implementation planned.", "new_rules_cn": "無計劃實施個人所得稅。",
+        "deadline": "N/A", "source_url": "https://comptroller.texas.gov/"
+      },
+      "corporate": {
+        "rate_en": "0.375% - 0.75% (Franchise Tax)", "rate_cn": "0.375% - 0.75% (特許經營稅)",
+        "new_rules_en": "No-Tax-Due Threshold increased to $2.47M.", "new_rules_cn": "免稅門檻提高至 247 萬美元。",
+        "sales_tax_obligations_en": "6.25% state rate + local (max 8.25%).", "sales_tax_obligations_cn": "6.25% 州稅 + 地方 (最高 8.25%)。",
+        "source_url": "https://comptroller.texas.gov/"
+      },
+      "portals": { "personal_url": "N/A", "corporate_url": "https://comptroller.texas.gov/taxes/file-pay/" }
+    }
+  },
+  {
+    "id": "UT",
+    "slug": "utah",
+    "names": { "en": "Utah", "cn": "猶他州" },
+    "meta": { "desc_en": "Utah Flat Tax.", "desc_cn": "猶他單一稅。", "keywords_en": "Utah tax", "keywords_cn": "猶他稅" },
+    "tax_logic": { "type": "flat", "max_rate_display": "4.55%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.0455 }] },
+    "content": { "intro_en": "Utah has a straightforward flat tax.", "intro_cn": "猶他州實行直接的單一稅。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Nevada", "pitch_en": "Moving to Nevada?", "pitch_cn": "考慮搬家去內華達？" },
+    "policy": {
+      "personal": {
+        "rate_en": "4.55% Flat Rate", "rate_cn": "4.55% 單一稅率",
+        "new_rules_en": "Rate lowered to 4.55%.", "new_rules_cn": "稅率降至 4.55%。",
+        "deadline": "2025-04-15", "source_url": "https://tax.utah.gov/"
+      },
+      "corporate": {
+        "rate_en": "4.55%", "rate_cn": "4.55%",
+        "new_rules_en": "Corporate rate matches personal rate.", "new_rules_cn": "企業稅率與個人稅率一致。",
+        "sales_tax_obligations_en": "6.1% state rate.", "sales_tax_obligations_cn": "6.1% 州稅率。",
+        "source_url": "https://tax.utah.gov/"
+      },
+      "portals": { "personal_url": "https://tap.tax.utah.gov/", "corporate_url": "https://tap.tax.utah.gov/" }
+    }
+  },
+  {
+    "id": "VT",
+    "slug": "vermont",
+    "names": { "en": "Vermont", "cn": "佛蒙特州" },
+    "meta": { "desc_en": "Vermont Tax Calculator.", "desc_cn": "佛蒙特州稅務計算器。", "keywords_en": "Vermont tax", "keywords_cn": "佛蒙特稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "8.75%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.0335 }, { "threshold": 213150, "rate": 0.0875 }] },
+    "content": { "intro_en": "Vermont taxes are progressive.", "intro_cn": "佛蒙特州稅收是累進的。", "cap_gains_en": "Capped deduction.", "cap_gains_cn": "有上限的扣除。" },
+    "relocation": { "target_state": "New Hampshire", "pitch_en": "Moving to NH?", "pitch_cn": "考慮搬家去新罕布什爾？" },
+    "policy": {
+      "personal": {
+        "rate_en": "3.35% - 8.75%", "rate_cn": "3.35% - 8.75%",
+        "new_rules_en": "Standard deduction increased.", "new_rules_cn": "標準扣除額增加。",
+        "deadline": "2025-04-15", "source_url": "https://tax.vermont.gov/"
+      },
+      "corporate": {
+        "rate_en": "6% - 8.5%", "rate_cn": "6% - 8.5%",
+        "new_rules_en": "Graduated rates apply.", "new_rules_cn": "適用累進稅率。",
+        "sales_tax_obligations_en": "6% state rate.", "sales_tax_obligations_cn": "6% 州稅率。",
+        "source_url": "https://tax.vermont.gov/"
+      },
+      "portals": { "personal_url": "https://myvtax.vermont.gov/", "corporate_url": "https://myvtax.vermont.gov/" }
+    }
+  },
+  {
+    "id": "VA",
+    "slug": "virginia",
+    "names": { "en": "Virginia", "cn": "弗吉尼亞州" },
+    "meta": { "desc_en": "Virginia Paycheck Calculator.", "desc_cn": "弗吉尼亞州薪資計算器。", "keywords_en": "VA tax", "keywords_cn": "弗吉尼亞稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "5.75%", "std_deduction_single": 8000, "std_deduction_mfj": 16000, "brackets_single": [{ "threshold": 0, "rate": 0.02 }, { "threshold": 3000, "rate": 0.03 }, { "threshold": 5000, "rate": 0.05 }, { "threshold": 17000, "rate": 0.0575 }] },
+    "content": { "intro_en": "Virginia hits top bracket early.", "intro_cn": "弗吉尼亞州很早就達到最高稅級。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Tennessee", "pitch_en": "Moving to Tennessee?", "pitch_cn": "考慮搬家去田納西？" },
+    "policy": {
+      "personal": {
+        "rate_en": "2% - 5.75%", "rate_cn": "2% - 5.75%",
+        "new_rules_en": "Standard deduction increased to $8,500/$17,000.", "new_rules_cn": "標準扣除額增至 $8,500/$17,000。",
+        "deadline": "2025-05-01", "source_url": "https://www.tax.virginia.gov/"
+      },
+      "corporate": {
+        "rate_en": "6%", "rate_cn": "6%",
+        "new_rules_en": "Flat corporate rate.", "new_rules_cn": "單一企業稅率。",
+        "sales_tax_obligations_en": "5.3% state rate.", "sales_tax_obligations_cn": "5.3% 州稅率。",
+        "source_url": "https://www.tax.virginia.gov/"
+      },
+      "portals": { "personal_url": "https://www.ireg.tax.virginia.gov/", "corporate_url": "https://www.business.tax.virginia.gov/" }
+    }
+  },
+  {
+    "id": "WA",
+    "slug": "washington",
+    "names": { "en": "Washington", "cn": "華盛頓州" },
+    "meta": { "desc_en": "Washington State Paycheck Calculator.", "desc_cn": "華盛頓州薪資計算器。", "keywords_en": "WA tax", "keywords_cn": "華盛頓稅" },
+    "tax_logic": { "type": "none", "max_rate_display": "0% (Wages)", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [] },
+    "content": { "intro_en": "Washington has no income tax on wages.", "intro_cn": "華盛頓州對工資不徵收所得稅。", "cap_gains_en": "7% tax on LTCG >$250k.", "cap_gains_cn": "超過 25 萬美元的長期資本利得徵收 7% 的稅。" },
+    "relocation": { "target_state": "California", "pitch_en": "Moving from California?", "pitch_cn": "從加州搬來？" },
+    "policy": {
+      "personal": {
+        "rate_en": "0% (Wages) / 7% (Cap Gains >$262k)", "rate_cn": "0% (工資) / 7% (資本利得 >$262k)",
+        "new_rules_en": "Capital gains threshold adjusted for inflation ($262,000).", "new_rules_cn": "資本利得門檻隨通脹調整 ($262,000)。",
+        "deadline": "2025-04-15", "source_url": "https://dor.wa.gov/"
+      },
+      "corporate": {
+        "rate_en": "B&O Tax (Gross Receipts)", "rate_cn": "商業和職業稅 (總收入)",
+        "new_rules_en": "Rates vary by industry (e.g., 1.5% - 1.75%).", "new_rules_cn": "稅率因行業而異 (如 1.5% - 1.75%)。",
+        "sales_tax_obligations_en": "6.5% state rate + local.", "sales_tax_obligations_cn": "6.5% 州稅率 + 地方稅。",
+        "source_url": "https://dor.wa.gov/"
+      },
+      "portals": { "personal_url": "https://secure.dor.wa.gov/", "corporate_url": "https://secure.dor.wa.gov/" }
+    }
+  },
+  {
+    "id": "WV",
+    "slug": "west-virginia",
+    "names": { "en": "West Virginia", "cn": "西弗吉尼亞州" },
+    "meta": { "desc_en": "West Virginia Tax Calculator.", "desc_cn": "西弗吉尼亞州稅務計算器。", "keywords_en": "WV tax", "keywords_cn": "西弗吉尼亞稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "5.525%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.0236 }, { "threshold": 60000, "rate": 0.05525 }] },
+    "content": { "intro_en": "WV taxes are moderate.", "intro_cn": "西弗吉尼亞稅收適中。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。" },
+    "relocation": { "target_state": "Virginia", "pitch_en": "Moving to Virginia?", "pitch_cn": "考慮搬家去弗吉尼亞？" },
+    "policy": {
+      "personal": {
+        "rate_en": "2.36% - 5.525%", "rate_cn": "2.36% - 5.525%",
+        "new_rules_en": "Rates reduced by ~21% recently.", "new_rules_cn": "稅率近期降低了約 21%。",
+        "deadline": "2025-04-15", "source_url": "https://tax.wv.gov/"
+      },
+      "corporate": {
+        "rate_en": "6.5%", "rate_cn": "6.5%",
+        "new_rules_en": "Flat corporate rate.", "new_rules_cn": "單一企業稅率。",
+        "sales_tax_obligations_en": "6% state rate.", "sales_tax_obligations_cn": "6% 州稅率。",
+        "source_url": "https://tax.wv.gov/"
+      },
+      "portals": { "personal_url": "https://mytaxes.wvtax.gov/", "corporate_url": "https://mytaxes.wvtax.gov/" }
+    }
+  },
+  {
+    "id": "WI",
+    "slug": "wisconsin",
+    "names": { "en": "Wisconsin", "cn": "威斯康星州" },
+    "meta": { "desc_en": "Wisconsin Tax Calculator.", "desc_cn": "威斯康星州稅務計算器。", "keywords_en": "WI tax", "keywords_cn": "威斯康星稅" },
+    "tax_logic": { "type": "progressive", "max_rate_display": "7.65%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{ "threshold": 0, "rate": 0.035 }, { "threshold": 286400, "rate": 0.0765 }] },
+    "content": { "intro_en": "Wisconsin has progressive tax brackets.", "intro_cn": "威斯康星州實行累進稅級。", "cap_gains_en": "30% deduction.", "cap_gains_cn": "30% 扣除額。" },
+    "relocation": { "target_state": "Illinois", "pitch_en": "Moving to Illinois?", "pitch_cn": "考慮搬家去伊利諾？" },
+    "policy": {
+      "personal": {
+        "rate_en": "3.5% - 7.65%", "rate_cn": "3.5% - 7.65%",
+        "new_rules_en": "Middle class tax cut proposals in discussion.", "new_rules_cn": "中產階級減稅提案正在討論中。",
+        "deadline": "2025-04-15", "source_url": "https://www.revenue.wi.gov/"
+      },
+      "corporate": {
+        "rate_en": "7.9%", "rate_cn": "7.9%",
+        "new_rules_en": "Flat corporate rate.", "new_rules_cn": "單一企業稅率。",
+        "sales_tax_obligations_en": "5% state rate.", "sales_tax_obligations_cn": "5% 州稅率。",
+        "source_url": "https://www.revenue.wi.gov/"
+      },
+      "portals": { "personal_url": "https://tap.revenue.wi.gov/", "corporate_url": "https://tap.revenue.wi.gov/" }
+    }
+  },
+  {
+    "id": "WY",
+    "slug": "wyoming",
+    "names": { "en": "Wyoming", "cn": "懷俄明州" },
+    "meta": { "desc_en": "Wyoming No Income Tax.", "desc_cn": "懷俄明州無所得稅。", "keywords_en": "Wyoming tax", "keywords_cn": "懷俄明稅" },
+    "tax_logic": { "type": "none", "max_rate_display": "0%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [] },
+    "content": { "intro_en": "Wyoming is a tax-free state.", "intro_cn": "懷俄明州是免稅州。", "cap_gains_en": "0% tax.", "cap_gains_cn": "0% 稅率。" },
+    "relocation": { "target_state": "Colorado", "pitch_en": "Moving from CO?", "pitch_cn": "從科羅拉多搬來？" },
+    "policy": {
+      "personal": {
+        "rate_en": "0% (No State Income Tax)", "rate_cn": "0% (無州所得稅)",
+        "new_rules_en": "No personal income tax implementation planned.", "new_rules_cn": "無計劃實施個人所得稅。",
+        "deadline": "N/A", "source_url": "http://revenue.wyo.gov/"
+      },
+      "corporate": {
+        "rate_en": "0%", "rate_cn": "0%",
+        "new_rules_en": "No corporate income tax. Gross Receipts Tax may apply to some.", "new_rules_cn": "無企業所得稅。部分適用總收入稅。",
+        "sales_tax_obligations_en": "4% state rate.", "sales_tax_obligations_cn": "4% 州稅率。",
+        "source_url": "http://revenue.wyo.gov/"
+      },
+      "portals": { "personal_url": "N/A", "corporate_url": "https://wyo-excise.public.rlid.net/" }
+    }
+  }
+]
