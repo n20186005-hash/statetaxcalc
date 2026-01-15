@@ -2686,7 +2686,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "link": "https://toolboxpro.top/modules/weather-health/weather.html",
             "isExternal": true
         }
-        // ... 你的其他几百个链接 ...
+        // ... 请务必把你的数据粘贴回来 ...
     ];
 
     // =========================================================================
@@ -2697,75 +2697,73 @@ document.addEventListener('DOMContentLoaded', function() {
         if (allLinks.length <= count) return allLinks;
         return [...allLinks].sort(() => 0.5 - Math.random()).slice(0, count);
     }
-
     const icons = ['fa-calculator', 'fa-line-chart', 'fa-pie-chart', 'fa-percent', 'fa-usd', 'fa-bank', 'fa-credit-card', 'fa-bar-chart', 'fa-star', 'fa-rocket'];
 
     // =========================================================================
-    // 3. 核心逻辑
+    // 3. 核心分流逻辑
     // =========================================================================
-    
-    const gridContainer = document.getElementById('recommendation-grid');       
-    const sidebarContainer = document.getElementById('related-tools-container'); 
+    const gridContainer = document.getElementById('recommendation-grid');       // 工具页特征
+    const sidebarContainer = document.getElementById('related-tools-container'); // 文章页特征
 
     // -------------------------------------------------------------------------
-    // 场景 A：工具页 (Grid) - 【这里进行了强力修复】
+    // 情况 A：这是“文章页” (没有 Grid，只有 Sidebar)
+    // 策略：立即执行，不要等，保证打开就有
+    // -------------------------------------------------------------------------
+    if (!gridContainer && sidebarContainer) {
+        renderSidebar(sidebarContainer);
+    }
+
+    // -------------------------------------------------------------------------
+    // 情况 B：这是“工具页” (有 Grid)
+    // 策略：先隐藏底部，然后“延迟”执行网格渲染，确保覆盖原有内容
     // -------------------------------------------------------------------------
     if (gridContainer) {
-        
-        // 1. 依然隐藏底部那个不需要的文本容器
-        if (sidebarContainer) {
-            sidebarContainer.style.display = 'none';
-        }
+        // 1. 先把底部那个讨厌的文字框隐藏掉
+        if (sidebarContainer) sidebarContainer.style.display = 'none';
 
-        // 定义我们的渲染函数
-        const myRenderer = function() {
-            const randomLinks = getRandomTools(5);
-            let html = '';
+        // 2. 注册到 window.load 事件，确保它是最后执行的
+        window.addEventListener('load', function() {
+            renderGrid(gridContainer);
+            // 再次强制劫持，防止页面切换语言后失效
+            window.renderRecommendation = function() { renderGrid(gridContainer); };
+        });
+    }
 
-            randomLinks.forEach(item => {
-                const randomIcon = icons[Math.floor(Math.random() * icons.length)];
-                const desc = item.desc || (item.isExternal ? 'Recommended Tool' : 'Tax Calculator');
-                
-                html += `
-                    <a href="${item.link}" ${item.isExternal ? 'target="_blank"' : ''} class="tool-card group block h-full">
-                        <div class="flex flex-col items-center text-center pt-4 pb-2 h-full">
-                            <div class="bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 w-12 h-12 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                                <i class="fa ${randomIcon} text-xl"></i>
+    // =========================================================================
+    // 4. 具体的渲染函数
+    // =========================================================================
+    
+    // 渲染工具页的大网格 (紫色)
+    function renderGrid(container) {
+        const randomLinks = getRandomTools(5);
+        let html = '';
+        randomLinks.forEach(item => {
+            const randomIcon = icons[Math.floor(Math.random() * icons.length)];
+            const desc = item.desc || (item.isExternal ? 'Recommended Tool' : 'Tax Calculator');
+            html += `
+                <a href="${item.link}" ${item.isExternal ? 'target="_blank"' : ''} class="tool-card group block h-full">
+                    <div class="flex flex-col items-center text-center pt-4 pb-2 h-full">
+                        <div class="bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 w-12 h-12 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                            <i class="fa ${randomIcon} text-xl"></i>
+                        </div>
+                        <div class="w-full px-2">
+                            <div class="font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors text-sm line-clamp-1" title="${item.title}">
+                                ${item.title}
                             </div>
-                            <div class="w-full px-2">
-                                <div class="font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors text-sm line-clamp-1" title="${item.title}">
-                                    ${item.title}
-                                </div>
-                                <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-1">
-                                    ${desc}
-                                </div>
+                            <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-1">
+                                ${desc}
                             </div>
                         </div>
-                    </a>
-                `;
-            });
-            gridContainer.innerHTML = html;
-        };
+                    </div>
+                </a>
+            `;
+        });
+        container.innerHTML = html;
+    }
 
-        // 2. 【关键修复】延迟执行 + 劫持
-        // 我们等 100毫秒，让页面原本的脚本先跑完，然后我们再覆盖它
-        setTimeout(() => {
-            // 执行一次，覆盖初始内容
-            myRenderer();
-            
-            // 【劫持】把页面原本的 renderRecommendation 函数替换成我们的
-            // 这样当用户切换语言时，系统调用 renderRecommendation，实际上跑的是我们的代码
-            window.renderRecommendation = myRenderer;
-            
-        }, 100);
-    } 
-    
-    // -------------------------------------------------------------------------
-    // 场景 B：文章页 (Sidebar) - 【保持原样，完全不动】
-    // -------------------------------------------------------------------------
-    else if (sidebarContainer) {
+    // 渲染文章页的侧边栏 (蓝色 + Glass) - 这里的样式和你之前满意的一模一样
+    function renderSidebar(container) {
         const randomLinks = getRandomTools(5);
-        
         let html = `
             <div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-blue-500 mb-8">
                 <h3 class="font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
@@ -2774,10 +2772,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 </h3>
                 <div class="space-y-3">
         `;
-        
         randomLinks.forEach(item => {
             const randomIcon = icons[Math.floor(Math.random() * icons.length)];
-            
             html += `
                 <a href="${item.link}" ${item.isExternal ? 'target="_blank"' : ''} class="tool-card group">
                     <div class="icon-box bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
@@ -2794,13 +2790,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 </a>
             `;
         });
-
-        html += `
-                </div>
-            </div>
-        `;
-        
-        sidebarContainer.innerHTML = html;
-        sidebarContainer.style.display = 'block';
+        html += `</div></div>`;
+        container.innerHTML = html;
+        container.style.display = 'block';
     }
 });
