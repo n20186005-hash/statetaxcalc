@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<meta content="finance" name="category"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='0' y='0' width='64' height='64' rx='12' fill='%232563eb'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='24' fill='white'%3ETax%3C/text%3E%3C/svg%3E" rel="icon"/>
+<meta content="俄勒岡州稅務計算器。" name="description"/>
+<meta content="俄勒岡稅" name="keywords"/>
+<title>俄勒岡州 Tax Calculator 2026 | StateTaxCalc</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#2563eb', hover: '#1d4ed8' }, 
+                        secondary: { DEFAULT: '#6366f1', hover: '#4f46e5' },
+                        success: { DEFAULT: '#10b981', hover: '#059669' },
+                        surface: { light: '#ffffff', dark: '#1e293b' },
+                        bg: { light: '#f8fafc', dark: '#0f172a' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans TC', 'system-ui', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'glow': '0 0 15px rgba(37, 99, 235, 0.3)'
+                    }
+                }
+            }
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .glass { @apply bg-white/90 dark:bg-slate-800/90 backdrop-blur-md border border-slate-200 dark:border-slate-700; }
+            .input-field { @apply w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-base; }
+            .label-text { @apply text-xs font-bold text-slate-500 dark:text-slate-400 mb-2 block uppercase tracking-wide flex items-center gap-1; }
+            .tooltip { @apply relative cursor-help; }
+            .tooltip:before { @apply content-[attr(data-tip)] absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-2 py-1 bg-slate-800 text-white text-xs rounded opacity-0 invisible transition-all duration-200 w-48 text-center z-50 pointer-events-none shadow-lg; }
+            .tooltip:hover:before { @apply opacity-100 visible; }
+            
+            /* Donut Chart CSS */
+            .donut-chart {
+                width: 120px; height: 120px; border-radius: 50%;
+                background: conic-gradient(#10b981 0% var(--net-pct), #ef4444 var(--net-pct) var(--fed-end), #f59e0b var(--fed-end) var(--state-end), #3b82f6 var(--state-end) 100%);
+                position: relative;
+            }
+            .donut-hole {
+                width: 80px; height: 80px; border-radius: 50%; background: white;
+                position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            }
+            .dark .donut-hole { background: #1e293b; }
+
+            input[type=range] { @apply w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer; }
+            input[type=range]::-webkit-slider-thumb { @apply appearance-none w-4 h-4 bg-primary rounded-full shadow hover:scale-110 transition-transform; }
+            
+            .state-card { @apply flex flex-col items-center justify-center p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary hover:shadow-md cursor-pointer transition-all duration-200 text-center h-full; }
+            .tool-card { @apply flex flex-col p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary hover:shadow-md cursor-pointer transition-all duration-200 h-full; }
+        }
+        
+        html { scroll-behavior: smooth; }
+        .tax-table-container { @apply overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm; }
+        .tax-table { @apply w-full text-sm text-left border-collapse whitespace-nowrap; }
+        .tax-table th { @apply bg-slate-100 dark:bg-slate-700 p-3 font-bold text-slate-700 dark:text-slate-200 border-b border-slate-200 dark:border-slate-600; }
+        .tax-table td { @apply p-3 border-b border-slate-100 dark:border-slate-700 text-slate-600 dark:text-slate-300; }
+        .tax-table tr:last-child td { @apply border-b-0; }
+        .tax-table tr:nth-child(even) { @apply bg-slate-50 dark:bg-slate-800/50; }
+        .irs-year-header { @apply text-lg font-bold text-slate-800 dark:text-white mb-2 mt-6 border-b border-slate-200 dark:border-slate-700 pb-2; }
+    </style>
+<link href="oregon-tax-calculator-tw.html" hreflang="zh-TW" rel="alternate"/><link href="oregon-tax-calculator.html" hreflang="en" rel="alternate"/></head>
+<body class="bg-bg-light dark:bg-bg-dark min-h-screen font-sans text-slate-800 dark:text-slate-200 selection:bg-primary/20 transition-colors duration-300">
+<div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+<div class="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-blue-50 to-transparent dark:from-slate-900 dark:to-transparent opacity-60"></div>
+<div class="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-blue-400/10 rounded-full blur-[100px]"></div>
+</div>
+<button class="fixed bottom-6 right-6 z-50 bg-primary hover:bg-primary-hover text-white w-12 h-12 rounded-full shadow-lg shadow-blue-500/30 flex items-center justify-center transition-transform hover:-translate-y-1 group" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<i class="fa fa-rocket text-xl group-hover:animate-pulse"></i>
+</button>
+<div class="container mx-auto px-4 py-6 max-w-6xl relative z-10">
+<nav class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-6 animate-fade-in">
+<a class="hover:text-primary transition-colors" href="/"><i class="fa fa-home"></i> <span data-i18n="nav_home">Home</span></a>
+<i class="fa fa-angle-right text-slate-300"></i>
+<a class="hover:text-primary transition-colors" href="/calculators"><span data-i18n="nav_calc">Calculators</span></a>
+<i class="fa fa-angle-right text-slate-300"></i>
+<span class="font-medium text-slate-800 dark:text-white">Oregon Tax Calculator</span>
+</nav>
+<header class="mb-10 text-center md:text-left">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<div class="flex items-center justify-center md:justify-start gap-3 mb-2">
+<h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+<span class="text-primary" id="page-title-state">俄勒岡州</span> <span data-i18n="title_suffix">Paycheck &amp; Tax Calculator</span>
+</h1>
+<span class="bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-emerald-200 dark:border-emerald-800 uppercase tracking-wide">Updated 2026</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-lg" data-i18n="header_desc">Don't just look at salary. Calculate your true bi-weekly paycheck and plan 401k savings.</p>
+</div>
+<div class="flex items-center gap-2 bg-white dark:bg-slate-800 p-1.5 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm mx-auto md:mx-0">
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-500 hover:text-primary transition-colors" id="mode-toggle">
+<i class="fa fa-moon-o dark:hidden text-lg"></i><i class="fa fa-sun-o hidden dark:inline text-lg"></i>
+</button>
+<div class="w-px h-5 bg-slate-300 dark:bg-slate-600"></div>
+<select class="bg-transparent text-xs font-bold text-slate-600 dark:text-slate-300 px-2 py-1 rounded focus:outline-none cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700" id="lang-selector" onchange="if(this.value !== 'zh-TW') window.location.href = (this.value === 'en') ? 'oregon-tax-calculator.html' : 'oregon-tax-calculator-tw.html'">
+<option value="en">EN</option>
+<option selected="selected" value="zh-TW">繁中</option>
+</select>
+</div>
+</div>
+</header>
+<div class="grid lg:grid-cols-12 gap-8 mb-16">
+<div class="lg:col-span-4 space-y-6">
+<div class="glass rounded-2xl shadow-soft p-6 relative overflow-hidden border-t-4 border-t-primary">
+<h2 class="text-xl font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
+<i class="fa fa-sliders text-primary"></i> <span data-i18n="input_title">Income Settings</span>
+</h2>
+<form class="space-y-5" id="tax-form" onsubmit="return false;">
+<div>
+<label class="label-text" data-i18n="lbl_year">Tax Year</label>
+<div class="relative">
+<select class="input-field appearance-none cursor-pointer" id="year">
+<option value="2026">2026 (Projected)</option>
+<option value="2025">2025 (Current)</option>
+</select>
+<i class="fa fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"></i>
+</div>
+</div>
+<div>
+<label class="label-text">
+<span data-i18n="lbl_status">Filing Status</span>
+<i class="fa fa-question-circle text-slate-400 tooltip" data-tip="Determines your standard deduction and brackets"></i>
+</label>
+<div class="relative">
+<select class="input-field appearance-none cursor-pointer" id="status" onchange="calculateTax()">
+<option data-i18n="opt_single" value="single">Single</option>
+<option data-i18n="opt_mfj" value="mfj">Married Jointly</option>
+<option data-i18n="opt_hoh" value="hoh">Head of Household</option>
+</select>
+<i class="fa fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"></i>
+</div>
+</div>
+<div>
+<label class="label-text" data-i18n="lbl_income">Gross Income</label>
+<div class="flex rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 overflow-hidden focus-within:ring-2 focus-within:ring-primary focus-within:border-transparent transition-all shadow-sm">
+<div class="bg-slate-100 dark:bg-slate-800 px-4 py-3 border-r border-slate-300 dark:border-slate-600 text-slate-500 dark:text-slate-400 font-mono text-lg flex items-center font-bold">$</div>
+<input class="w-full px-4 py-3 bg-transparent outline-none text-slate-900 dark:text-white font-mono font-bold text-lg" id="income" oninput="calculateTax()" placeholder="75000" type="number" value="100000"/>
+<div class="border-l border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-800 flex items-center">
+<select class="h-full px-3 bg-transparent outline-none text-xs font-bold text-slate-600 dark:text-slate-300 cursor-pointer uppercase tracking-wider hover:text-primary transition-colors" id="income-frequency" onchange="calculateTax()">
+<option data-i18n="freq_year" value="year">/ Year</option>
+<option data-i18n="freq_month" value="month">/ Month</option>
+<option data-i18n="freq_week" value="week">/ Week</option>
+</select>
+</div>
+</div>
+</div>
+<div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-xl border border-blue-100 dark:border-blue-800/30">
+<label class="label-text text-blue-800 dark:text-blue-300 flex justify-between">
+<span><i class="fa fa-piggy-bank mr-1"></i> <span data-i18n="lbl_401k">401(k) Contribution</span></span>
+<span class="font-mono" id="401k-display">$0</span>
+</label>
+<input id="401k-input" max="23000" min="0" oninput="update401k(this.value); calculateTax()" step="500" type="range" value="0"/>
+<div class="text-[10px] text-blue-600 dark:text-blue-400 mt-1 flex justify-between">
+<span>$0</span>
+<span>$23,000 (Max)</span>
+</div>
+<div class="text-xs font-bold text-emerald-600 dark:text-emerald-400 mt-2 hidden animate-pulse" id="tax-savings-msg">
+<i class="fa fa-arrow-down"></i> <span data-i18n="msg_saved">Est. Tax Saved:</span> <span id="tax-saved-amt">$0</span>
+</div>
+</div>
+<div>
+<label class="label-text" data-i18n="lbl_state">State</label>
+<div class="relative bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200 dark:border-slate-700 p-3 flex items-center gap-3">
+<i class="fa fa-map-marker text-red-500"></i>
+<span class="font-semibold text-slate-700 dark:text-white" id="state-display-name">俄勒岡州</span>
+<span class="text-xs text-slate-400 ml-auto" id="state-display-rate">9.9% <span data-i18n="est_label">Max Est.</span></span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary-hover text-white font-bold py-3.5 rounded-xl shadow-glow transition-all active:scale-[0.98]" onclick="calculateTax()">
+<span data-i18n="btn_calc">Recalculate</span>
+</button>
+</form>
+</div>
+</div>
+<div class="lg:col-span-8 space-y-6">
+<div class="glass rounded-2xl shadow-soft p-6 md:p-8 relative overflow-hidden">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+<div>
+<h2 class="text-lg font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wide" data-i18n="res_biweekly_lbl">Your Bi-Weekly Paycheck</h2>
+<div class="text-5xl md:text-6xl font-extrabold text-slate-900 dark:text-white font-mono mt-2 tracking-tight" id="res-biweekly">$0</div>
+</div>
+<div class="mt-4 md:mt-0 flex flex-col items-end">
+<span class="text-sm text-emerald-600 dark:text-emerald-400 font-bold bg-emerald-100 dark:bg-emerald-900/30 px-3 py-1 rounded-full mb-1">
+<i class="fa fa-check-circle"></i> <span data-i18n="res_actual">Take Home</span>
+</span>
+<span class="text-xs text-slate-400" data-i18n="res_freq">~26 paychecks / year</span>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+<div class="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+<div class="text-xs text-slate-500 mb-1" data-i18n="res_annual">Annual Net</div>
+<div class="text-lg font-bold font-mono text-slate-700 dark:text-slate-200" id="res-net">$0</div>
+</div>
+<div class="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+<div class="text-xs text-slate-500 mb-1" data-i18n="res_monthly">Monthly</div>
+<div class="text-lg font-bold font-mono text-slate-700 dark:text-slate-200" id="res-monthly">$0</div>
+</div>
+<div class="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+<div class="text-xs text-slate-500 mb-1" data-i18n="res_biweekly_small">Bi-Weekly</div>
+<div class="text-lg font-bold font-mono text-slate-700 dark:text-slate-200" id="res-biweekly-small">$0</div>
+</div>
+<div class="p-4 bg-emerald-50 dark:bg-emerald-900/10 rounded-xl border border-emerald-100 dark:border-emerald-800/30">
+<div class="text-xs text-emerald-600 dark:text-emerald-400 mb-1" data-i18n="res_weekly">Weekly</div>
+<div class="text-lg font-bold font-mono text-emerald-700 dark:text-emerald-300" id="res-weekly">$0</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 items-center border-t border-slate-200 dark:border-slate-700 pt-8">
+<div class="flex-shrink-0 flex flex-col items-center">
+<div class="donut-chart shadow-inner" id="tax-donut" style="--net-pct: 65%; --fed-end: 85%; --state-end: 92%;">
+<div class="donut-hole flex items-center justify-center">
+<div class="text-center">
+<div class="text-[10px] text-slate-400">Tax</div>
+<div class="text-sm font-bold text-slate-800 dark:text-white" id="total-tax-pct">0%</div>
+</div>
+</div>
+</div>
+<p class="text-xs text-slate-400 mt-2" data-i18n="chart_legend">Fund Distribution</p>
+</div>
+<div class="flex-grow w-full">
+<h3 class="text-sm font-bold text-slate-800 dark:text-white mb-3" data-i18n="breakdown_title">Detailed Breakdown</h3>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between items-center p-2 rounded hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-emerald-500"></div><span class="text-slate-600 dark:text-slate-300" data-i18n="row_net">Net Pay</span></div>
+<span class="font-mono font-bold text-slate-800 dark:text-white" id="row-net">$0</span>
+</div>
+<div class="flex justify-between items-center p-2 rounded hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-red-500"></div><span class="text-slate-600 dark:text-slate-300" data-i18n="row_fed">Federal Income Tax</span></div>
+<span class="font-mono font-bold text-slate-600 dark:text-slate-400" id="row-fed">$0</span>
+</div>
+<div class="flex justify-between items-center p-2 rounded hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-amber-500"></div><span class="text-slate-600 dark:text-slate-300" data-i18n="row_fica">FICA (SS/Medicare)</span></div>
+<span class="font-mono font-bold text-slate-600 dark:text-slate-400" id="row-fica">$0</span>
+</div>
+<div class="flex justify-between items-center p-2 rounded hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-blue-500"></div><span class="text-slate-600 dark:text-slate-300" data-i18n="row_state">State Tax</span></div>
+<span class="font-mono font-bold text-slate-600 dark:text-slate-400" id="row-state">$0</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl shadow-lg p-6 text-white flex flex-col md:flex-row items-center justify-between gap-6">
+<div>
+<h3 class="text-lg font-bold flex items-center gap-2">
+<i class="fa fa-truck"></i> 考慮搬家去華盛頓州？
+                        </h3>
+<p class="text-indigo-100 text-sm mt-1">Compare taxes if you move to Washington.</p>
+</div>
+<div class="text-center">
+<div class="text-3xl font-mono font-extrabold text-yellow-300" id="relocation-savings">$0</div>
+<div class="text-xs text-indigo-200">Difference / Year</div>
+</div>
+</div>
+</div>
+</div>
+<section class="mt-8 mb-16" id="state-selector">
+<div class="flex items-center gap-3 mb-6">
+<div class="h-8 w-1 bg-primary rounded-full"></div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white" data-i18n="state_sel_title">Select Other State</h2>
+</div>
+<div class="glass rounded-3xl p-6 shadow-soft">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3" id="state-grid">
+</div>
+</div>
+</section>
+<div class="space-y-12 w-full">
+<section class="w-full">
+<div class="glass rounded-2xl p-8 shadow-soft">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+<i class="fa fa-book text-primary"></i> <span data-i18n="guide_title">State Tax Guide</span>
+</h2>
+<div class="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-5 border border-slate-100 dark:border-slate-700">
+<h3 class="font-bold text-sky-700 dark:text-sky-400 mb-2 text-sm uppercase tracking-wide">
+<i class="fa fa-info-circle mr-2"></i> 俄勒岡州 Overview
+                        </h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4" id="state-intro-text">俄勒岡州所得稅高，但沒有銷售稅。</p>
+<h3 class="font-bold text-sky-700 dark:text-sky-400 mb-2 text-sm uppercase tracking-wide mt-6">
+<i class="fa fa-line-chart mr-2"></i> Capital Gains
+                        </h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed" id="state-cap-gains-text">普通稅率。</p>
+</div>
+<div class="mt-8 pt-8 border-t border-slate-200 dark:border-slate-700">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+<i class="fa fa-gavel text-emerald-500"></i>
+<span data-i18n="policy_title">2025 報稅政策說明</span>
+</h3>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="space-y-6">
+<h4 class="font-bold text-slate-800 dark:text-white border-b border-slate-200 dark:border-slate-700 pb-2 mb-4 flex items-center gap-2">
+<i class="fa fa-user-circle-o text-blue-500"></i>
+<span data-i18n="policy_p_tax">一、個人所得稅</span>
+</h4>
+<div class="pl-2 border-l-2 border-slate-200 dark:border-slate-700 space-y-4">
+<div>
+<span class="text-xs font-bold text-slate-400 uppercase tracking-wide block mb-1" data-i18n="lbl_rate">稅率說明</span>
+<p class="text-sm text-slate-700 dark:text-slate-300">4.75% - 9.9%</p>
+</div>
+<div>
+<span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wide block mb-1">
+<i class="fa fa-star"></i> <span data-i18n="lbl_new_rules">2025 新規</span>
+</span>
+<p class="text-sm text-slate-700 dark:text-slate-300 bg-emerald-50 dark:bg-emerald-900/20 p-2 rounded-lg">
+                                            若收入超過預測，可能會有 Kicker 退稅。
+                                        </p>
+</div>
+<div class="flex flex-wrap gap-4 text-xs">
+<div class="bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded">
+<span class="text-slate-500" data-i18n="lbl_deadline_prefix">截止日:</span>
+<span class="font-mono font-bold">2025-04-15</span>
+</div>
+<a class="flex items-center gap-1 text-blue-600 hover:underline" href="https://www.oregon.gov/dor/" rel="nofollow" target="_blank">
+<i class="fa fa-external-link"></i> <span data-i18n="lbl_source">官方依據</span>
+</a>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-slate-800 dark:text-white border-b border-slate-200 dark:border-slate-700 pb-2 mb-4 flex items-center gap-2">
+<i class="fa fa-building-o text-purple-500"></i>
+<span data-i18n="policy_c_tax">二、企業所得稅</span>
+</h4>
+<div class="pl-2 border-l-2 border-slate-200 dark:border-slate-700 space-y-4">
+<div>
+<span class="text-xs font-bold text-slate-400 uppercase tracking-wide block mb-1" data-i18n="lbl_rate">稅率說明</span>
+<p class="text-sm text-slate-700 dark:text-slate-300">6.6% - 7.6%</p>
+</div>
+<div>
+<span class="text-xs font-bold text-slate-400 uppercase tracking-wide block mb-1" data-i18n="lbl_employer_obl">雇主銷售稅義務</span>
+<p class="text-sm text-slate-700 dark:text-slate-300">0% (無銷售稅)。</p>
+</div>
+<div class="flex flex-wrap gap-4 text-xs pt-2">
+<a class="flex items-center gap-1 text-blue-600 hover:underline" href="https://www.oregon.gov/dor/" rel="nofollow" target="_blank">
+<i class="fa fa-external-link"></i> <span data-i18n="lbl_source">官方依據</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-700">
+<h4 class="text-xs font-bold text-slate-500 uppercase tracking-wide mb-4 text-center" data-i18n="lbl_portals">官方申報入口</h4>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5" href="https://revenueonline.dor.oregon.gov/" rel="nofollow" target="_blank">
+<i class="fa fa-user"></i> <span data-i18n="btn_file_indiv">個人報稅入口</span>
+</a>
+<a class="flex items-center justify-center gap-2 px-6 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 hover:border-purple-500 text-slate-700 dark:text-white rounded-xl font-bold transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5" href="https://revenueonline.dor.oregon.gov/" rel="nofollow" target="_blank">
+<i class="fa fa-briefcase text-purple-500"></i> <span data-i18n="btn_file_corp">企業報稅入口</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full">
+<div class="glass rounded-2xl p-8 shadow-soft">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+<i class="fa fa-lightbulb-o text-primary"></i> <span data-i18n="edu_title">Tax Planning Insights</span>
+</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-6 border border-slate-100 dark:border-slate-700">
+<h4 class="font-bold text-sky-700 dark:text-sky-400 mb-3 text-sm uppercase" data-i18n="edu_h_how_work">How Brackets Work</h4>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="edu_p_how_work">
+                                The US has a progressive tax system. You don’t pay the same rate on every dollar. It's like climbing stairs; you only pay a higher "toll" (rate) on the income that exceeds that specific step.
+                             </p>
+</div>
+<div class="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-6 border border-slate-100 dark:border-slate-700">
+<h4 class="font-bold text-emerald-700 dark:text-emerald-400 mb-3 text-sm uppercase" data-i18n="edu_h_strategies">Strategies to Lower Taxes</h4>
+<ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+<li class="flex items-start gap-2"><i class="fa fa-check-circle text-emerald-500 mt-0.5"></i> <span><strong data-i18n="edu_s_retirement">Retirement:</strong> <span data-i18n="edu_p_retirement">Contributing to a 401(k) or Traditional IRA reduces your taxable income dollar-for-dollar. Try the slider above!</span></span></li>
+<li class="flex items-start gap-2"><i class="fa fa-check-circle text-emerald-500 mt-0.5"></i> <span><strong data-i18n="edu_s_hsa">HSA:</strong> <span data-i18n="edu_p_hsa">If you have a high-deductible plan, HSA contributions directly reduce taxable income.</span></span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full">
+<div class="glass rounded-2xl p-8 shadow-soft space-y-8">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+<i class="fa fa-table text-primary"></i> <span data-i18n="irs_title">IRS Tax Brackets &amp; FAQ</span>
+</h2>
+<div class="grid lg:grid-cols-2 gap-8">
+<div>
+<h3 class="irs-year-header" data-i18n="irs_2026">2026 Federal Tax Brackets (Projected)</h3>
+<div class="tax-table-container">
+<table class="tax-table">
+<thead><tr><th data-i18n="th_rate">Rate</th><th data-i18n="th_single">Single</th><th data-i18n="th_mfj">Married Jointly</th></tr></thead>
+<tbody>
+<tr><td>10%</td><td>$0 - $12,400</td><td>$0 - $24,800</td></tr>
+<tr><td>12%</td><td>$12,401 - $50,400</td><td>$24,801 - $100,800</td></tr>
+<tr><td>22%</td><td>$50,401 - $105,700</td><td>$100,801 - $211,400</td></tr>
+<tr><td>24%</td><td>$105,701 - $201,775</td><td>$211,401 - $403,550</td></tr>
+<tr><td>32%</td><td>$201,776 - $256,225</td><td>$403,551 - $512,450</td></tr>
+<tr><td>35%</td><td>$256,226 - $640,600</td><td>$512,451 - $768,700</td></tr>
+<tr><td>37%</td><td>&gt; $640,600</td><td>&gt; $768,700</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<h3 class="irs-year-header" data-i18n="irs_2025">2025 Federal Tax Brackets</h3>
+<div class="tax-table-container">
+<table class="tax-table">
+<thead><tr><th data-i18n="th_rate">Rate</th><th data-i18n="th_single">Single</th><th data-i18n="th_mfj">Married Jointly</th></tr></thead>
+<tbody>
+<tr><td>10%</td><td>$0 - $11,925</td><td>$0 - $23,850</td></tr>
+<tr><td>12%</td><td>$11,926 - $48,475</td><td>$23,851 - $96,950</td></tr>
+<tr><td>22%</td><td>$48,476 - $103,350</td><td>$96,951 - $206,700</td></tr>
+<tr><td>24%</td><td>$103,351 - $197,300</td><td>$206,701 - $394,600</td></tr>
+<tr><td>32%</td><td>$197,301 - $250,525</td><td>$394,601 - $501,050</td></tr>
+<tr><td>35%</td><td>$250,526 - $626,350</td><td>$501,051 - $751,600</td></tr>
+<tr><td>37%</td><td>&gt; $626,350</td><td>&gt; $751,600</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="space-y-6 pt-6 border-t border-slate-200 dark:border-slate-700">
+<div class="grid md:grid-cols-2 gap-8">
+<div>
+<h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2" data-i18n="faq_h_bracket">How to determine your tax bracket?</h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="faq_p_bracket">
+                                    First look at the tax rates for your filing status. Calculate taxable income by adding all income and subtracting deductions. The top rate your income falls into is not the rate you pay on *all* income—only the portion in that specific bracket.
+                                </p>
+</div>
+<div>
+<h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2" data-i18n="faq_h_marginal">What is your federal marginal tax rate?</h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="faq_p_marginal">
+                                    Federal marginal tax rate is the rate owed on your highest dollar earned. For example, if you fall into the 24% bracket, your marginal rate is 24%. You owe 24 cents on every additional dollar earned.
+                                </p>
+</div>
+<div>
+<h3 class="font-bold text-lg text-slate-800 dark:text-white mb-2" data-i18n="faq_h_effective">What is your federal effective tax rate?</h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="faq_p_effective">
+                                    Your effective tax rate is the total percentage of income paid in federal income tax (Total Tax / Total Income). It is essentially the average of the different rates paid across all brackets.
+                                </p>
+</div>
+</div>
+<div class="bg-indigo-50 dark:bg-indigo-900/20 rounded-xl p-6 border border-indigo-100 dark:border-indigo-800/30">
+<h3 class="font-bold text-lg text-slate-800 dark:text-white mb-4" data-i18n="faq_h_lower">Potential ways to get into a lower tax bracket</h3>
+<ul class="grid md:grid-cols-2 gap-4 text-sm text-slate-600 dark:text-slate-300">
+<li class="flex gap-2"><i class="fa fa-check text-emerald-500 mt-1"></i> <span><strong data-i18n="strat_deduct_t">Maximize Deductions:</strong> <span data-i18n="strat_deduct_d">Claim all eligible deductions.</span></span></li>
+<li class="flex gap-2"><i class="fa fa-check text-emerald-500 mt-1"></i> <span><strong data-i18n="strat_bunch_t">Bunching Deductions:</strong> <span data-i18n="strat_bunch_d">Concentrate charitable donations.</span></span></li>
+<li class="flex gap-2"><i class="fa fa-check text-emerald-500 mt-1"></i> <span><strong data-i18n="strat_retire_t">Retirement Savings:</strong> <span data-i18n="strat_retire_d">Contribute to 401(k) or Traditional IRA.</span></span></li>
+<li class="flex gap-2"><i class="fa fa-check text-emerald-500 mt-1"></i> <span><strong data-i18n="strat_hsa_t">Health Savings Account:</strong> <span data-i18n="strat_hsa_d">HSA contributions reduce taxable income.</span></span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full">
+<div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
+<h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
+<i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
+</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
+</div>
+</div>
+</section>
+</div>
+<footer class="mt-12 border-t border-slate-200 dark:border-slate-700 pt-8 pb-12 text-center text-slate-500 text-sm">
+            © 2026 StateTaxCalc. <span data-i18n="footer_text">Educational purposes only.</span>
+<div class="mt-4 flex justify-center gap-4">
+<a class="hover:text-primary" href="/about.html">About</a>
+<a class="hover:text-primary" href="/legal.html">Privacy</a>
+</div>
+</footer>
+</div>
+<div id="related-tools-container"></div>
+<script src="/scripts/related.js"></script>
+<script>
+        // --- 1. Dynamic State Data (Injected by Python) ---
+        var rawStateData = `{"id": "OR", "slug": "oregon", "names": {"en": "Oregon", "cn": "俄勒岡州"}, "meta": {"desc_en": "Oregon Tax Calculator.", "desc_cn": "俄勒岡州稅務計算器。", "keywords_en": "Oregon tax", "keywords_cn": "俄勒岡稅"}, "tax_logic": {"type": "progressive", "max_rate_display": "9.9%", "std_deduction_single": 2605, "std_deduction_mfj": 5210, "brackets_single": [{"threshold": 0, "rate": 0.0475}, {"threshold": 125000, "rate": 0.099}]}, "content": {"intro_en": "Oregon has high income tax but no sales tax.", "intro_cn": "俄勒岡州所得稅高，但沒有銷售稅。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。"}, "relocation": {"target_state": "Washington", "pitch_en": "Moving to WA?", "pitch_cn": "考慮搬家去華盛頓州？"}, "policy": {"personal": {"rate_en": "4.75% - 9.9%", "rate_cn": "4.75% - 9.9%", "new_rules_en": "Kicker refund may apply if revenue exceeds forecast.", "new_rules_cn": "若收入超過預測，可能會有 Kicker 退稅。", "deadline": "2025-04-15", "source_url": "https://www.oregon.gov/dor/"}, "corporate": {"rate_en": "6.6% - 7.6%", "rate_cn": "6.6% - 7.6%", "new_rules_en": "CAT (Corporate Activity Tax) also applies.", "new_rules_cn": "也適用企業活動稅 (CAT)。", "sales_tax_obligations_en": "0% (No Sales Tax).", "sales_tax_obligations_cn": "0% (無銷售稅)。", "source_url": "https://www.oregon.gov/dor/"}, "portals": {"personal_url": "https://revenueonline.dor.oregon.gov/", "corporate_url": "https://revenueonline.dor.oregon.gov/"}}}`; 
+        
+        // Check if rawStateData is still the placeholder (Template mode)
+        const DEFAULT_STATE = {
+            "id": "CA",
+            "slug": "california",
+            "names": { "en": "California", "cn": "加利福尼亞州" },
+            "meta": { "desc_en": "Calculate your 2026 California paycheck.", "keywords_en": "California tax calculator" },
+            "tax_logic": {
+                "type": "progressive", "max_rate_display": "14.4%", "std_deduction_single": 5363, "std_deduction_mfj": 10726,
+                "brackets_single": [ { "threshold": 0, "rate": 0.01 }, { "threshold": 1000000, "rate": 0.144 } ]
+            },
+            "content": {
+                "intro_en": "California has some of the highest income tax rates in the US.", "intro_cn": "加州擁有全美最高的所得稅率之一。",
+                "cap_gains_en": "California taxes capital gains as ordinary income.", "cap_gains_cn": "加州將資本利得視為普通收入徵稅。"
+            },
+            "relocation": { "target_state": "Texas", "pitch_en": "Moving to Texas?", "pitch_cn": "考慮搬家去德州？" }
+        };
+
+        var CURRENT_STATE;
+        try {
+            // FIX: Escaped the curly braces string for Jinja2 compatibility
+            if (rawStateData.includes("{{")) {
+                CURRENT_STATE = DEFAULT_STATE;
+            } else {
+                CURRENT_STATE = JSON.parse(rawStateData);
+            }
+        } catch(e) {
+            CURRENT_STATE = DEFAULT_STATE;
+        }
+        
+        // --- 2. Localization ---
+        const i18nData = {
+            'zh-TW': {
+                nav_home: "首頁", nav_calc: "計算器", nav_back: "返回工具列表",
+                title_suffix: "薪資與稅務計算器", header_desc: "別只看年薪。計算您真實的雙週到手薪資 (Paycheck)，並規劃如何透過 401k 省稅。",
+                input_title: "薪資設定",
+                lbl_year: "稅務年度", lbl_status: "報稅身份", lbl_income: "年度總收入", lbl_state: "州 (State)",
+                lbl_401k: "401(k) 投入", msg_saved: "預計省稅:",
+                opt_single: "單身", opt_mfj: "已婚合併", opt_hoh: "戶主",
+                freq_year: "/ 年", freq_month: "/ 月", freq_week: "/ 週",
+                est_label: "預估", btn_calc: "重新計算",
+                res_biweekly_lbl: "您的雙週薪資", res_actual: "實際到手", res_freq: "每年約 26 次發薪",
+                res_annual: "年度到手", res_monthly: "每月到手", res_biweekly_small: "雙週到手", res_weekly: "每週到手",
+                row_net: "稅後淨收入", row_fed: "聯邦所得稅", row_fica: "FICA (社保/醫保)", row_state: "州所得稅",
+                chart_legend: "資金去向分佈", breakdown_title: "詳細扣除明細",
+                guide_title: "州稅指南", state_sel_title: "查看其他州",
+                
+                // NEW: FAQ & Planning Translation
+                edu_title: "稅務規劃見解", edu_h_how_work: "稅率級距如何運作？", edu_p_how_work: "美國採用累進稅制。您不會對每一美元支付相同的稅率。",
+                edu_h_strategies: "降低稅負的策略", edu_s_retirement: "退休儲蓄:", edu_p_retirement: "存入 401(k) 或傳統 IRA 的每一美元都直接減少當年的應稅收入。",
+                edu_s_hsa: "HSA (健康儲蓄):", edu_p_hsa: "如果您有高自付額健康計劃，HSA 供款可直接減少應稅收入。",
+                
+                irs_title: "IRS 稅率表 & 常見問題", irs_2026: "2026 聯邦稅級表 (預測)", irs_2025: "2025 聯邦稅級表",
+                th_rate: "稅率", th_single: "單身", th_mfj: "已婚合併",
+                
+                faq_h_bracket: "如何確定您所在的稅級？",
+                faq_p_bracket: "首先查看您報稅身份對應的稅率。通過加總所有收入並減去扣除額來確定應稅收入。您收入落入的最高稅率並非您對所有收入支付的實際稅率。",
+                faq_h_marginal: "什麼是聯邦邊際稅率？",
+                faq_p_marginal: "邊際稅率是您收入中最高一美元所欠的稅率。例如，如果落入 24% 稅級，您每多賺一美元就欠 24 美分。",
+                faq_h_effective: "什麼是聯邦有效稅率？",
+                faq_p_effective: "有效稅率是您支付的總稅額佔總收入的百分比。它是您在所有級距中支付的不同稅率的平均值。",
+                faq_h_lower: "進入較低稅級的方法",
+                strat_deduct_t: "最大化扣除額：", strat_deduct_d: "申報所有符合資格的扣除。",
+                strat_bunch_t: "捆綁扣除額：", strat_bunch_d: "集中慈善捐款。",
+                strat_retire_t: "退休儲蓄：", strat_retire_d: "向 401(k) 或 IRA 供款。",
+                strat_hsa_t: "HSA：", strat_hsa_d: "HSA 供款減少應稅收入。",
+
+                // NEW: Policy Section
+                policy_title: "2025 報稅政策說明",
+                policy_p_tax: "一、個人所得稅",
+                policy_c_tax: "二、企業所得稅",
+                lbl_rate: "稅率說明",
+                lbl_new_rules: "2025 新規",
+                lbl_deadline_prefix: "截止日",
+                lbl_source: "官方依據",
+                lbl_employer_obl: "雇主銷售稅義務",
+                lbl_portals: "官方申報入口",
+                btn_file_indiv: "個人報稅入口",
+                btn_file_corp: "企業報稅入口",
+
+                rec_title: "推薦工具", footer_text: "數據僅供參考，不構成財務建議。"
+            },
+            'en': {
+                nav_home: "Home", nav_calc: "Calculators", nav_back: "Back to Tools",
+                title_suffix: "Paycheck & Tax Calculator", header_desc: "Calculate your true bi-weekly paycheck and plan 401k savings.",
+                input_title: "Income Settings",
+                lbl_year: "Tax Year", lbl_status: "Filing Status", lbl_income: "Gross Income", lbl_state: "State",
+                lbl_401k: "401(k) Contribution", msg_saved: "Est. Tax Saved:",
+                opt_single: "Single", opt_mfj: "Married Jointly", opt_hoh: "Head of Household",
+                freq_year: "/ Year", freq_month: "/ Month", freq_week: "/ Week",
+                est_label: "Est.", btn_calc: "Recalculate",
+                res_biweekly_lbl: "Your Bi-Weekly Paycheck", res_actual: "Take Home", res_freq: "~26 paychecks / year",
+                res_annual: "Annual Net", res_monthly: "Monthly", res_biweekly_small: "Bi-Weekly", res_weekly: "Weekly",
+                row_net: "Net Pay", row_fed: "Federal Tax", row_fica: "FICA (SS/Medicare)", row_state: "State Tax",
+                chart_legend: "Fund Distribution", breakdown_title: "Detailed Breakdown",
+                guide_title: "State Tax Guide", state_sel_title: "Other States",
+                
+                // NEW: FAQ & Planning Translation
+                edu_title: "Tax Planning Insights", edu_h_how_work: "How Brackets Work", edu_p_how_work: "Progressive tax system. You don’t pay the same rate on every dollar.",
+                edu_h_strategies: "Strategies to Lower Taxes", edu_s_retirement: "Retirement:", edu_p_retirement: "401k/IRA contributions reduce taxable income.",
+                edu_s_hsa: "HSA:", edu_p_hsa: "HSA contributions reduce taxable income.",
+                
+                irs_title: "IRS Tax Brackets & FAQ", irs_2026: "2026 Federal Tax Brackets (Projected)", irs_2025: "2025 Federal Tax Brackets",
+                th_rate: "Rate", th_single: "Single", th_mfj: "Married Jointly",
+                
+                faq_h_bracket: "How to determine your tax bracket?",
+                faq_p_bracket: "Check tax rates for your status. Calculate taxable income (income minus deductions). Your top bracket is not the rate for all income.",
+                faq_h_marginal: "What is federal marginal tax rate?",
+                faq_p_marginal: "The rate owed on your highest dollar earned. E.g., in the 24% bracket, you owe 24 cents on every additional dollar.",
+                faq_h_effective: "What is federal effective tax rate?",
+                faq_p_effective: "Total percentage of income paid in tax. It is the average of rates paid across brackets.",
+                faq_h_lower: "Ways to get into a lower bracket",
+                strat_deduct_t: "Maximize Deductions:", strat_deduct_d: "Claim eligible deductions.",
+                strat_bunch_t: "Bunching Deductions:", strat_bunch_d: "Concentrate donations.",
+                strat_retire_t: "Retirement Savings:", strat_retire_d: "Contribute to 401(k)/IRA.",
+                strat_hsa_t: "HSA:", strat_hsa_d: "HSA reduces taxable income.",
+
+                // NEW: Policy Section
+                policy_title: "2025 Tax Policy Updates",
+                policy_p_tax: "I. Personal Income Tax",
+                policy_c_tax: "II. Corporate Tax",
+                lbl_rate: "Tax Rate",
+                lbl_new_rules: "2025 New Rules",
+                lbl_deadline_prefix: "Deadline",
+                lbl_source: "Source",
+                lbl_employer_obl: "Employer Obligations",
+                lbl_portals: "Official Filing Portals",
+                btn_file_indiv: "File Individual Tax",
+                btn_file_corp: "File Corporate Tax",
+
+                rec_title: "Recommended Tools", footer_text: "Educational purposes only."
+            }
+        };
+
+        // --- 3. Calculation Engine (Universal) ---
+        function calculateTax() {
+            const rawIncome = parseFloat(document.getElementById('income').value) || 0;
+            const freq = document.getElementById('income-frequency').value;
+            let baseIncome = rawIncome;
+            if (freq === 'month') baseIncome = rawIncome * 12;
+            else if (freq === 'week') baseIncome = rawIncome * 52;
+
+            const contrib401k = parseInt(document.getElementById('401k-input').value) || 0;
+            const taxableIncome = Math.max(0, baseIncome - contrib401k);
+            const status = document.getElementById('status').value;
+
+            // A. Federal Tax (Simplified 2026 Progressive)
+            let fedDed = (status === 'mfj') ? 32200 : (status === 'hoh' ? 24150 : 16100);
+            let fedTaxable = Math.max(0, taxableIncome - fedDed);
+            let fedTax = 0;
+            
+            // Simplified Brackets for Demo (Single)
+            const fedBrackets = [
+                {th: 0, r: 0.10}, {th: 12400, r: 0.12}, {th: 50400, r: 0.22}, 
+                {th: 105700, r: 0.24}, {th: 201775, r: 0.32}, {th: 256225, r: 0.35}, {th: 640600, r: 0.37}
+            ];
+            
+            for(let i=0; i<fedBrackets.length; i++) {
+                let r = fedBrackets[i].r;
+                let lower = fedBrackets[i].th;
+                let upper = (i === fedBrackets.length - 1) ? Infinity : fedBrackets[i+1].th;
+                
+                // Adjust for MFJ
+                if(status === 'mfj' && i < 6) { lower *= 2; upper = (upper===Infinity)?Infinity:upper*2; }
+                
+                if (fedTaxable > lower) {
+                    let incomeInBracket = Math.min(fedTaxable, upper) - lower;
+                    fedTax += incomeInBracket * r;
+                }
+            }
+
+            // B. State Tax (Dynamic Logic from JSON)
+            let stateTax = 0;
+            const logic = CURRENT_STATE.tax_logic;
+            
+            if (logic.type === 'none') {
+                stateTax = 0;
+            } else if (logic.type === 'flat') {
+                let stDed = (status === 'mfj') ? logic.std_deduction_mfj : logic.std_deduction_single;
+                let stTaxable = Math.max(0, taxableIncome - stDed);
+                if(logic.brackets_single && logic.brackets_single.length > 0) {
+                    stateTax = stTaxable * logic.brackets_single[0].rate;
+                }
+            } else if (logic.type === 'progressive') {
+                let stDed = (status === 'mfj') ? logic.std_deduction_mfj : logic.std_deduction_single;
+                let stTaxable = Math.max(0, taxableIncome - stDed);
+                const brackets = logic.brackets_single;
+                
+                for (let i = 0; i < brackets.length; i++) {
+                    const b = brackets[i];
+                    const rate = b.rate;
+                    let lower = b.threshold;
+                    let upper = (i === brackets.length - 1) ? Infinity : brackets[i+1].threshold;
+                    
+                    if(status === 'mfj') { lower *= 2; upper = (upper===Infinity)?Infinity:upper*2; }
+
+                    if (stTaxable > lower) {
+                        let taxableInBracket = Math.min(stTaxable, upper) - lower;
+                        stateTax += taxableInBracket * rate;
+                    }
+                }
+            }
+
+            // C. FICA (Fixed)
+            let fica = Math.min(baseIncome, 176100) * 0.062 + baseIncome * 0.0145;
+
+            // D. Totals
+            const totalTax = fedTax + stateTax + fica;
+            const netPay = baseIncome - totalTax - contrib401k;
+
+            // Update UI
+            const els = {
+                'res-biweekly': netPay / 26, 'res-biweekly-small': netPay / 26,
+                'res-monthly': netPay / 12, 'res-net': netPay, 'res-weekly': netPay / 52,
+                'row-net': netPay, 'row-fed': fedTax, 'row-state': stateTax, 'row-fica': fica
+            };
+            
+            for(const [id, val] of Object.entries(els)) {
+                const el = document.getElementById(id);
+                if(el) el.innerText = '$' + Math.round(val).toLocaleString();
+            }
+            
+            // Relocation Difference
+            const diff = stateTax; 
+            document.getElementById('relocation-savings').innerText = "+$" + Math.round(diff).toLocaleString();
+
+            // Donut
+            const safeIncome = baseIncome || 1;
+            const netPct = (netPay / safeIncome) * 100;
+            const fedPct = (fedTax / safeIncome) * 100;
+            const statePct = (stateTax / safeIncome) * 100;
+            const ficaPct = (fica / safeIncome) * 100;
+            
+            const stop1 = netPct; 
+            const stop2 = netPct + fedPct;
+            const stop3 = stop2 + ficaPct; 
+            
+            document.getElementById('tax-donut').style.background = `conic-gradient(
+                #10b981 0% ${Math.max(0, stop1)}%, 
+                #ef4444 ${Math.max(0, stop1)}% ${Math.max(0, stop2)}%,
+                #f59e0b ${Math.max(0, stop2)}% ${Math.max(0, stop3)}%,
+                #3b82f6 ${Math.max(0, stop3)}% 100%
+            )`;
+            
+            document.getElementById('total-tax-pct').innerText = Math.round((totalTax/safeIncome)*100) + '%';
+            
+            // Savings Msg
+            if (contrib401k > 0) {
+                 // Marginal Rate Estimate (Fed + State)
+                 let fedMarginal = (fedTaxable > 105700) ? 0.24 : 0.22; 
+                 let stateMarginal = 0.05; // Avg
+                 if(logic.brackets_single && logic.brackets_single.length > 0) stateMarginal = logic.brackets_single[logic.brackets_single.length-1].rate;
+                 
+                 let saved = contrib401k * (fedMarginal + stateMarginal);
+                 document.getElementById('tax-saved-amt').innerText = '$' + Math.round(saved).toLocaleString();
+                 document.getElementById('tax-savings-msg').classList.remove('hidden');
+            } else {
+                document.getElementById('tax-savings-msg').classList.add('hidden');
+            }
+        }
+
+        function update401k(val) {
+            document.getElementById('401k-display').innerText = '$' + parseInt(val).toLocaleString();
+        }
+
+        // --- 4. Recommendations & State Grid ---
+        const recommendations = [
+            { icon: 'fa-line-chart', title: 'Investment Calculator', desc: 'See your money grow.' },
+            { icon: 'fa-home', title: 'Rent vs Buy', desc: 'Is buying worth it?' },
+            { icon: 'fa-credit-card', title: 'Credit Card Payoff', desc: 'Plan debt-free life.' },
+            { icon: 'fa-users', title: 'Marriage Tax Bonus', desc: 'Check filing joint savings.' },
+            { icon: 'fa-calculator', title: 'Mortgage Calculator', desc: 'Estimate monthly payments.' }
+        ];
+        const recommendations_tw = [
+             { icon: 'fa-line-chart', title: '投資回報計算器', desc: '複利的力量：查看資金增長。' },
+             { icon: 'fa-home', title: '租房 vs 買房', desc: '現在買房划算還是租房划算？' },
+             { icon: 'fa-credit-card', title: '信用卡還款', desc: '規劃無債生活。' },
+             { icon: 'fa-users', title: '婚姻稅務紅利', desc: '查看合併申報是否省錢。' },
+             { icon: 'fa-calculator', title: '房貸計算器', desc: '估算每月房貸還款額。' }
+        ];
+
+        function renderRecommendation() {
+            const container = document.getElementById('recommendation-grid');
+            const lang = document.documentElement.lang;
+            const list = (lang === 'zh-TW') ? recommendations_tw : recommendations;
+            container.innerHTML = list.map(item => `
+                <a href="#" class="tool-card group">
+                    <div class="flex flex-col items-center text-center pt-2">
+                        <div class="bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 w-12 h-12 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                            <i class="fa ${item.icon} text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors text-sm">${item.title}</div>
+                            <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">${item.desc}</div>
+                        </div>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        const states_list = [
+            { en: "Alabama", cn: "阿拉巴馬州" }, { en: "Alaska", cn: "阿拉斯加州" }, { en: "Arizona", cn: "亞利桑那州" }, 
+            { en: "Arkansas", cn: "阿肯色州" }, { en: "California", cn: "加利福尼亞州" }, { en: "Colorado", cn: "科羅拉多州" }, 
+            { en: "Connecticut", cn: "康涅狄格州" }, { en: "Delaware", cn: "特拉華州" }, { en: "Florida", cn: "佛羅里達州" }, 
+            { en: "Georgia", cn: "佐治亞州" }, { en: "Hawaii", cn: "夏威夷州" }, { en: "Idaho", cn: "愛達荷州" }, 
+            { en: "Illinois", cn: "伊利諾伊州" }, { en: "Indiana", cn: "印第安納州" }, { en: "Iowa", cn: "愛荷華州" }, 
+            { en: "Kansas", cn: "堪薩斯州" }, { en: "Kentucky", cn: "肯塔基州" }, { en: "Louisiana", cn: "路易斯安那州" }, 
+            { en: "Maine", cn: "緬因州" }, { en: "Maryland", cn: "馬里蘭州" }, { en: "Massachusetts", cn: "馬薩諸塞州" }, 
+            { en: "Michigan", cn: "密歇根州" }, { en: "Minnesota", cn: "明尼蘇達州" }, { en: "Mississippi", cn: "密西西比州" }, 
+            { en: "Missouri", cn: "密蘇里州" }, { en: "Montana", cn: "蒙大拿州" }, { en: "Nebraska", cn: "內布拉斯加州" }, 
+            { en: "Nevada", cn: "內華達州" }, { en: "New Hampshire", cn: "新罕布什爾州" }, { en: "New Jersey", cn: "新澤西州" }, 
+            { en: "New Mexico", cn: "新墨西哥州" }, { en: "New York", cn: "紐約州" }, { en: "North Carolina", cn: "北卡羅來納州" }, 
+            { en: "North Dakota", cn: "北達科他州" }, { en: "Ohio", cn: "俄亥俄州" }, { en: "Oklahoma", cn: "俄克拉荷馬州" }, 
+            { en: "Oregon", cn: "俄勒岡州" }, { en: "Pennsylvania", cn: "賓夕法尼亞州" }, { en: "Rhode Island", cn: "羅德島州" }, 
+            { en: "South Carolina", cn: "南卡羅來納州" }, { en: "South Dakota", cn: "南達科他州" }, { en: "Tennessee", cn: "田納西州" }, 
+            { en: "Texas", cn: "得克薩斯州" }, { en: "Utah", cn: "猶他州" }, { en: "Vermont", cn: "佛蒙特州" }, 
+            { en: "Virginia", cn: "弗吉尼亞州" }, { en: "Washington", cn: "華盛頓州" }, { en: "West Virginia", cn: "西弗吉尼亞州" }, 
+            { en: "Wisconsin", cn: "威斯康星州" }, { en: "Wyoming", cn: "懷俄明州" }
+        ];
+
+        function renderStateGrid() {
+            const grid = document.getElementById('state-grid');
+            const lang = document.documentElement.lang;
+            grid.innerHTML = "";
+            states_list.forEach(state => {
+                const card = document.createElement('div');
+                card.className = 'state-card group';
+                card.onclick = () => {
+                    const slug = state.en.toLowerCase().replace(/\s+/g, '-');
+                    window.open(`/calculators/state/${slug}-tax-calculator.html`, '_blank');
+                };
+                // Display Logic
+                const mainText = (lang === 'zh-TW') ? state.cn : state.en;
+                const subText = (lang === 'zh-TW') ? state.en : 'Go';
+                
+                card.innerHTML = `
+                    <span class="text-sm font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary">${mainText}</span>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 mt-1">${subText}</span>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // --- 5. Init ---
+        const App = {
+            init() {
+                this.setupTheme();
+                this.setupLanguage();
+                calculateTax(); // Initial Calc
+            },
+            setupTheme() {
+                const toggle = document.getElementById('mode-toggle');
+                if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+                toggle.addEventListener('click', () => {
+                    document.documentElement.classList.toggle('dark');
+                    localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+                });
+            },
+            setupLanguage() {
+                const selector = document.getElementById('lang-selector');
+                const lang = localStorage.getItem('app_lang_tax') || 'en';
+                selector.value = lang;
+                this.translate(lang);
+                selector.addEventListener('change', (e) => {
+                    const newLang = e.target.value;
+                    this.translate(newLang);
+                    localStorage.setItem('app_lang_tax', newLang);
+                });
+            },
+            translate(lang) {
+                document.documentElement.lang = lang;
+                const data = i18nData[lang] || i18nData['en'];
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if(data[key]) el.innerText = data[key];
+                });
+                
+                // Dynamic Data
+                const names = CURRENT_STATE.names;
+                const intro = CURRENT_STATE.content;
+                const pitch = CURRENT_STATE.relocation;
+                
+                // Helper for safe text update
+                const setText = (id, text) => {
+                    const el = document.getElementById(id);
+                    if(el && text) el.innerText = text;
+                };
+
+                const targetLang = (lang === 'zh-TW') ? 'cn' : 'en';
+
+                if (lang === 'zh-TW') {
+                    setText('page-title-state', names.cn);
+                    setText('state-intro-text', intro.intro_cn);
+                    setText('state-cap-gains-text', intro.cap_gains_cn);
+                    setText('state-display-name', names.cn);
+                    
+                    const rateEl = document.getElementById('state-display-rate');
+                    if(rateEl) rateEl.innerHTML = CURRENT_STATE.tax_logic.max_rate_display + ' <span data-i18n="est_label">預估</span>';
+                } else {
+                    setText('page-title-state', names.en);
+                    setText('state-intro-text', intro.intro_en);
+                    setText('state-cap-gains-text', intro.cap_gains_en);
+                    setText('state-display-name', names.en);
+                    
+                    const rateEl = document.getElementById('state-display-rate');
+                    if(rateEl) rateEl.innerHTML = CURRENT_STATE.tax_logic.max_rate_display + ' <span data-i18n="est_label">Est.</span>';
+                }
+                
+                renderRecommendation();
+                renderStateGrid();
+                calculateTax(); // Re-calc to update currency formatting if needed (though currency is usually standard)
+            }
+        };
+        document.addEventListener('DOMContentLoaded', () => App.init());
+    </script>
+</body>
+</html>
