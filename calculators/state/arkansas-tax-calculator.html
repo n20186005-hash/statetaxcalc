@@ -461,13 +461,17 @@
 </div>
 </section>
 <section class="w-full">
-<div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
-<h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
-<i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
-</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
-</div>
-</div>
+
+<section class="w-full mt-8">
+    <div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
+        <h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
+            <i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
+        </div>
+    </div>
+</section>
+
 </section>
 </div>
 <footer class="mt-12 border-t border-slate-200 dark:border-slate-700 pt-8 pb-12 text-center text-slate-500 text-sm">
@@ -479,7 +483,7 @@
 </footer>
 </div>
 <div id="related-tools-container"></div>
-<script src="../../scripts/related.js?v=final"></script>
+<script src="../../scripts/related.js?v=rebuild"></script>
 <script>
         // --- 1. Dynamic State Data (Injected by Python) ---
         var rawStateData = `{"id": "AR", "slug": "arkansas", "names": {"en": "Arkansas", "cn": "阿肯色州"}, "meta": {"desc_en": "Arkansas Tax Calculator.", "desc_cn": "阿肯色州稅務計算器。", "keywords_en": "Arkansas tax", "keywords_cn": "阿肯色稅"}, "tax_logic": {"type": "progressive", "max_rate_display": "4.4%", "std_deduction_single": 2270, "std_deduction_mfj": 4540, "brackets_single": [{"threshold": 0, "rate": 0.02}, {"threshold": 8800, "rate": 0.044}]}, "content": {"intro_en": "Arkansas rates have been lowered.", "intro_cn": "阿肯色州稅率已降低。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。"}, "relocation": {"target_state": "Tennessee", "pitch_en": "Moving to Tennessee?", "pitch_cn": "考慮搬家去田納西？"}, "policy": {"personal": {"rate_en": "Up to 4.4%", "rate_cn": "最高 4.4%", "new_rules_en": "Rate reductions from previous years in effect.", "new_rules_cn": "往年降稅措施生效。", "deadline": "2025-04-15", "source_url": "https://www.dfa.arkansas.gov/"}, "corporate": {"rate_en": "1% - 5.1%", "rate_cn": "1% - 5.1%", "new_rules_en": "Top corporate rate reduced to 5.1%.", "new_rules_cn": "最高企業稅率降至 5.1%。", "sales_tax_obligations_en": "6.5% state rate + local.", "sales_tax_obligations_cn": "6.5% 州稅率 + 地方稅。", "source_url": "https://www.dfa.arkansas.gov/"}, "portals": {"personal_url": "https://www.atap.arkansas.gov/", "corporate_url": "https://www.atap.arkansas.gov/"}}}`; 
