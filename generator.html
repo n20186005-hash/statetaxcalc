@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>推荐链接生成器</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; background: #f4f7f6; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        textarea { width: 100%; height: 200px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; padding: 10px; font-family: monospace; }
+        button { background: #2563eb; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; }
+        button:hover { background: #1d4ed8; }
+        pre { background: #1e293b; color: #f8fafc; padding: 20px; border-radius: 8px; overflow-x: auto; font-size: 13px; }
+        .hint { color: #666; font-size: 14px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🚀 JS 推荐列表生成工具</h2>
+        <p class="hint">直接粘贴你的网址列表（一行一个），包括本站和其他站的：</p>
+        <textarea id="urlInput" placeholder="https://example.com/page1&#10;https://mysite.com/alabama.html"></textarea>
+        <button onclick="generateJS()">生成 JS 代码</button>
+        
+        <p class="hint" style="margin-top:20px;">生成的代码（直接复制到 related.js 中）：</p>
+        <pre id="outputCode">// 点击上方按钮生成内容...</pre>
+    </div>
+
+    <script>
+        function generateJS() {
+            const input = document.getElementById('urlInput').value;
+            const urls = input.split('\n').filter(url => url.trim() !== '');
+            const myDomain = "statetaxcalc.org"; // ★ 这里换成你本站的域名
+
+            const results = urls.map(url => {
+                const isExternal = !url.includes(myDomain);
+                // 简单的从网址中提取标题逻辑
+                let title = url.split('/').pop().replace('.html', '').replace(/-/g, ' ');
+                if (!title || title === "") title = "Useful Tool";
+                
+                return {
+                    title: title.charAt(0).toUpperCase() + title.slice(1),
+                    link: url.trim(),
+                    isExternal: isExternal
+                };
+            });
+
+            const jsonOutput = JSON.stringify(results, null, 4);
+            document.getElementById('outputCode').innerText = `const allLinks = ${jsonOutput};`;
+        }
+    </script>
+</body>
+</html>

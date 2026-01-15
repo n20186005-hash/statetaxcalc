@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal & Privacy Policy | StateTaxCalc 2026</title>
+    <meta name="robots" content="noindex"> 
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='0' y='0' width='64' height='64' rx='12' fill='%232563eb'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='24' fill='white'%3ETax%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { extend: { colors: { primary: '#2563eb', bg: { light: '#f8fafc', dark: '#0f172a' } } } }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .glass { @apply bg-white/90 dark:bg-slate-800/90 backdrop-blur-md border border-slate-200 dark:border-slate-700; }
+            h2 { @apply text-2xl font-bold text-slate-900 dark:text-white mb-4 mt-8 scroll-mt-24; }
+            p { @apply text-slate-600 dark:text-slate-300 leading-relaxed mb-4; }
+            ul { @apply list-disc list-inside text-slate-600 dark:text-slate-300 mb-4; }
+        }
+    </style>
+</head>
+<body class="bg-bg-light dark:bg-bg-dark min-h-screen font-sans text-slate-800 dark:text-slate-200 flex flex-col">
+
+    <nav class="sticky top-0 z-50 glass shadow-sm">
+        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 font-bold text-lg dark:text-white">
+                <i class="fa fa-calculator text-primary"></i> StateTaxCalc 2026
+            </a>
+            <div class="flex items-center gap-4">
+                <a href="/" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors hidden sm:flex items-center gap-2">
+                    <i class="fa fa-arrow-left"></i> <span data-i18n="nav_back">Back to Tools</span>
+                </a>
+                <div class="w-px h-5 bg-slate-300 dark:bg-slate-600 hidden sm:block"></div>
+                <select id="lang-selector" class="bg-transparent text-xs font-bold px-2 py-1 rounded focus:outline-none cursor-pointer">
+                    <option value="en">English</option>
+                    <option value="zh-TW">繁體中文</option>
+                </select>
+                <button id="mode-toggle"><i class="fa fa-adjust"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+        <div class="grid md:grid-cols-12 gap-8">
+            
+            <aside class="hidden md:block md:col-span-3">
+                <div class="sticky top-24 space-y-2">
+                    <p class="text-xs font-bold text-slate-400 uppercase mb-2">Table of Contents</p>
+                    <a href="#disclaimer" class="block text-sm hover:text-primary py-1">Disclaimer</a>
+                    <a href="#privacy" class="block text-sm hover:text-primary py-1">Privacy Policy</a>
+                    <a href="#terms" class="block text-sm hover:text-primary py-1">Terms of Service</a>
+                    <a href="#cookies" class="block text-sm hover:text-primary py-1">Cookies & Ads</a>
+                </div>
+            
+                <div id="related-tools-container"></div>
+                <script src="/scripts/related.js"></script>
+
+            </aside>
+
+            <main class="md:col-span-9 glass rounded-3xl p-8 md:p-12 shadow-soft">
+                <h1 class="text-3xl font-extrabold mb-2 dark:text-white" data-i18n="title">Legal & Privacy Center</h1>
+                <p class="text-sm text-slate-400 mb-8 border-b border-slate-200 dark:border-slate-700 pb-8" data-i18n="updated">Last Updated: Jan 14, 2026</p>
+
+                <div id="legal-content-en">
+                    <section id="disclaimer">
+                        <h2>1. Disclaimer</h2>
+                        <div class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-4 rounded mb-6">
+                            <p class="text-red-700 dark:text-red-300 font-bold mb-0">Important: Not Financial Advice</p>
+                            <p class="text-sm text-red-600 dark:text-red-400 mb-0">The calculations provided by StateTaxCalc 2026 are estimates for educational purposes only.</p>
+                        </div>
+                        <p>We are a team of software developers, not Certified Public Accountants (CPAs). While we strive to match our algorithms with 2026 IRS Revenue Procedures, tax laws are subject to frequent changes. You should consult a qualified tax professional before making financial decisions.</p>
+                    </section>
+
+                    <section id="privacy">
+                        <h2>2. Privacy Policy</h2>
+                        <p>Your privacy is paramount. <strong>We do not collect or store any personal financial data entered into our calculators.</strong></p>
+                        <p>All inputs (income, filing status, 401k contributions) are processed "Client-Side" within your browser. This means your financial data never leaves your device and is never sent to our servers.</p>
+                    </section>
+
+                    <section id="cookies">
+                        <h2>3. Cookies & Advertising</h2>
+                        <p>We use third-party vendors, including Google AdSense, to serve ads based on your prior visits to our website.</p>
+                        <ul>
+                            <li>Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to our sites and/or other sites on the Internet.</li>
+                            <li>You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" class="text-primary underline">Ads Settings</a>.</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="terms">
+                        <h2>4. Terms of Service</h2>
+                        <p>By accessing StateTaxCalc 2026, you agree to be bound by these Terms of Use. The materials on this website are provided "as is". StateTaxCalc 2026 makes no warranties, expressed or implied, regarding the accuracy of calculation results.</p>
+                    </section>
+                </div>
+
+                <div id="legal-content-tw" class="hidden">
+                    <section>
+                        <h2>1. 免責聲明</h2>
+                        <div class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-4 rounded mb-6">
+                            <p class="text-red-700 dark:text-red-300 font-bold mb-0">重要提示：非財務建議</p>
+                            <p class="text-sm text-red-600 dark:text-red-400 mb-0">StateTaxCalc 2026 提供的計算結果僅供教育參考。</p>
+                        </div>
+                        <p>我們是一個軟件開發團隊，並非註冊會計師 (CPA)。雖然我們努力使算法符合 2026 年 IRS 稅收程序，但稅法經常變動。在做出財務決策前，請務必諮詢合格的稅務專業人士。</p>
+                    </section>
+
+                    <section>
+                        <h2>2. 隱私政策</h2>
+                        <p>您的隱私至關重要。<strong>我們絕不收集或存儲您在計算器中輸入的任何個人財務數據。</strong></p>
+                        <p>所有輸入（收入、報稅身份、401k 供款）均在您的瀏覽器中進行“客戶端”處理。這意味著您的財務數據永遠不會離開您的設備，也永遠不會發送到我們的服務器。</p>
+                    </section>
+                    
+                    <section>
+                        <h2>3. Cookie 與廣告</h2>
+                        <p>我們使用第三方供應商（包括 Google AdSense）根據您過往的訪問記錄投放廣告。</p>
+                        <ul>
+                            <li>Google 使用廣告 Cookie 使其及其合作夥伴能夠根據您對本網站和/或互聯網上其他網站的訪問向您投放廣告。</li>
+                            <li>您可以訪問 <a href="https://www.google.com/settings/ads" class="text-primary underline">廣告設置</a> 選擇退出個性化廣告。</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>4. 服務條款</h2>
+                        <p>訪問 StateTaxCalc 2026 即表示您同意受這些使用條款的約束。本網站上的材料按“原樣”提供。StateTaxCalc 2026 不對計算結果的準確性做出任何明示或暗示的保證。</p>
+                    </section>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Simple logic specifically for the legal page text-block swapping
+        const selector = document.getElementById('lang-selector');
+        const enBlock = document.getElementById('legal-content-en');
+        const twBlock = document.getElementById('legal-content-tw');
+        
+        // Dynamic Elements
+        const titleEl = document.querySelector('[data-i18n="title"]');
+        const dateEl = document.querySelector('[data-i18n="updated"]');
+        const backEl = document.querySelector('[data-i18n="nav_back"]'); // 新增选择器
+
+        const i18nTitles = {
+            'zh-TW': { 
+                title: "法律聲明與隱私中心", 
+                updated: "最後更新：2026年1月14日",
+                nav_back: "返回工具首頁" // 新增翻译
+            },
+            'en': { 
+                title: "Legal & Privacy Center", 
+                updated: "Last Updated: Jan 14, 2026",
+                nav_back: "Back to Tools" // 新增翻译
+            }
+        };
+
+        function updateLang(lang) {
+            document.documentElement.lang = lang;
+            
+            // Text Updates
+            const data = i18nTitles[lang];
+            titleEl.textContent = data.title;
+            dateEl.textContent = data.updated;
+            if(backEl) backEl.textContent = data.nav_back; // 更新返回按钮文字
+
+            // Block Swapping
+            if(lang === 'zh-TW') {
+                enBlock.classList.add('hidden');
+                twBlock.classList.remove('hidden');
+            } else {
+                twBlock.classList.add('hidden');
+                enBlock.classList.remove('hidden');
+            }
+            localStorage.setItem('app_lang_tax', lang);
+        }
+
+        // Init
+        const savedLang = localStorage.getItem('app_lang_tax') || 'en';
+        selector.value = savedLang;
+        updateLang(savedLang);
+        
+        selector.addEventListener('change', (e) => updateLang(e.target.value));
+
+        // Dark Mode
+        const toggle = document.getElementById('mode-toggle');
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+        toggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | StateTaxCalc 2026</title>
+    <meta name="description" content="Meet the team behind StateTaxCalc 2026. 20+ years of development experience dedicated to simplifying US tax calculations.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='0' y='0' width='64' height='64' rx='12' fill='%232563eb'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='24' fill='white'%3ETax%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#2563eb', hover: '#1d4ed8' }, 
+                        bg: { light: '#f8fafc', dark: '#0f172a' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .glass { @apply bg-white/90 dark:bg-slate-800/90 backdrop-blur-md border border-slate-200 dark:border-slate-700; }
+            .nav-link { @apply text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors; }
+        }
+    </style>
+</head>
+<body class="bg-bg-light dark:bg-bg-dark min-h-screen font-sans text-slate-800 dark:text-slate-200 flex flex-col">
+
+    <nav class="sticky top-0 z-50 glass shadow-sm">
+        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 font-extrabold text-lg text-slate-900 dark:text-white">
+                <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white"><i class="fa fa-calculator"></i></div>
+                State<span class="text-primary">TaxCalc</span> 2026
+            </a>
+            <div class="flex items-center gap-4">
+                <a href="/" class="nav-link"><i class="fa fa-arrow-left"></i> <span data-i18n="nav_back">Back to Tools</span></a>
+                <div class="w-px h-5 bg-slate-300 dark:bg-slate-600"></div>
+                <select id="lang-selector" class="bg-transparent text-xs font-bold px-2 py-1 rounded focus:outline-none cursor-pointer">
+                    <option value="en">English</option>
+                    <option value="zh-TW">繁體中文</option>
+                </select>
+                <button id="mode-toggle" class="w-8 h-8 flex items-center justify-center hover:text-primary"><i class="fa fa-moon-o dark:hidden"></i><i class="fa fa-sun-o hidden dark:inline"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative pt-20 pb-16 text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-6" data-i18n="about_title">Combining Tech Excellence with Financial Clarity</h1>
+        <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto" data-i18n="about_subtitle">
+            We are a team of veteran developers turning 20 years of experience into the most user-friendly tax tools on the web.
+        </p>
+    </div>
+
+    <div class="container mx-auto px-4 mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass p-8 rounded-2xl text-center hover:-translate-y-1 transition-transform duration-300">
+                <div class="text-4xl font-extrabold text-primary mb-2">20+</div>
+                <div class="text-sm font-bold uppercase tracking-wider text-slate-500" data-i18n="stat_years">Years Experience</div>
+                <p class="text-xs text-slate-400 mt-2" data-i18n="stat_years_desc">Software development excellence since 2005.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl text-center hover:-translate-y-1 transition-transform duration-300">
+                <div class="text-4xl font-extrabold text-purple-500 mb-2">30</div>
+                <div class="text-sm font-bold uppercase tracking-wider text-slate-500" data-i18n="stat_team">Team Members</div>
+                <p class="text-xs text-slate-400 mt-2" data-i18n="stat_team_desc">Dedicated engineers, designers, and data analysts.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl text-center hover:-translate-y-1 transition-transform duration-300">
+                <div class="text-4xl font-extrabold text-emerald-500 mb-2">50</div>
+                <div class="text-sm font-bold uppercase tracking-wider text-slate-500" data-i18n="stat_states">States Covered</div>
+                <p class="text-xs text-slate-400 mt-2" data-i18n="stat_states_desc">Full US tax coverage with real-time updates.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 pb-20 max-w-4xl">
+        <div class="glass rounded-3xl p-8 md:p-12 shadow-soft space-y-12">
+            
+            <section>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-primary"><i class="fa fa-users"></i></div>
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white" data-i18n="h_who">Who We Are</h2>
+                </div>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg" data-i18n="p_who">
+                    StateTaxCalc 2026 is not just another calculator website. We are a tight-knit team of nearly 30 technology professionals. With over two decades of software development history, we have transitioned from building enterprise-grade systems to creating accessible consumer tools. Our background ensures that the code behind our calculators is robust, secure, and incredibly fast.
+                </p>
+            </section>
+
+            <section>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600"><i class="fa fa-rocket"></i></div>
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white" data-i18n="h_mission">Our Mission</h2>
+                </div>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4" data-i18n="p_mission_1">
+                    Tax laws are complex, but understanding your paycheck shouldn't be. Our mission is to democratize financial data. We believe that whether you live in California or Texas, you deserve free, professional-grade tools to estimate your taxes without hitting a paywall.
+                </p>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="p_mission_2">
+                    We leverage our technical expertise to aggregate data from the IRS and state revenue departments, updating our algorithms the moment new legislation is passed.
+                </p>
+            </section>
+
+            <section class="border-t border-slate-200 dark:border-slate-700 pt-8">
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6" data-i18n="h_contact">Get in Touch</h2>
+                <div class="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div>
+                        <p class="text-slate-500 dark:text-slate-400 mb-1" data-i18n="contact_label">Email Support</p>
+                        <a href="mailto:n20186005@gmail.com" class="text-xl font-mono font-bold text-primary hover:underline">n20186005@gmail.com</a>
+                    </div>
+                    <a href="mailto:n20186005@gmail.com" class="bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 px-6 py-3 rounded-xl font-bold hover:shadow-lg transition-all" data-i18n="btn_email">
+                        Send Message
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <footer class="mt-auto py-8 text-center text-slate-500 text-sm border-t border-slate-200 dark:border-slate-800">
+        &copy; 2026 StateTaxCalc. <span data-i18n="rights">All rights reserved.</span>
+    </footer>
+
+    <script>
+        // i18n Data
+        const i18n = {
+            'zh-TW': {
+                nav_back: "返回工具首頁",
+                about_title: "卓越技術與財務透明的結合",
+                about_subtitle: "我們是一支擁有 20 年資深經驗的開發團隊，致力於將複雜的稅務計算轉化為最友好的網絡工具。",
+                stat_years: "年開發經驗", stat_years_desc: "自 2005 年起的卓越軟體工藝",
+                stat_team: "團隊成員", stat_team_desc: "專業工程師、設計師與數據分析師",
+                stat_states: "覆蓋全美", stat_states_desc: "50 州稅務數據實時更新",
+                h_who: "我們是誰",
+                p_who: "StateTaxCalc 2026 不僅僅是一個計算器網站。我們是一個由近 30 名技術專家組成的緊密團隊。憑藉超過二十年的軟體開發歷史，我們從構建企業級系統轉型為開發大眾可用的消費級工具。深厚的技術背景確保了我們計算器背後的代碼穩健、安全且極致快速。",
+                h_mission: "我們的使命",
+                p_mission_1: "稅法很複雜，但了解您的薪水不應如此。我們的使命是讓財務數據民主化。我們堅信，無論您住在加利福尼亞還是德克薩斯，您都值得擁有免費、專業級的工具來估算稅務，而無需支付昂貴的費用。",
+                p_mission_2: "我們利用技術專長聚合來自 IRS 和州稅務局的數據，一旦新法規通過，我們的算法就會即時更新。",
+                h_contact: "聯繫我們", contact_label: "郵件支持", btn_email: "發送郵件", rights: "版權所有。"
+            },
+            'en': {
+                nav_back: "Back to Tools",
+                about_title: "Combining Tech Excellence with Financial Clarity",
+                about_subtitle: "We are a team of veteran developers turning 20 years of experience into the most user-friendly tax tools on the web.",
+                stat_years: "Years Experience", stat_years_desc: "Software development excellence since 2005.",
+                stat_team: "Team Members", stat_team_desc: "Dedicated engineers, designers, and data analysts.",
+                stat_states: "States Covered", stat_states_desc: "Full US tax coverage with real-time updates.",
+                h_who: "Who We Are",
+                p_who: "StateTaxCalc 2026 is not just another calculator website. We are a tight-knit team of nearly 30 technology professionals. With over two decades of software development history, we have transitioned from building enterprise-grade systems to creating accessible consumer tools. Our background ensures that the code behind our calculators is robust, secure, and incredibly fast.",
+                h_mission: "Our Mission",
+                p_mission_1: "Tax laws are complex, but understanding your paycheck shouldn't be. Our mission is to democratize financial data. We believe that whether you live in California or Texas, you deserve free, professional-grade tools to estimate your taxes without hitting a paywall.",
+                p_mission_2: "We leverage our technical expertise to aggregate data from the IRS and state revenue departments, updating our algorithms the moment new legislation is passed.",
+                h_contact: "Get in Touch", contact_label: "Email Support", btn_email: "Send Message", rights: "All rights reserved."
+            }
+        };
+
+        // Logic
+        const selector = document.getElementById('lang-selector');
+        const toggle = document.getElementById('mode-toggle');
+        
+        // Theme
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+        toggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+        });
+
+        // Lang
+        function updateLang(lang) {
+            document.documentElement.lang = lang;
+            const data = i18n[lang];
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if(data[key]) el.textContent = data[key];
+            });
+            localStorage.setItem('app_lang_tax', lang);
+        }
+        
+        selector.value = localStorage.getItem('app_lang_tax') || 'en';
+        updateLang(selector.value);
+        
+        selector.addEventListener('change', (e) => updateLang(e.target.value));
+    </script>
+</body>
+</html>
