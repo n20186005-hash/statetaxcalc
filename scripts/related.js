@@ -2686,7 +2686,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "link": "https://toolboxpro.top/modules/weather-health/weather.html",
             "isExternal": true
         }
-        // ... 请务必把你的几百个链接复制回这里 ...
+        // ... 你的其他几百个链接 ...
     ];
 
     // =========================================================================
@@ -2694,7 +2694,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // =========================================================================
     function getRandomTools(count) {
         if (!allLinks || allLinks.length === 0) return [];
-        // 如果数据不够，就返回所有，否则随机取 count 个
         if (allLinks.length <= count) return allLinks;
         return [...allLinks].sort(() => 0.5 - Math.random()).slice(0, count);
     }
@@ -2705,32 +2704,28 @@ document.addEventListener('DOMContentLoaded', function() {
     // 3. 核心逻辑
     // =========================================================================
     
-    const gridContainer = document.getElementById('recommendation-grid');       // 工具页的大网格
-    const sidebarContainer = document.getElementById('related-tools-container'); // 文章页的侧边栏/工具页的底部容器
+    const gridContainer = document.getElementById('recommendation-grid');       
+    const sidebarContainer = document.getElementById('related-tools-container'); 
 
     // -------------------------------------------------------------------------
-    // 场景 A：检测到“工具页” (存在 recommendation-grid)
+    // 场景 A：工具页 (Grid) - 【这里进行了强力修复】
     // -------------------------------------------------------------------------
     if (gridContainer) {
         
-        // 1. 隐藏底部那个不需要的文本容器
+        // 1. 依然隐藏底部那个不需要的文本容器
         if (sidebarContainer) {
             sidebarContainer.style.display = 'none';
         }
 
-        // 2. 【核心大招】劫持页面原本的渲染函数
-        // 这样不仅初始化时会生效，甚至当你点击“繁中/EN”切换语言时，
-        // 页面调用的也是我们这个新函数，确保你的工具永远都在！
-        window.renderRecommendation = function() {
+        // 定义我们的渲染函数
+        const myRenderer = function() {
             const randomLinks = getRandomTools(5);
             let html = '';
 
             randomLinks.forEach(item => {
                 const randomIcon = icons[Math.floor(Math.random() * icons.length)];
-                // 如果没有描述，根据是否外部链接给一个默认描述
                 const desc = item.desc || (item.isExternal ? 'Recommended Tool' : 'Tax Calculator');
                 
-                // 使用工具页专用的 Grid 样式 (紫色主题)
                 html += `
                     <a href="${item.link}" ${item.isExternal ? 'target="_blank"' : ''} class="tool-card group block h-full">
                         <div class="flex flex-col items-center text-center pt-4 pb-2 h-full">
@@ -2749,19 +2744,26 @@ document.addEventListener('DOMContentLoaded', function() {
                     </a>
                 `;
             });
-
             gridContainer.innerHTML = html;
         };
 
-        // 3. 立即执行一次渲染 (防止等待 App.init)
-        window.renderRecommendation();
+        // 2. 【关键修复】延迟执行 + 劫持
+        // 我们等 100毫秒，让页面原本的脚本先跑完，然后我们再覆盖它
+        setTimeout(() => {
+            // 执行一次，覆盖初始内容
+            myRenderer();
+            
+            // 【劫持】把页面原本的 renderRecommendation 函数替换成我们的
+            // 这样当用户切换语言时，系统调用 renderRecommendation，实际上跑的是我们的代码
+            window.renderRecommendation = myRenderer;
+            
+        }, 100);
     } 
     
     // -------------------------------------------------------------------------
-    // 场景 B：检测到“文章页” (没有 grid，只有 sidebar)
+    // 场景 B：文章页 (Sidebar) - 【保持原样，完全不动】
     // -------------------------------------------------------------------------
     else if (sidebarContainer) {
-        // 这里完全保留你满意的文章页样式，绝对不动！
         const randomLinks = getRandomTools(5);
         
         let html = `
