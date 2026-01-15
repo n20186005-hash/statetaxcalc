@@ -59,9 +59,16 @@
 
             input[type=range] { @apply w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer; }
             input[type=range]::-webkit-slider-thumb { @apply appearance-none w-4 h-4 bg-primary rounded-full shadow hover:scale-110 transition-transform; }
-            
-            .state-card { @apply flex flex-col items-center justify-center p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary hover:shadow-md cursor-pointer transition-all duration-200 text-center h-full; }
-            .tool-card { @apply flex flex-col p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary hover:shadow-md cursor-pointer transition-all duration-200 h-full; }
+        }
+
+        /* 修复：将工具卡片和州卡片的样式移入独立的 @layer components 块 */
+        @layer components {
+            .state-card { 
+                @apply flex flex-col items-center justify-center p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary hover:shadow-md cursor-pointer transition-all duration-200 text-center h-full; 
+            }
+            .tool-card { 
+                @apply flex flex-col p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary hover:shadow-md cursor-pointer transition-all duration-200 h-full; 
+            }
         }
         
         html { scroll-behavior: smooth; }
