@@ -59,16 +59,9 @@
 
             input[type=range] { @apply w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer; }
             input[type=range]::-webkit-slider-thumb { @apply appearance-none w-4 h-4 bg-primary rounded-full shadow hover:scale-110 transition-transform; }
-        }
-
-        /* 修复：将工具卡片和州卡片的样式移入独立的 @layer components 块 */
-        @layer components {
-            .state-card { 
-                @apply flex flex-col items-center justify-center p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary hover:shadow-md cursor-pointer transition-all duration-200 text-center h-full; 
-            }
-            .tool-card { 
-                @apply flex flex-col p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary hover:shadow-md cursor-pointer transition-all duration-200 h-full; 
-            }
+            
+            .state-card { @apply flex flex-col items-center justify-center p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary hover:shadow-md cursor-pointer transition-all duration-200 text-center h-full; }
+            .tool-card { @apply flex flex-col p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary hover:shadow-md cursor-pointer transition-all duration-200 h-full; }
         }
         
         html { scroll-behavior: smooth; }
@@ -756,38 +749,27 @@
         }
 
         // --- 4. Recommendations & State Grid ---
-        const recommendations = [
-            { icon: 'fa-line-chart', title: 'Investment Calculator', desc: 'See your money grow.' },
-            { icon: 'fa-home', title: 'Rent vs Buy', desc: 'Is buying worth it?' },
-            { icon: 'fa-credit-card', title: 'Credit Card Payoff', desc: 'Plan debt-free life.' },
-            { icon: 'fa-users', title: 'Marriage Tax Bonus', desc: 'Check filing joint savings.' },
-            { icon: 'fa-calculator', title: 'Mortgage Calculator', desc: 'Estimate monthly payments.' }
-        ];
-        const recommendations_tw = [
-             { icon: 'fa-line-chart', title: '投資回報計算器', desc: '複利的力量：查看資金增長。' },
-             { icon: 'fa-home', title: '租房 vs 買房', desc: '現在買房划算還是租房划算？' },
-             { icon: 'fa-credit-card', title: '信用卡還款', desc: '規劃無債生活。' },
-             { icon: 'fa-users', title: '婚姻稅務紅利', desc: '查看合併申報是否省錢。' },
-             { icon: 'fa-calculator', title: '房貸計算器', desc: '估算每月房貸還款額。' }
-        ];
-
+        // [已修改] 仅保留 5 个空白占位框，等待 related.js 填充
         function renderRecommendation() {
             const container = document.getElementById('recommendation-grid');
-            const lang = document.documentElement.lang;
-            const list = (lang === 'zh-TW') ? recommendations_tw : recommendations;
-            container.innerHTML = list.map(item => `
-                <a href="#" class="tool-card group">
-                    <div class="flex flex-col items-center text-center pt-2">
-                        <div class="bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 w-12 h-12 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                            <i class="fa ${item.icon} text-xl"></i>
-                        </div>
-                        <div>
-                            <div class="font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors text-sm">${item.title}</div>
-                            <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">${item.desc}</div>
+            if (!container) return;
+            
+            // 生成 5 个空白的灰色占位卡片
+            let html = '';
+            for(let i=0; i<5; i++) {
+                html += `
+                <div class="tool-card cursor-default opacity-60">
+                    <div class="flex flex-col items-center text-center pt-3 pb-2">
+                        <div class="bg-slate-200 dark:bg-slate-700/50 w-12 h-12 rounded-lg mb-3"></div>
+                        <div class="w-full px-4 space-y-2">
+                            <div class="h-4 bg-slate-200 dark:bg-slate-700/50 rounded w-3/4 mx-auto"></div>
+                            <div class="h-3 bg-slate-100 dark:bg-slate-800/50 rounded w-1/2 mx-auto"></div>
                         </div>
                     </div>
-                </a>
-            `).join('');
+                </div>
+                `;
+            }
+            container.innerHTML = html;
         }
 
         const states_list = [
