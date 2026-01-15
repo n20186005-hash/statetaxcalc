@@ -461,13 +461,17 @@
 </div>
 </section>
 <section class="w-full">
-<div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
-<h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
-<i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
-</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
-</div>
-</div>
+
+<section class="w-full mt-8">
+    <div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
+        <h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
+            <i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
+        </div>
+    </div>
+</section>
+
 </section>
 </div>
 <footer class="mt-12 border-t border-slate-200 dark:border-slate-700 pt-8 pb-12 text-center text-slate-500 text-sm">
@@ -479,7 +483,7 @@
 </footer>
 </div>
 <div id="related-tools-container"></div>
-<script src="../../scripts/related.js?v=final"></script>
+<script src="../../scripts/related.js?v=rebuild"></script>
 <script>
         // --- 1. Dynamic State Data (Injected by Python) ---
         var rawStateData = `{"id": "LA", "slug": "louisiana", "names": {"en": "Louisiana", "cn": "路易斯安那州"}, "meta": {"desc_en": "Louisiana Tax Calculator.", "desc_cn": "路易斯安那州稅務計算器。", "keywords_en": "LA tax", "keywords_cn": "路易斯安那稅"}, "tax_logic": {"type": "progressive", "max_rate_display": "4.25%", "std_deduction_single": 4500, "std_deduction_mfj": 9000, "brackets_single": [{"threshold": 0, "rate": 0.0185}, {"threshold": 50000, "rate": 0.0425}]}, "content": {"intro_en": "Louisiana rates are moderate.", "intro_cn": "路易斯安那州稅率適中。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。"}, "relocation": {"target_state": "Texas", "pitch_en": "Moving to Texas?", "pitch_cn": "考慮搬家去德州？"}, "policy": {"personal": {"rate_en": "1.85% - 4.25%", "rate_cn": "1.85% - 4.25%", "new_rules_en": "Continued phase-out of federal income tax deduction.", "new_rules_cn": "繼續逐步取消聯邦所得稅扣除。", "deadline": "2025-05-15", "source_url": "https://revenue.louisiana.gov/"}, "corporate": {"rate_en": "3.5% - 7.5%", "rate_cn": "3.5% - 7.5%", "new_rules_en": "Graduated corporate rates apply.", "new_rules_cn": "適用累進企業稅率。", "sales_tax_obligations_en": "4.45% state + local.", "sales_tax_obligations_cn": "4.45% 州稅 + 地方稅。", "source_url": "https://revenue.louisiana.gov/"}, "portals": {"personal_url": "https://latap.revenue.louisiana.gov/", "corporate_url": "https://latap.revenue.louisiana.gov/"}}}`; 

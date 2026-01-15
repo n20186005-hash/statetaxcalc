@@ -461,13 +461,17 @@
 </div>
 </section>
 <section class="w-full">
-<div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
-<h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
-<i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
-</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
-</div>
-</div>
+
+<section class="w-full mt-8">
+    <div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
+        <h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
+            <i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
+        </div>
+    </div>
+</section>
+
 </section>
 </div>
 <footer class="mt-12 border-t border-slate-200 dark:border-slate-700 pt-8 pb-12 text-center text-slate-500 text-sm">
@@ -479,7 +483,7 @@
 </footer>
 </div>
 <div id="related-tools-container"></div>
-<script src="../../scripts/related.js?v=final"></script>
+<script src="../../scripts/related.js?v=rebuild"></script>
 <script>
         // --- 1. Dynamic State Data (Injected by Python) ---
         var rawStateData = `{"id": "CO", "slug": "colorado", "names": {"en": "Colorado", "cn": "科羅拉多州"}, "meta": {"desc_en": "Colorado Paycheck Calculator.", "desc_cn": "科羅拉多州薪資計算器。", "keywords_en": "CO tax", "keywords_cn": "科羅拉多稅"}, "tax_logic": {"type": "flat", "max_rate_display": "4.4%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{"threshold": 0, "rate": 0.044}]}, "content": {"intro_en": "Colorado maintains a simple flat tax system.", "intro_cn": "科羅拉多州維持簡單的單一稅制。", "cap_gains_en": "Taxed at 4.4%.", "cap_gains_cn": "按 4.4% 徵稅。"}, "relocation": {"target_state": "Wyoming", "pitch_en": "Moving to Wyoming?", "pitch_cn": "考慮搬家去懷俄明？"}, "policy": {"personal": {"rate_en": "4.4% Flat Rate", "rate_cn": "4.4% 單一稅率", "new_rules_en": "TABOR refunds may affect effective rate.", "new_rules_cn": "TABOR 退稅可能會影響有效稅率。", "deadline": "2025-04-15", "source_url": "https://tax.colorado.gov/"}, "corporate": {"rate_en": "4.4%", "rate_cn": "4.4%", "new_rules_en": "Corporate rate matches personal rate.", "new_rules_cn": "企業稅率與個人稅率一致。", "sales_tax_obligations_en": "2.9% state + significant local taxes.", "sales_tax_obligations_cn": "2.9% 州稅 + 顯著的地方稅。", "source_url": "https://tax.colorado.gov/"}, "portals": {"personal_url": "https://www.colorado.gov/revenueonline/", "corporate_url": "https://www.colorado.gov/revenueonline/"}}}`; 

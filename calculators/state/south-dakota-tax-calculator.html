@@ -461,13 +461,17 @@
 </div>
 </section>
 <section class="w-full">
-<div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
-<h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
-<i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
-</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
-</div>
-</div>
+
+<section class="w-full mt-8">
+    <div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
+        <h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
+            <i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
+        </div>
+    </div>
+</section>
+
 </section>
 </div>
 <footer class="mt-12 border-t border-slate-200 dark:border-slate-700 pt-8 pb-12 text-center text-slate-500 text-sm">
@@ -479,7 +483,7 @@
 </footer>
 </div>
 <div id="related-tools-container"></div>
-<script src="../../scripts/related.js?v=final"></script>
+<script src="../../scripts/related.js?v=rebuild"></script>
 <script>
         // --- 1. Dynamic State Data (Injected by Python) ---
         var rawStateData = `{"id": "SD", "slug": "south-dakota", "names": {"en": "South Dakota", "cn": "南達科他州"}, "meta": {"desc_en": "South Dakota No Income Tax.", "desc_cn": "南達科他州無所得稅。", "keywords_en": "SD tax", "keywords_cn": "南達科他稅"}, "tax_logic": {"type": "none", "max_rate_display": "0%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": []}, "content": {"intro_en": "South Dakota has no state tax.", "intro_cn": "南達科他州沒有州稅。", "cap_gains_en": "0% tax.", "cap_gains_cn": "0% 稅率。"}, "relocation": {"target_state": "Minnesota", "pitch_en": "Moving from MN?", "pitch_cn": "從明尼蘇達搬來？"}, "policy": {"personal": {"rate_en": "0% (No State Income Tax)", "rate_cn": "0% (無州所得稅)", "new_rules_en": "No personal income tax implementation planned.", "new_rules_cn": "無計劃實施個人所得稅。", "deadline": "N/A", "source_url": "https://dor.sd.gov/"}, "corporate": {"rate_en": "0%", "rate_cn": "0%", "new_rules_en": "No corporate income tax (Bank Franchise Tax exists).", "new_rules_cn": "無企業所得稅 (存在銀行特許經營稅)。", "sales_tax_obligations_en": "4.2% state rate.", "sales_tax_obligations_cn": "4.2% 州稅率。", "source_url": "https://dor.sd.gov/"}, "portals": {"personal_url": "N/A", "corporate_url": "https://sd.gov/tax"}}}`; 

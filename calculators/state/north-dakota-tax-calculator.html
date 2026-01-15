@@ -461,13 +461,17 @@
 </div>
 </section>
 <section class="w-full">
-<div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
-<h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
-<i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
-</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
-</div>
-</div>
+
+<section class="w-full mt-8">
+    <div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
+        <h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
+            <i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
+        </div>
+    </div>
+</section>
+
 </section>
 </div>
 <footer class="mt-12 border-t border-slate-200 dark:border-slate-700 pt-8 pb-12 text-center text-slate-500 text-sm">
@@ -479,7 +483,7 @@
 </footer>
 </div>
 <div id="related-tools-container"></div>
-<script src="../../scripts/related.js?v=final"></script>
+<script src="../../scripts/related.js?v=rebuild"></script>
 <script>
         // --- 1. Dynamic State Data (Injected by Python) ---
         var rawStateData = `{"id": "ND", "slug": "north-dakota", "names": {"en": "North Dakota", "cn": "北達科他州"}, "meta": {"desc_en": "North Dakota Tax Calculator.", "desc_cn": "北達科他州稅務計算器。", "keywords_en": "ND tax", "keywords_cn": "北達科他稅"}, "tax_logic": {"type": "progressive", "max_rate_display": "2.5%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{"threshold": 0, "rate": 0.011}, {"threshold": 44725, "rate": 0.0195}, {"threshold": 490200, "rate": 0.025}]}, "content": {"intro_en": "ND has very low rates.", "intro_cn": "北達科他州稅率非常低。", "cap_gains_en": "40% exclusion.", "cap_gains_cn": "40% 排除額。"}, "relocation": {"target_state": "South Dakota", "pitch_en": "Moving to SD?", "pitch_cn": "考慮搬家去南達科他？"}, "policy": {"personal": {"rate_en": "1.1% - 2.5%", "rate_cn": "1.1% - 2.5%", "new_rules_en": "Low rate structure maintained.", "new_rules_cn": "維持低稅率結構。", "deadline": "2025-04-15", "source_url": "https://www.tax.nd.gov/"}, "corporate": {"rate_en": "1.41% - 4.31%", "rate_cn": "1.41% - 4.31%", "new_rules_en": "Graduated rates apply.", "new_rules_cn": "適用累進稅率。", "sales_tax_obligations_en": "5% state rate.", "sales_tax_obligations_cn": "5% 州稅率。", "source_url": "https://www.tax.nd.gov/"}, "portals": {"personal_url": "https://apps.nd.gov/tax/tap", "corporate_url": "https://apps.nd.gov/tax/tap"}}}`; 

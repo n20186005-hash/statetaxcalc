@@ -461,13 +461,17 @@
 </div>
 </section>
 <section class="w-full">
-<div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
-<h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
-<i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
-</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
-</div>
-</div>
+
+<section class="w-full mt-8">
+    <div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
+        <h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
+            <i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
+        </div>
+    </div>
+</section>
+
 </section>
 </div>
 <footer class="mt-12 border-t border-slate-200 dark:border-slate-700 pt-8 pb-12 text-center text-slate-500 text-sm">
@@ -479,7 +483,7 @@
 </footer>
 </div>
 <div id="related-tools-container"></div>
-<script src="../../scripts/related.js?v=final"></script>
+<script src="../../scripts/related.js?v=rebuild"></script>
 <script>
         // --- 1. Dynamic State Data (Injected by Python) ---
         var rawStateData = `{"id": "TN", "slug": "tennessee", "names": {"en": "Tennessee", "cn": "田納西州"}, "meta": {"desc_en": "Tennessee Paycheck Calculator.", "desc_cn": "田納西州薪資計算器。", "keywords_en": "TN tax", "keywords_cn": "田納西稅"}, "tax_logic": {"type": "none", "max_rate_display": "0%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": []}, "content": {"intro_en": "Tennessee is a tax-friendly state.", "intro_cn": "田納西州是一個稅收友好的州。", "cap_gains_en": "0% tax.", "cap_gains_cn": "0% 稅率。"}, "relocation": {"target_state": "North Carolina", "pitch_en": "Moving from NC?", "pitch_cn": "從北卡搬來？"}, "policy": {"personal": {"rate_en": "0% (No State Income Tax)", "rate_cn": "0% (無州所得稅)", "new_rules_en": "Hall Income Tax (dividends) fully repealed.", "new_rules_cn": "霍爾所得稅 (股息) 已完全廢除。", "deadline": "N/A", "source_url": "https://www.tn.gov/revenue.html"}, "corporate": {"rate_en": "6.5% Excise Tax", "rate_cn": "6.5% 消費稅", "new_rules_en": "Franchise tax property measure repealed.", "new_rules_cn": "特許經營稅財產衡量標準已廢除。", "sales_tax_obligations_en": "7% state rate.", "sales_tax_obligations_cn": "7% 州稅率。", "source_url": "https://www.tn.gov/revenue.html"}, "portals": {"personal_url": "N/A", "corporate_url": "https://tntap.tn.gov/eservices"}}}`; 

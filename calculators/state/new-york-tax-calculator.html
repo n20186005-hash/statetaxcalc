@@ -461,13 +461,17 @@
 </div>
 </section>
 <section class="w-full">
-<div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
-<h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
-<i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
-</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
-</div>
-</div>
+
+<section class="w-full mt-8">
+    <div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
+        <h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
+            <i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
+        </div>
+    </div>
+</section>
+
 </section>
 </div>
 <footer class="mt-12 border-t border-slate-200 dark:border-slate-700 pt-8 pb-12 text-center text-slate-500 text-sm">
@@ -479,7 +483,7 @@
 </footer>
 </div>
 <div id="related-tools-container"></div>
-<script src="../../scripts/related.js?v=final"></script>
+<script src="../../scripts/related.js?v=rebuild"></script>
 <script>
         // --- 1. Dynamic State Data (Injected by Python) ---
         var rawStateData = `{"id": "NY", "slug": "new-york", "names": {"en": "New York", "cn": "紐約州"}, "meta": {"desc_en": "New York State Tax Calculator 2026.", "desc_cn": "2026 紐約州稅務計算器。", "keywords_en": "NY tax", "keywords_cn": "紐約稅"}, "tax_logic": {"type": "progressive", "max_rate_display": "10.9%", "std_deduction_single": 8000, "std_deduction_mfj": 16050, "brackets_single": [{"threshold": 0, "rate": 0.04}, {"threshold": 8500, "rate": 0.045}, {"threshold": 11700, "rate": 0.0525}, {"threshold": 13900, "rate": 0.0585}, {"threshold": 80650, "rate": 0.0625}, {"threshold": 215400, "rate": 0.0685}, {"threshold": 1077550, "rate": 0.0965}, {"threshold": 5000000, "rate": 0.103}, {"threshold": 25000000, "rate": 0.109}]}, "content": {"intro_en": "New York generally mimics the federal tax structure.", "intro_cn": "紐約州的稅收結構通常模仿聯邦稅制。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。"}, "relocation": {"target_state": "Florida", "pitch_en": "Moving to Florida?", "pitch_cn": "考慮搬家去佛州？"}, "policy": {"personal": {"rate_en": "4% - 10.9%", "rate_cn": "4% - 10.9%", "new_rules_en": "NYC residents pay additional city tax (3.078%-3.876%).", "new_rules_cn": "NYC 居民需繳納額外城市稅 (3.078%-3.876%)。", "deadline": "2025-04-15", "source_url": "https://www.tax.ny.gov/"}, "corporate": {"rate_en": "7.25%", "rate_cn": "7.25%", "new_rules_en": "MTA Surcharge applies in metro area.", "new_rules_cn": "大都會地區適用 MTA 附加費。", "sales_tax_obligations_en": "4% state rate + local (up to 8.875%).", "sales_tax_obligations_cn": "4% 州稅 + 地方稅 (最高 8.875%)。", "source_url": "https://www.tax.ny.gov/"}, "portals": {"personal_url": "https://www.tax.ny.gov/pit/file/", "corporate_url": "https://www.tax.ny.gov/bus/ct/file.htm"}}}`; 

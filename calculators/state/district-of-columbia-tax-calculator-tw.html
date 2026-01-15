@@ -461,13 +461,17 @@
 </div>
 </section>
 <section class="w-full">
-<div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
-<h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
-<i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
-</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
-</div>
-</div>
+
+<section class="w-full mt-8">
+    <div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
+        <h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
+            <i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
+        </div>
+    </div>
+</section>
+
 </section>
 </div>
 <footer class="mt-12 border-t border-slate-200 dark:border-slate-700 pt-8 pb-12 text-center text-slate-500 text-sm">
@@ -479,7 +483,7 @@
 </footer>
 </div>
 <div id="related-tools-container"></div>
-<script src="../../scripts/related.js?v=final"></script>
+<script src="../../scripts/related.js?v=rebuild"></script>
 <script>
         // --- 1. Dynamic State Data (Injected by Python) ---
         var rawStateData = `{"id": "DC", "slug": "district-of-columbia", "names": {"en": "District of Columbia", "cn": "哥倫比亞特區"}, "meta": {"desc_en": "DC Tax Calculator.", "desc_cn": "哥倫比亞特區稅務計算器。", "keywords_en": "DC tax", "keywords_cn": "DC 稅"}, "tax_logic": {"type": "progressive", "max_rate_display": "10.75%", "std_deduction_single": 13850, "std_deduction_mfj": 27700, "brackets_single": [{"threshold": 0, "rate": 0.04}, {"threshold": 1000000, "rate": 0.1075}]}, "content": {"intro_en": "DC taxes are progressive.", "intro_cn": "DC 稅收是累進的。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。"}, "relocation": {"target_state": "Virginia", "pitch_en": "Moving to Virginia?", "pitch_cn": "考慮搬家去弗吉尼亞？"}, "policy": {"personal": {"rate_en": "4% - 10.75%", "rate_cn": "4% - 10.75%", "new_rules_en": "Brackets adjusted for cost of living.", "new_rules_cn": "稅級根據生活成本調整。", "deadline": "2025-04-15", "source_url": "https://otr.cfo.dc.gov/"}, "corporate": {"rate_en": "8.25%", "rate_cn": "8.25%", "new_rules_en": "Surtaxes may apply.", "new_rules_cn": "可能適用附加稅。", "sales_tax_obligations_en": "6% general rate.", "sales_tax_obligations_cn": "6% 一般稅率。", "source_url": "https://otr.cfo.dc.gov/"}, "portals": {"personal_url": "https://mytax.dc.gov/", "corporate_url": "https://mytax.dc.gov/"}}}`; 

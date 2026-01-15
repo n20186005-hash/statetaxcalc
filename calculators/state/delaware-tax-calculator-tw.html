@@ -461,13 +461,17 @@
 </div>
 </section>
 <section class="w-full">
-<div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
-<h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
-<i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
-</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
-</div>
-</div>
+
+<section class="w-full mt-8">
+    <div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
+        <h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
+            <i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
+        </div>
+    </div>
+</section>
+
 </section>
 </div>
 <footer class="mt-12 border-t border-slate-200 dark:border-slate-700 pt-8 pb-12 text-center text-slate-500 text-sm">
@@ -479,7 +483,7 @@
 </footer>
 </div>
 <div id="related-tools-container"></div>
-<script src="../../scripts/related.js?v=final"></script>
+<script src="../../scripts/related.js?v=rebuild"></script>
 <script>
         // --- 1. Dynamic State Data (Injected by Python) ---
         var rawStateData = `{"id": "DE", "slug": "delaware", "names": {"en": "Delaware", "cn": "特拉華州"}, "meta": {"desc_en": "Delaware Tax Calculator.", "desc_cn": "特拉華州稅務計算器。", "keywords_en": "Delaware tax", "keywords_cn": "特拉華稅"}, "tax_logic": {"type": "progressive", "max_rate_display": "6.6%", "std_deduction_single": 3250, "std_deduction_mfj": 6500, "brackets_single": [{"threshold": 0, "rate": 0.0}, {"threshold": 60000, "rate": 0.066}]}, "content": {"intro_en": "Delaware has no sales tax.", "intro_cn": "特拉華州沒有銷售稅。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。"}, "relocation": {"target_state": "Maryland", "pitch_en": "Moving to Maryland?", "pitch_cn": "考慮搬家去馬里蘭？"}, "policy": {"personal": {"rate_en": "2.2% - 6.6%", "rate_cn": "2.2% - 6.6%", "new_rules_en": "Standard deduction increased for 2025.", "new_rules_cn": "2025 年標準扣除額增加。", "deadline": "2025-04-30", "source_url": "https://revenue.delaware.gov/"}, "corporate": {"rate_en": "8.7%", "rate_cn": "8.7%", "new_rules_en": "Flat rate applies to taxable income.", "new_rules_cn": "應稅收入適用單一稅率。", "sales_tax_obligations_en": "0% (No Sales Tax). Gross Receipts Tax applies.", "sales_tax_obligations_cn": "0% (無銷售稅)。適用總收入稅。", "source_url": "https://revenue.delaware.gov/"}, "portals": {"personal_url": "https://revenue.delaware.gov/file/", "corporate_url": "https://revenue.delaware.gov/file/"}}}`; 

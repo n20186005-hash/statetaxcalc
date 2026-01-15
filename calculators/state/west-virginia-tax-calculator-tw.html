@@ -461,13 +461,17 @@
 </div>
 </section>
 <section class="w-full">
-<div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
-<h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
-<i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
-</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
-</div>
-</div>
+
+<section class="w-full mt-8">
+    <div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500">
+        <h3 class="text-lg font-bold text-slate-800 dark:text-white mb-6 flex items-center gap-2">
+            <i class="fa fa-star text-yellow-400"></i> <span data-i18n="rec_title">Recommended Tools</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" id="recommendation-grid">
+        </div>
+    </div>
+</section>
+
 </section>
 </div>
 <footer class="mt-12 border-t border-slate-200 dark:border-slate-700 pt-8 pb-12 text-center text-slate-500 text-sm">
@@ -479,7 +483,7 @@
 </footer>
 </div>
 <div id="related-tools-container"></div>
-<script src="../../scripts/related.js?v=final"></script>
+<script src="../../scripts/related.js?v=rebuild"></script>
 <script>
         // --- 1. Dynamic State Data (Injected by Python) ---
         var rawStateData = `{"id": "WV", "slug": "west-virginia", "names": {"en": "West Virginia", "cn": "西弗吉尼亞州"}, "meta": {"desc_en": "West Virginia Tax Calculator.", "desc_cn": "西弗吉尼亞州稅務計算器。", "keywords_en": "WV tax", "keywords_cn": "西弗吉尼亞稅"}, "tax_logic": {"type": "progressive", "max_rate_display": "5.525%", "std_deduction_single": 0, "std_deduction_mfj": 0, "brackets_single": [{"threshold": 0, "rate": 0.0236}, {"threshold": 60000, "rate": 0.05525}]}, "content": {"intro_en": "WV taxes are moderate.", "intro_cn": "西弗吉尼亞稅收適中。", "cap_gains_en": "Ordinary rates.", "cap_gains_cn": "普通稅率。"}, "relocation": {"target_state": "Virginia", "pitch_en": "Moving to Virginia?", "pitch_cn": "考慮搬家去弗吉尼亞？"}, "policy": {"personal": {"rate_en": "2.36% - 5.525%", "rate_cn": "2.36% - 5.525%", "new_rules_en": "Rates reduced by ~21% recently.", "new_rules_cn": "稅率近期降低了約 21%。", "deadline": "2025-04-15", "source_url": "https://tax.wv.gov/"}, "corporate": {"rate_en": "6.5%", "rate_cn": "6.5%", "new_rules_en": "Flat corporate rate.", "new_rules_cn": "單一企業稅率。", "sales_tax_obligations_en": "6% state rate.", "sales_tax_obligations_cn": "6% 州稅率。", "source_url": "https://tax.wv.gov/"}, "portals": {"personal_url": "https://mytaxes.wvtax.gov/", "corporate_url": "https://mytaxes.wvtax.gov/"}}}`; 
