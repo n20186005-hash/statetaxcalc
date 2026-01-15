@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 
-<html lang="zh-TW">
+<html lang="{{ lang }}">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
 <meta content="finance" name="category"/>
 <meta content="📰" name="icon"/>
-<title>2026 華盛頓特區州稅：稅率與級距 | StateTaxCalc 2026</title>
-<meta content="2026 年華盛頓特區所得稅級距與稅率更新。計算您的州稅負。" name="description"/>
-<meta content="2026 tax brackets, 華盛頓特區 tax, tax calculator 2026" name="keywords"/>
-<link href="https://statetaxcalc.com/articles/district-of-columbia-tax-brackets-2026-tw.html" rel="canonical"/>
-<link href="https://statetaxcalc.com/articles/district-of-columbia-tax-brackets-2026.html" hreflang="en" rel="alternate"/>
-<script src="https://cdn.tailwindcss.com"></script>
+<title>{{ title }} | StateTaxCalc 2026</title>
+<meta content="{{ description }}" name="description"/>
+<meta content="2026 tax brackets, {{ state_name if state_name else 'Federal' }} tax, tax calculator 2026" name="keywords"/>
+<link href="https://statetaxcalc.com/{{ filename }}" rel="canonical"/>
+    {% if lang == 'zh-TW' %}
+    <link href="https://statetaxcalc.com/{{ alt_filename }}" hreflang="en" rel="alternate"/>
+    {% else %}
+    <link href="https://statetaxcalc.com/{{ alt_filename }}" hreflang="zh-TW" rel="alternate"/>
+    {% endif %}
+    
+    <script src="https://cdn.tailwindcss.com"></script>
 <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='0' y='0' width='64' height='64' rx='12' fill='%232563eb'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='24' fill='white'%3ETax%3C/text%3E%3C/svg%3E" rel="icon"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
@@ -93,8 +98,8 @@
 <a class="nav-link" data-i18n="nav_about" href="../about.html">About</a>
 </div>
 <div class="flex items-center gap-2 md:gap-3">
-<a class="bg-transparent text-xs font-bold text-slate-600 dark:text-slate-300 px-2 py-1 rounded hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors border border-slate-200 dark:border-slate-600" href="articles/district-of-columbia-tax-brackets-2026.html">
-                    EN
+<a class="bg-transparent text-xs font-bold text-slate-600 dark:text-slate-300 px-2 py-1 rounded hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors border border-slate-200 dark:border-slate-600" href="{{ alt_filename }}">
+                    {{ '繁中' if lang == 'en' else 'EN' }}
                 </a>
 <div class="w-px h-5 bg-slate-300 dark:bg-slate-600 mx-1"></div>
 <button class="w-8 h-8 rounded-lg flex items-center justify-center text-slate-500 hover:text-primary hover:bg-slate-100 dark:hover:bg-slate-700 transition-all" id="mode-toggle">
@@ -105,11 +110,11 @@
 </nav>
 <div class="container mx-auto px-4 py-6">
 <nav class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 animate-fade-in">
-<a class="hover:text-primary transition-colors" href="../index.html"><i class="fa fa-home"></i> 首頁</a>
+<a class="hover:text-primary transition-colors" href="../index.html"><i class="fa fa-home"></i> {{ 'Home' if lang == 'en' else '首頁' }}</a>
 <i class="fa fa-angle-right text-slate-300"></i>
-<a class="hover:text-primary transition-colors" href="../articles.html">文章列表</a>
+<a class="hover:text-primary transition-colors" href="../articles.html">{{ 'Articles' if lang == 'en' else '文章列表' }}</a>
 <i class="fa fa-angle-right text-slate-300"></i>
-<span class="font-medium text-slate-800 dark:text-white line-clamp-1">2026 華盛頓特區州稅：稅率與級距</span>
+<span class="font-medium text-slate-800 dark:text-white line-clamp-1">{{ title }}</span>
 </nav>
 </div>
 <div class="container mx-auto px-4 pb-20">
@@ -119,12 +124,12 @@
 <header class="mb-8 border-b border-slate-200 dark:border-slate-700 pb-8">
 <div class="flex flex-wrap gap-2 mb-4">
 <span class="px-2.5 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-bold uppercase tracking-wide">
-                                華盛頓特區
+                                {{ state_name if state_name else ('Federal Tax' if lang == 'en' else '聯邦稅') }}
                             </span>
 <span class="px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs font-bold uppercase tracking-wide">2026 Update</span>
 </div>
 <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mb-4 leading-tight">
-                            2026 華盛頓特區州稅：稅率與級距
+                            {{ title }}
                         </h1>
 <div class="flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
 <span class="flex items-center gap-1"><i class="fa fa-calendar"></i> Jan 2026</span>
@@ -134,41 +139,43 @@
 </header>
 <div class="bg-indigo-50 dark:bg-indigo-900/20 border-l-4 border-indigo-500 p-5 rounded-r-xl mb-10">
 <h4 class="text-indigo-900 dark:text-indigo-200 font-bold text-sm uppercase tracking-wide mb-1 flex items-center gap-2">
-<i class="fa fa-book"></i> 資料來源
+<i class="fa fa-book"></i> {{ 'Source Reference' if lang == 'en' else '資料來源' }}
                         </h4>
 <p class="text-sm text-indigo-800 dark:text-indigo-300 mb-2">
-                            本文數據基於官方政府發布：
+                            {{ 'Data in this article is sourced from official government releases:' if lang == 'en' else '本文數據基於官方政府發布：' }}
                         </p>
 <ul class="space-y-1">
-<li>
-<a class="inline-flex items-center gap-1 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline" href="https://otr.cfo.dc.gov/" rel="nofollow noopener" target="_blank">
-                                    District of Columbia Dept. of Revenue <i class="fa fa-external-link"></i>
+                            {% for source in sources %}
+                            <li>
+<a class="inline-flex items-center gap-1 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline" href="{{ source.url }}" rel="nofollow noopener" target="_blank">
+                                    {{ source.name }} <i class="fa fa-external-link"></i>
 </a>
 </li>
-</ul>
+                            {% endfor %}
+                        </ul>
 </div>
 <div class="article-content">
 <p class="text-lg leading-relaxed text-slate-700 dark:text-slate-200 mb-8">
-                            對於 2026 納稅年度，華盛頓特區 繼續調整其稅務政策。華盛頓特區 採用累進稅率制度。2026 年的具體級距有待立法批准。
+                            {{ intro }}
                         </p>
-<h2>主要更新與稅級</h2>
+<h2>{{ 'Key Updates &amp; Brackets' if lang == 'en' else '主要更新與稅級' }}</h2>
 <div class="text-slate-600 dark:text-slate-300">
-<p><strong>關鍵稅務特徵：</strong></p><ul><li><strong>申報狀態：</strong> 稅級根據您是單身、已婚聯合申報還是戶主而有所不同。</li><li><strong>標準扣除額：</strong> 請確認 華盛頓特區 是否允許與聯邦金額相對應的標準扣除額。</li></ul><p>如需最準確的稅表，請參閱 <a href="https://otr.cfo.dc.gov/" target="_blank">華盛頓特區稅務局官方網站</a>。</p>
-</div>
-<h2 class="mt-12">常見問題</h2>
+                            {{ details | safe }}
+                        </div>
+<h2 class="mt-12">{{ 'Common Questions' if lang == 'en' else '常見問題' }}</h2>
 <div class="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-6 border border-slate-200 dark:border-slate-700 mb-4">
 <h3 class="!mt-0 text-lg flex items-start gap-3">
 <i class="fa fa-question-circle text-primary mt-1"></i>
-                                這如何影響我的實得薪資？
+                                {{ 'How does this affect my take-home pay?' if lang == 'en' else '這如何影響我的實得薪資？' }}
                             </h3>
 <p class="!mb-0 text-sm pl-8">
-                                請使用我們的薪資計算器，根據這些新的稅級調整查看確切差異。
+                                {{ 'Use our Paycheck Calculator to see the exact difference based on these new bracket adjustments.' if lang == 'en' else '請使用我們的薪資計算器，根據這些新的稅級調整查看確切差異。' }}
                             </p>
 </div>
 </div>
 <div class="mt-12 pt-6 border-t border-slate-200 dark:border-slate-700 flex flex-wrap gap-2">
 <span class="text-xs font-bold text-slate-400 uppercase tracking-wide mr-2 py-1">Tags:</span>
-<a class="tag-pill" href="#">#華盛頓特區</a>
+<a class="tag-pill" href="#">#{{ state_name if state_name else 'Federal' }}</a>
 <a class="tag-pill" href="#">#2026Taxes</a>
 <a class="tag-pill" href="#">#Finance</a>
 </div>
@@ -176,7 +183,7 @@
 </main>
 <aside class="lg:col-span-4 space-y-8">
 <div class="glass rounded-2xl p-6 shadow-soft">
-<h3 class="font-bold text-slate-900 dark:text-white mb-4">搜尋主題</h3>
+<h3 class="font-bold text-slate-900 dark:text-white mb-4">{{ 'Search Topics' if lang == 'en' else '搜尋主題' }}</h3>
 <div class="relative">
 <i class="fa fa-search absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
 <input class="w-full pl-9 pr-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-900 text-sm focus:ring-2 focus:ring-primary outline-none" placeholder="..." type="text"/>
@@ -266,7 +273,7 @@
 <div class="container mx-auto px-4">
 <div class="text-center text-xs text-slate-500">
 <p>© 2026 StateTaxCalc. All rights reserved.</p>
-<p class="mt-2">數據僅供教育用途，不構成財務建議。</p>
+<p class="mt-2">{{ 'Figures are for educational purposes only.' if lang == 'en' else '數據僅供教育用途，不構成財務建議。' }}</p>
 </div>
 </div>
 </footer>
