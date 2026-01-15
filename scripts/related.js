@@ -2686,70 +2686,84 @@ document.addEventListener('DOMContentLoaded', function() {
             "link": "https://toolboxpro.top/modules/weather-health/weather.html",
             "isExternal": true
         }
-        // ... 请确保这里有你完整的几百个链接 ...
+        // ... 请务必把你的几百个链接复制回这里 ...
     ];
 
-    // -------------------------------------------------------------------------
+    // =========================================================================
     // 2. 辅助函数
-    // -------------------------------------------------------------------------
+    // =========================================================================
     function getRandomTools(count) {
         if (!allLinks || allLinks.length === 0) return [];
+        // 如果数据不够，就返回所有，否则随机取 count 个
         if (allLinks.length <= count) return allLinks;
         return [...allLinks].sort(() => 0.5 - Math.random()).slice(0, count);
     }
 
     const icons = ['fa-calculator', 'fa-line-chart', 'fa-pie-chart', 'fa-percent', 'fa-usd', 'fa-bank', 'fa-credit-card', 'fa-bar-chart', 'fa-star', 'fa-rocket'];
 
-    // -------------------------------------------------------------------------
-    // 3. 核心逻辑：智能判断页面类型
-    // -------------------------------------------------------------------------
+    // =========================================================================
+    // 3. 核心逻辑
+    // =========================================================================
     
     const gridContainer = document.getElementById('recommendation-grid');       // 工具页的大网格
-    const sidebarContainer = document.getElementById('related-tools-container'); // 文章页的侧边栏
+    const sidebarContainer = document.getElementById('related-tools-container'); // 文章页的侧边栏/工具页的底部容器
 
-    // === 场景 A：这是“工具计算器页” (有大网格) ===
+    // -------------------------------------------------------------------------
+    // 场景 A：检测到“工具页” (存在 recommendation-grid)
+    // -------------------------------------------------------------------------
     if (gridContainer) {
-        const randomLinks = getRandomTools(5);
-        let html = '';
-
-        randomLinks.forEach(item => {
-            const randomIcon = icons[Math.floor(Math.random() * icons.length)];
-            const desc = item.desc || (item.isExternal ? 'Recommended Tool' : 'Tax Calculator');
-            
-            // 工具页样式：紫色大卡片
-            html += `
-                <a href="${item.link}" ${item.isExternal ? 'target="_blank"' : ''} class="tool-card group block h-full">
-                    <div class="flex flex-col items-center text-center p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-purple-500 dark:hover:border-purple-500 hover:shadow-md hover:shadow-purple-500/10 transition-all duration-300 h-full">
-                        <div class="bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-300 w-12 h-12 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                            <i class="fa ${randomIcon} text-xl"></i>
-                        </div>
-                        <div class="w-full">
-                            <div class="font-bold text-slate-800 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors text-sm truncate" title="${item.title}">
-                                ${item.title}
-                            </div>
-                            <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 truncate">
-                                ${desc}
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            `;
-        });
-
-        gridContainer.innerHTML = html;
-
-        // 【关键】如果是工具页，强制隐藏侧边栏容器，防止重复出现在底部
+        
+        // 1. 隐藏底部那个不需要的文本容器
         if (sidebarContainer) {
             sidebarContainer.style.display = 'none';
         }
+
+        // 2. 【核心大招】劫持页面原本的渲染函数
+        // 这样不仅初始化时会生效，甚至当你点击“繁中/EN”切换语言时，
+        // 页面调用的也是我们这个新函数，确保你的工具永远都在！
+        window.renderRecommendation = function() {
+            const randomLinks = getRandomTools(5);
+            let html = '';
+
+            randomLinks.forEach(item => {
+                const randomIcon = icons[Math.floor(Math.random() * icons.length)];
+                // 如果没有描述，根据是否外部链接给一个默认描述
+                const desc = item.desc || (item.isExternal ? 'Recommended Tool' : 'Tax Calculator');
+                
+                // 使用工具页专用的 Grid 样式 (紫色主题)
+                html += `
+                    <a href="${item.link}" ${item.isExternal ? 'target="_blank"' : ''} class="tool-card group block h-full">
+                        <div class="flex flex-col items-center text-center pt-4 pb-2 h-full">
+                            <div class="bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 w-12 h-12 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                                <i class="fa ${randomIcon} text-xl"></i>
+                            </div>
+                            <div class="w-full px-2">
+                                <div class="font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors text-sm line-clamp-1" title="${item.title}">
+                                    ${item.title}
+                                </div>
+                                <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-1">
+                                    ${desc}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                `;
+            });
+
+            gridContainer.innerHTML = html;
+        };
+
+        // 3. 立即执行一次渲染 (防止等待 App.init)
+        window.renderRecommendation();
     } 
     
-    // === 场景 B：这是“文章页” (没有网格，只有侧边栏) ===
+    // -------------------------------------------------------------------------
+    // 场景 B：检测到“文章页” (没有 grid，只有 sidebar)
+    // -------------------------------------------------------------------------
     else if (sidebarContainer) {
+        // 这里完全保留你满意的文章页样式，绝对不动！
         const randomLinks = getRandomTools(5);
         
-        // 【核心修复】：加上了 class="glass ..." 外壳，并使用了蓝色主题 (blue-500)
-        // 这样它就和下面的 "State Tax Map" 长得一模一样了
         let html = `
             <div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-blue-500 mb-8">
                 <h3 class="font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
@@ -2762,7 +2776,6 @@ document.addEventListener('DOMContentLoaded', function() {
         randomLinks.forEach(item => {
             const randomIcon = icons[Math.floor(Math.random() * icons.length)];
             
-            // 使用 tool-card 类，让列表竖向排列
             html += `
                 <a href="${item.link}" ${item.isExternal ? 'target="_blank"' : ''} class="tool-card group">
                     <div class="icon-box bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
@@ -2786,7 +2799,6 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         
         sidebarContainer.innerHTML = html;
-        // 确保显示
         sidebarContainer.style.display = 'block';
     }
 });
