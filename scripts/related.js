@@ -3,8 +3,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // -------------------------------------------------------------------------
-    // 1. 数据源 (为了防止代码太长被截断，这里只保留了开头和结尾的部分数据)
-    // 请将你原本完整的 allLinks 数组内容复制并替换下面的数组内容
+    // 1. 数据源 (重要：请在这里填入你完整的工具链接列表)
     // -------------------------------------------------------------------------
     const allLinks = [
         {
@@ -2687,6 +2686,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "link": "https://toolboxpro.top/modules/weather-health/weather.html",
             "isExternal": true
         }
+        // ... 请在这里把你的几百个链接复制进来 ...
     ];
 
     // -------------------------------------------------------------------------
@@ -2695,13 +2695,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 随机获取N个工具
     function getRandomTools(count) {
+        if (!allLinks || allLinks.length === 0) return [];
         // 如果数据不够，就返回所有
         if (allLinks.length <= count) return allLinks;
         // 简单洗牌算法
-        return allLinks.sort(() => 0.5 - Math.random()).slice(0, count);
+        return [...allLinks].sort(() => 0.5 - Math.random()).slice(0, count);
     }
 
-    // 随机图标 (用于增强视觉效果)
+    // 随机图标库
     const icons = ['fa-calculator', 'fa-line-chart', 'fa-pie-chart', 'fa-percent', 'fa-usd', 'fa-bank', 'fa-credit-card', 'fa-bar-chart', 'fa-star', 'fa-rocket'];
 
     // -------------------------------------------------------------------------
@@ -2710,15 +2711,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const gridContainer = document.getElementById('recommendation-grid');
     
     if (gridContainer) {
-        const randomLinks = getRandomTools(5); // 推荐5个
+        const randomLinks = getRandomTools(5);
         let html = '';
 
         randomLinks.forEach(item => {
             const randomIcon = icons[Math.floor(Math.random() * icons.length)];
             
-            // 生成紫色主题的垂直卡片结构
             html += `
-                <a href="${item.link}" ${item.isExternal ? 'target="_blank"' : ''} class="tool-card group block h-full">
+                <a href="${item.link}" ${item.isExternal ? 'target="_blank"' : ''} class="group block h-full">
                     <div class="flex flex-col items-center text-center p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-purple-500 dark:hover:border-purple-500 hover:shadow-md hover:shadow-purple-500/10 transition-all duration-300 h-full">
                         <div class="bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-300 w-12 h-12 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                             <i class="fa ${randomIcon} text-xl"></i>
@@ -2738,60 +2738,52 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         gridContainer.innerHTML = html;
-        // 如果存在 grid 容器，我们就不再处理侧边栏逻辑，避免重复（或者你可以根据需求移除这个 return）
-        return; 
+        return; // 如果是 Grid 页面，就不处理侧边栏
     }
 
     // -------------------------------------------------------------------------
-    // 4. 场景 B: 文章页面侧边栏 (Sidebar List)
+    // 4. 场景 B: 文章页面侧边栏 (Sidebar List) - 修复显示糟糕的问题
     // -------------------------------------------------------------------------
     const sidebarContainer = document.getElementById('related-tools-container');
 
     if (sidebarContainer) {
-        const randomLinks = getRandomTools(5); // 推荐5个
+        const randomLinks = getRandomTools(5);
         
-        // 生成紫色主题的侧边栏卡片容器
+        // 使用与 State Tax Map 相同的 glass 容器结构
         let html = `
-            <div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500 mb-6 relative overflow-hidden group/card">
-                <!-- 装饰背景 -->
-                <div class="absolute -top-10 -right-10 w-20 h-20 bg-purple-500/10 rounded-full blur-2xl group-hover/card:bg-purple-500/20 transition-all"></div>
-                
-                <h3 class="font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2 relative z-10">
-                    <div class="w-6 h-6 rounded bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center">
-                        <i class="fa fa-wrench text-purple-500 text-xs"></i>
-                    </div>
+            <div class="glass rounded-2xl p-6 shadow-soft border-t-4 border-t-purple-500 mb-8">
+                <h3 class="font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+                    <i class="fa fa-wrench text-purple-500"></i>
                     <span>Useful Tools</span>
                 </h3>
-                <div class="space-y-3 relative z-10">
+                <div class="space-y-3">
         `;
         
-        randomLinks.forEach((item, index) => {
+        randomLinks.forEach(item => {
             const randomIcon = icons[Math.floor(Math.random() * icons.length)];
             
-            // 生成列表项样式
+            // 使用 tool-card 和 icon-box 类，复用网站现有样式
             html += `
-                <a href="${item.link}" ${item.isExternal ? 'target="_blank"' : ''} class="flex items-center gap-3 p-3 rounded-xl bg-slate-50/50 dark:bg-slate-800/30 hover:bg-purple-50 dark:hover:bg-purple-900/20 border border-transparent hover:border-purple-200 dark:hover:border-purple-800 transition-all duration-300 group">
-                    <div class="w-10 h-10 rounded-lg bg-white dark:bg-slate-700 flex items-center justify-center text-purple-500 dark:text-purple-400 shadow-sm group-hover:scale-105 transition-transform">
+                <a href="${item.link}" ${item.isExternal ? 'target="_blank"' : ''} class="tool-card group">
+                    <div class="icon-box bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400">
                         <i class="fa ${randomIcon}"></i>
                     </div>
-                    <div class="overflow-hidden flex-1">
-                        <div class="text-sm font-bold text-slate-700 dark:text-slate-200 truncate group-hover:text-purple-700 dark:group-hover:text-purple-300 transition-colors">
+                    <div class="overflow-hidden">
+                        <div class="text-sm font-bold text-slate-800 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors truncate">
                             ${item.title}
                         </div>
-                        <div class="text-xs text-slate-400 dark:text-slate-500 truncate flex items-center gap-1">
-                            ${item.isExternal ? '<i class="fa fa-bolt text-[10px]"></i>' : '<i class="fa fa-magic text-[10px]"></i>'} 
-                            Recommended
+                        <div class="text-xs text-slate-500 dark:text-slate-400">
+                            ${item.isExternal ? 'Recommended Tool' : 'Internal Tool'}
                         </div>
-                    </div>
-                    <div class="text-purple-300 dark:text-purple-700 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0">
-                        <i class="fa fa-angle-right"></i>
                     </div>
                 </a>
             `;
         });
 
-        html += `   </div>
-            </div>`;
+        html += `
+                </div>
+            </div>
+        `;
         
         sidebarContainer.innerHTML = html;
     }
