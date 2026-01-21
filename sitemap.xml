@@ -4,55 +4,31 @@
     <loc>https://statetaxcalc.com/about.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/articles.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/generator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://statetaxcalc.com/</loc>
+    <loc>https://statetaxcalc.com/index.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/legal.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://statetaxcalc.com/template_2026.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://statetaxcalc.com/template_calculator.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://statetaxcalc.com/tool.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://statetaxcalc.com/_template_calculator.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/articles/2026-federal-tax-brackets-tw.html</loc>
@@ -679,621 +655,615 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://statetaxcalc.com/articles/_template_2026.html</loc>
+    <loc>https://statetaxcalc.com/calculators/state/alabama-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://statetaxcalc.com/calculators/state/alabama-tax-calculator-tw.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://statetaxcalc.com/calculators/state/alabama-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/alaska-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/alaska-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/arizona-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/arizona-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/arkansas-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/arkansas-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/california-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/california-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/colorado-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/colorado-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/connecticut-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/connecticut-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/delaware-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/delaware-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/district-of-columbia-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/district-of-columbia-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/florida-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/florida-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/georgia-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/georgia-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/hawaii-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/hawaii-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/idaho-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/idaho-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/illinois-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/illinois-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/indiana-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/indiana-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/iowa-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/iowa-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/kansas-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/kansas-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/kentucky-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/kentucky-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/louisiana-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/louisiana-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/maine-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/maine-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/maryland-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/maryland-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/massachusetts-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/massachusetts-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/michigan-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/michigan-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/minnesota-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/minnesota-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/mississippi-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/mississippi-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/missouri-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/missouri-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/montana-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/montana-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/nebraska-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/nebraska-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/nevada-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/nevada-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/new-hampshire-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/new-hampshire-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/new-jersey-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/new-jersey-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/new-mexico-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/new-mexico-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/new-york-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/new-york-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/north-carolina-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/north-carolina-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/north-dakota-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/north-dakota-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/ohio-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/ohio-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/oklahoma-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/oklahoma-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/oregon-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/oregon-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/pennsylvania-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/pennsylvania-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/rhode-island-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/rhode-island-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/south-carolina-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/south-carolina-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/south-dakota-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/south-dakota-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/tennessee-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/tennessee-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/texas-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/texas-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/utah-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/utah-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/vermont-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/vermont-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/virginia-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/virginia-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/washington-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/washington-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/west-virginia-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/west-virginia-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/wisconsin-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/wisconsin-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/wyoming-tax-calculator-tw.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://statetaxcalc.com/calculators/state/wyoming-tax-calculator.html</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>
