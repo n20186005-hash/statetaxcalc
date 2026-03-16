@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | StateTaxCalc 2026</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { extend: { colors: { primary: '#2563eb', bg: { light: '#f8fafc', dark: '#0f172a' } } } }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .glass { @apply bg-white/90 dark:bg-slate-800/90 backdrop-blur-md border border-slate-200 dark:border-slate-700; }
+            h2 { @apply text-2xl font-bold text-slate-900 dark:text-white mb-4 mt-8; }
+            p { @apply text-slate-600 dark:text-slate-300 leading-relaxed mb-4; }
+        }
+    </style>
+</head>
+<body class="bg-bg-light dark:bg-bg-dark min-h-screen font-sans text-slate-800 dark:text-slate-200 flex flex-col">
+
+    <nav class="sticky top-0 z-50 glass shadow-sm">
+        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 font-bold text-lg dark:text-white">
+                <i class="fa fa-calculator text-primary"></i> StateTaxCalc 2026
+            </a>
+            <a href="/" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors flex items-center gap-2">
+                <i class="fa fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+        <main class="glass rounded-3xl p-8 md:p-12 shadow-soft">
+            <h1 class="text-3xl font-extrabold mb-2 dark:text-white">Terms of Service</h1>
+            <p class="text-sm text-slate-400 mb-8 border-b border-slate-200 dark:border-slate-700 pb-8">Last Updated: March 2026</p>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing and using statetaxcalc.com, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by these terms, please do not use our services.</p>
+
+            <h2>2. Description of Service</h2>
+            <p>StateTaxCalc provides digital tax assessment tools, calculators, and generated reports. We do not provide certified legal, financial, or accounting advice. The calculations are for informational and educational purposes only.</p>
+
+            <h2>3. Payment and Pricing</h2>
+            <p>Certain advanced features, such as the Premium Tax Assessment, require a one-time payment of $29.90 USD. All payments are securely processed through our authorized Merchant of Record, Paddle. Prices are subject to change without notice.</p>
+
+            <div class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 rounded-lg my-8">
+                <h2 class="!mt-0 text-red-700 dark:text-red-300">4. Refund Policy (Strictly No Refunds)</h2>
+                <p class="text-red-800 dark:text-red-200 font-medium">Please read carefully before purchasing:</p>
+                <p class="text-red-800 dark:text-red-200">Because our products and services (including the Premium Tax Assessment reports) are <strong>100% digital and delivered instantly</strong> upon successful payment, we enforce a strict <strong>NO REFUND</strong> policy. Once a digital product has been purchased and access is granted or generated, the transaction is final. We do not offer refunds, exchanges, or cancellations for any digital services under any circumstances.</p>
+            </div>
+
+            <h2>5. Intellectual Property</h2>
+            <p>All content included on this site, such as text, graphics, logos, and software, is the property of StateTaxCalc and protected by international copyright laws.</p>
+
+            <h2>6. Contact Us</h2>
+            <p>If you have any questions regarding these Terms or your purchase, please contact us directly at:</p>
+            <p class="font-bold text-primary"><a href="mailto:n20186005@gmail.com">n20186005@gmail.com</a></p>
+        </main>
+    </div>
+
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body>
+</html>

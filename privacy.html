@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | StateTaxCalc 2026</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { extend: { colors: { primary: '#2563eb', bg: { light: '#f8fafc', dark: '#0f172a' } } } }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .glass { @apply bg-white/90 dark:bg-slate-800/90 backdrop-blur-md border border-slate-200 dark:border-slate-700; }
+            h2 { @apply text-2xl font-bold text-slate-900 dark:text-white mb-4 mt-8; }
+            p { @apply text-slate-600 dark:text-slate-300 leading-relaxed mb-4; }
+            ul { @apply list-disc list-inside text-slate-600 dark:text-slate-300 mb-4 space-y-2; }
+        }
+    </style>
+</head>
+<body class="bg-bg-light dark:bg-bg-dark min-h-screen font-sans text-slate-800 dark:text-slate-200 flex flex-col">
+
+    <nav class="sticky top-0 z-50 glass shadow-sm">
+        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 font-bold text-lg dark:text-white">
+                <i class="fa fa-calculator text-primary"></i> StateTaxCalc 2026
+            </a>
+            <a href="/" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors flex items-center gap-2">
+                <i class="fa fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+        <main class="glass rounded-3xl p-8 md:p-12 shadow-soft">
+            <h1 class="text-3xl font-extrabold mb-2 dark:text-white">Privacy Policy</h1>
+            <p class="text-sm text-slate-400 mb-8 border-b border-slate-200 dark:border-slate-700 pb-8">Last Updated: March 2026</p>
+
+            <h2>1. Introduction</h2>
+            <p>At StateTaxCalc, your privacy is our priority. This Privacy Policy outlines how we collect, use, and protect your information when you visit statetaxcalc.com and use our tax calculation tools.</p>
+
+            <h2>2. Information We Collect</h2>
+            <p>We believe in minimal data collection:</p>
+            <ul>
+                <li><strong>Calculation Data:</strong> The numerical inputs (income, deductions) you enter are processed locally in your browser to generate instant results. We do not store this sensitive financial data on our servers.</li>
+                <li><strong>Account Information:</strong> If you purchase a Premium Tax Assessment, basic contact information (like your email address) is collected strictly for delivering the product and sending receipts.</li>
+                <li><strong>Analytics:</strong> We collect standard, anonymized web analytics data (such as browser type, referring domain) to improve our website performance.</li>
+            </ul>
+
+            <h2>3. How We Use Your Information</h2>
+            <p>The information we collect is used exclusively to:</p>
+            <ul>
+                <li>Process your transactions and deliver the purchased digital services.</li>
+                <li>Provide customer support.</li>
+                <li>Improve our website features and user experience.</li>
+            </ul>
+
+            <h2>4. Data Protection and Third Parties</h2>
+            <p>We implement strict security measures to safeguard your information. <strong>We do not sell, trade, or rent your personal information to third parties.</strong></p>
+            <p>We use authorized third-party services to ensure secure operations:</p>
+            <ul>
+                <li><strong>Paddle:</strong> Our payment processor (Merchant of Record). Paddle securely handles all payment information. We do not process or store your credit card details.</li>
+                <li><strong>Google AdSense:</strong> We use Google advertising networks, which may use cookies to serve personalized ads based on your visit to our site.</li>
+            </ul>
+
+            <h2>5. Contact Us</h2>
+            <p>If you have any questions or concerns regarding our privacy practices, please reach out to us at:</p>
+            <p class="font-bold text-primary"><a href="mailto:n20186005@gmail.com">n20186005@gmail.com</a></p>
+        </main>
+    </div>
+
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body>
+</html>
