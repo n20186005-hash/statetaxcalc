@@ -79,6 +79,7 @@
 
             <div class="hidden md:flex items-center gap-8">
                 <a href="/#states" class="nav-link" data-i18n="nav_calculators">Calculators</a>
+                <a href="#pricing" class="nav-link" data-i18n="nav_pricing">Pricing</a>
                 <a href="articles.html" class="nav-link text-primary" data-i18n="nav_policy">Articles</a>
                 <a href="/about.html" class="nav-link" data-i18n="nav_about">About</a>
             </div>
@@ -120,9 +121,9 @@
                 <a href="#states" class="w-full sm:w-auto bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold shadow-glow hover:-translate-y-1 transition-all flex items-center justify-center gap-2">
                     <i class="fa fa-map-o"></i> <span data-i18n="btn_start">Select Your State</span>
                 </a>
-                <button onclick="openLoginModal()" class="w-full sm:w-auto bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors flex items-center justify-center gap-2">
-                    <i class="fa fa-lock"></i> <span data-i18n="btn_premium">Premium Features</span>
-                </button>
+                <a href="#pricing" class="w-full sm:w-auto bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors flex items-center justify-center gap-2">
+                    <i class="fa fa-unlock-alt"></i> <span data-i18n="btn_premium">Premium Features</span>
+                </a>
             </div>
         </div>
     </header>
@@ -141,6 +142,40 @@
 
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3" id="homepage-state-grid">
                 </div>
+        </div>
+    </section>
+
+    <!-- NEW PRICING SECTION -->
+    <section id="pricing" class="py-20 bg-slate-50 dark:bg-slate-800/50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4" data-i18n="pricing_title">Simple, Transparent Pricing</h2>
+                <p class="text-slate-500 dark:text-slate-400" data-i18n="pricing_desc">Unlock advanced data processing and reporting tools.</p>
+            </div>
+            
+            <div class="max-w-md mx-auto glass rounded-3xl p-8 border-2 border-primary relative overflow-hidden shadow-xl shadow-primary/10">
+                <div class="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">Most Popular</div>
+                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2" data-i18n="pricing_plan_name">Premium Tax Assessment</h3>
+                <div class="text-4xl font-extrabold text-slate-900 dark:text-white mb-6">$29.90 <span class="text-sm font-normal text-slate-500">/ one-time</span></div>
+                
+                <ul class="space-y-4 mb-8 text-slate-600 dark:text-slate-300 text-sm">
+                    <li class="flex items-start gap-3">
+                        <i class="fa fa-check-circle text-primary mt-1"></i> 
+                        <span data-i18n="pricing_f1">Generate detailed multi-state & federal tax calculation reports</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa fa-check-circle text-primary mt-1"></i> 
+                        <span data-i18n="pricing_f2">Unlock all advanced data processing and scenario planning functions</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa fa-check-circle text-primary mt-1"></i> 
+                        <span data-i18n="pricing_f3">Instant online delivery and lifetime access to your generated reports</span>
+                    </li>
+                </ul>
+                
+                <a href="#!" class="block w-full text-center bg-primary hover:bg-primary-hover text-white py-3.5 rounded-xl font-bold shadow-glow hover:-translate-y-1 transition-all" data-i18n="btn_buy_now">Get Started</a>
+                <p class="text-xs text-center text-slate-400 mt-4"><i class="fa fa-lock"></i> <span data-i18n="pricing_guarantee">Secure checkout. Instant delivery. Strictly no refunds.</span></p>
+            </div>
         </div>
     </section>
 
@@ -176,13 +211,16 @@
                     <ul class="space-y-2 text-sm">
                         <li><a href="about.html" class="hover:text-white transition-colors" data-i18n="link_about">About Us</a></li>
                         <li><a href="#states" class="hover:text-white transition-colors" data-i18n="link_calcs">Calculators</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors" data-i18n="nav_pricing">Pricing</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-white font-bold mb-4 uppercase tracking-wide text-xs" data-i18n="footer_col_support">Support</h4>
+                    <h4 class="text-white font-bold mb-4 uppercase tracking-wide text-xs" data-i18n="footer_col_support">Legal & Support</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="mailto:n20186005@gmail.com" class="hover:text-white transition-colors" data-i18n="link_contact">Contact Us</a></li>
-                        <li><a href="legal.html" class="hover:text-white transition-colors" data-i18n="link_privacy">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="legal.html" class="hover:text-white transition-colors">Disclaimer</a></li>
                     </ul>
                 </div>
                 <div>
@@ -244,25 +282,31 @@
         // --- 2. Localization Data ---
         const i18nData = {
             'zh-TW': {
-                nav_calculators: "州稅計算器", nav_policy: "稅務政策", nav_about: "關於我們", btn_login: "會員登錄",
+                nav_calculators: "州稅計算器", nav_policy: "稅務政策", nav_about: "關於我們", nav_pricing: "定價方案", btn_login: "會員登錄",
                 hero_title: "2026 美國稅務指南", hero_subtitle: "精準的州稅與聯邦稅估算，最新的稅法更新，完全免費。",
                 btn_start: "選擇您的州", btn_premium: "高級功能",
                 states_title: "全美 50 州稅務計算器", states_desc: "選擇一個州以估算您的薪資、退稅和有效稅率。",
+                pricing_title: "簡單透明的定價", pricing_desc: "解鎖高級數據處理與報告生成工具。", pricing_plan_name: "高級稅務評估報告",
+                pricing_f1: "一鍵生成各州與聯邦詳細稅務計算報告", pricing_f2: "解鎖所有高級數據處理與場景規劃功能", pricing_f3: "在線即時交付並永久訪問您生成的報告",
+                btn_buy_now: "立即購買", pricing_guarantee: "安全結算。即時交付。虛擬服務不支持退款。",
                 news_title: "稅務政策與見解", news_desc: "來自 IRS 和州稅務局的最新消息。", link_view_all: "查看所有文章",
                 footer_brand_desc: "我們提供免費、準確的全美 50 州稅務估算工具。賦予您做出更好財務決策的能力。",
-                footer_col_platform: "平台", footer_col_support: "支持", footer_col_links: "友情鏈接",
+                footer_col_platform: "平台", footer_col_support: "條款與支持", footer_col_links: "友情鏈接",
                 link_about: "關於我們", link_calcs: "計算器", link_contact: "聯繫我們", link_privacy: "隱私政策",
                 footer_copyright: "&copy; 2026 StateTaxCalc. 版權所有. 數據僅供教育用途，不構成財務建議。",
                 modal_login_title: "專業會員登錄", modal_login_desc: "解鎖高級省稅策略。", btn_signin: "登入"
             },
             'en': {
-                nav_calculators: "State Calculators", nav_policy: "Tax Policy", nav_about: "About", btn_login: "Pro Login",
+                nav_calculators: "State Calculators", nav_policy: "Tax Policy", nav_about: "About", nav_pricing: "Pricing", btn_login: "Pro Login",
                 hero_title: "Navigate Your Taxes with", hero_subtitle: "Access comprehensive State & Federal tax calculators, updated brackets, and expert policy insights. Free for everyone.",
                 btn_start: "Select Your State", btn_premium: "Premium Features",
                 states_title: "State Tax Calculators", states_desc: "Select a state to estimate your paycheck, tax refund, and effective tax rate.",
+                pricing_title: "Simple, Transparent Pricing", pricing_desc: "Unlock advanced data processing and reporting tools.", pricing_plan_name: "Premium Tax Assessment",
+                pricing_f1: "Generate detailed multi-state & federal tax calculation reports", pricing_f2: "Unlock all advanced data processing and scenario planning functions", pricing_f3: "Instant online delivery and lifetime access to your generated reports",
+                btn_buy_now: "Get Started", pricing_guarantee: "Secure checkout. Instant delivery. Strictly no refunds.",
                 news_title: "Tax Policy & Insights", news_desc: "Latest updates from the IRS and state revenue departments.", link_view_all: "View All Articles",
                 footer_brand_desc: "We provide free, accurate tax estimation tools for all 50 states. Empowering you to make better financial decisions.",
-                footer_col_platform: "Platform", footer_col_support: "Support", footer_col_links: "Friendly Links",
+                footer_col_platform: "Platform", footer_col_support: "Legal & Support", footer_col_links: "Friendly Links",
                 link_about: "About Us", link_calcs: "Calculators", link_contact: "Contact Us", link_privacy: "Privacy Policy",
                 footer_copyright: "&copy; 2026 StateTaxCalc. All rights reserved. Figures are for educational purposes only and do not constitute financial advice.",
                 modal_login_title: "Pro Login", modal_login_desc: "Unlock advanced saving strategies.", btn_signin: "Sign In"
@@ -311,13 +355,12 @@
                 });
             },
 
-            // --- NEW: Dynamic Article Rendering ---
             renderLatestArticles() {
                 const container = document.getElementById('latest-articles-grid');
                 if (!window.TAX_ARTICLES_DB) return;
 
                 const lang = document.documentElement.lang === 'zh-TW' ? 'zh' : 'en';
-                const latest = window.TAX_ARTICLES_DB.slice(0, 3); // Get top 3
+                const latest = window.TAX_ARTICLES_DB.slice(0, 3);
 
                 container.innerHTML = latest.map(article => {
                     const title = article.title[lang] || article.title.en;
@@ -325,7 +368,6 @@
                     const cat = article.category[lang] || article.category.en;
                     const readMore = lang === 'zh' ? '閱讀更多' : 'Read More';
 
-                    // Dynamic colors based on first letter of category for variety
                     const colors = ['blue', 'emerald', 'purple', 'indigo'];
                     const color = colors[article.title.en.length % colors.length];
 
@@ -374,7 +416,7 @@
 
             setupLanguage() {
                 const selector = document.getElementById('lang-selector');
-                const savedLang = localStorage.getItem('app_lang_tax') || 'en'; // Default EN
+                const savedLang = localStorage.getItem('app_lang_tax') || 'en';
                 selector.value = savedLang;
                 this.translate(savedLang);
 
@@ -384,7 +426,7 @@
                     localStorage.setItem('app_lang_tax', newLang);
                     
                     this.renderStates(document.getElementById('state-search').value);
-                    this.renderLatestArticles(); // Re-render articles on lang change
+                    this.renderLatestArticles(); 
                 });
             },
 
@@ -405,9 +447,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
